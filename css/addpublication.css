@@ -50,6 +50,11 @@ ul {
     border-radius: 50%;
 }
 
+.add-individual {
+    color: var(--ocean-mediterrean);
+    font-weight: bold;
+}
+
 
 
 
