@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+.card-header {
+ color: #fff;
+ font-family: 'K2D', sans-serif;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+
+ul {
+    font-family: 'K2D', sans-serif;
+    font-size: 1.5rem; 
+}

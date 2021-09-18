@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+.card-body {
+    font-family: 'K2D', sans-serif;
+}
+
+.card-header {
+    background-color: #084E75;
+    color: #fff;
+}
+

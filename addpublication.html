@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/addpublication.css" />
+    <title>Add Publication</title>
+  </head>
+  <body>
+
+ <!--NAVIGATION MENU-->  
+ <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="fas fa-home"></i>   
+                  </a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">
+                  <i class="far fa-calendar-alt"></i>    
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hubspot.html">
+                  <i class="fas fa-dna"></i>   
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jobs.html">
+                    <i class="fas fa-briefcase"></i> 
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideaspot.html">
+                  <i class="fas fa-lightbulb"></i>   
+              </a>
+          </li> 
+          <li class="nav-item">
+              <a class="nav-link" href="notifications.html">
+                  <i class="fas fa-bell"></i> 
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="messages.html">
+                    <i class="fas fa-envelope"></i>  
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="myprofile.html">
+                <i class="fas fa-user-edit"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     </div>   
+
+<!--PROFILE NAVIGATION-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-ellipsis-h fa-1x"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav text-center mt-2">
+
+<!--View Visitor Mode-->
+<a href="viewvisitormodepublication.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">View Visitor Mode          
+</a>
+
+<!--Profile Settings-->
+<a href="settings.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
+</a>
+
+<!--My Profile-->
+<a href="myprofile.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">My Profile          
+</a>  
+
+<!--Edit Your Publications-->
+<a class="card-link ml-4" href="edityourpublications.html" style="color: #BBDEFB; font-size: 17px;">
+    Edit Your Publications</a>
+  
+<!--Create Event-->    
+<div class="btn-group">  
+  <a class="card-link dropdown-toggle ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+      Create Event</a>
+     <div class="dropdown-menu" aria-labelledby="createevent">
+       <a class="dropdown-item" href="createevent.html">Create Event</a>
+       <a class="dropdown-item" href="edityourevents.html">Edit Your Events</a>
+     </div>
+     </div>   
+
+<!--Additional Settings-->
+<div class="btn-group">  
+<a class="card-link ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+    <i class="fas fa-cog" style="font-size: 30px;"></i></a>
+   <div class="dropdown-menu" aria-labelledby="createevent">
+     <a class="dropdown-item" href="createcompanypage.html">Create Company Page</a>
+     <a class="dropdown-item" href="edityourcompanies.html">Edit Your Companies</a>
+     <a class="dropdown-item" href="createuniversitypage.html">Create University Page</a>
+     <a class="dropdown-item" href="edityouruniversities.html">Edit Your Universities</a>
+     <a class="dropdown-item" data-toggle="modal" data-target="#postjob" href="postjob.html">Post Job</a>
+     <a class="dropdown-item" href="edityourpostings.html">Edit Your Postings</a>
+   </div>
+   </div> 
+<!--Modal-->
+<div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Post Job</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body text-left">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Posted by</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Description</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+            </div>
+          </form>
+          <p class="mt-2 mb-2" style="font-size: 1rem; color: grey;">Your job posting will be visible for the members of 
+            the platform for 30 days, after that period it will dissapear from 
+            job hub. You can drop the posting earlier if you wish. Go to Profile
+            Settings > Job Feed, in order to manage your job postings. Please 
+            note that we recommend to drop job posting earlier if you found
+            the right candidate or don't wish to hire anymore since you might
+            still recieve applications for a job from the other members.
+          </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn rounded">Post</button>
+    </div>
+  </div>
+</div>
+</div>      
+<!--Logout-->
+<a href="#" class="card-link ml-4" style="font-size: 17px;">Logout</a>
+</div>
+</div>
+    </div>
+  </nav>   
+
+<!--Add Publication-->     
+    <div class="container-fluid">
+      <div class="row">
+        <div class="card text-center mb-4 mx-auto d-block mt-4" style="max-width: 100%; width: 80%;">
+          <div class="wrapper-icon">
+            <ul class="edit-icon float-right">
+              <a href="#" data-toggle="modal" data-target="#exampleModal"><li><i class="fas fa-edit fa-3x mb-2"></i></li></a>
+            </ul>                   
+         </div>
+        <div class="card-body">
+        <h2 class="card-title">The Importance of Technology in Biotech</h2>
+        <h4 class="card-subtitle text-muted mb-2 mt-2">Author: Alexandra Slomska, CEO of Tech for Biotech</h4>
+        <h4 class="card-subtitle text-muted mb-2">Co-Author: Jacek Wieczorek, CEO of Whatever</h4>
+        <h5 class="card-subtitle text-muted mb-2">Published at 12:35pm 04/20/2019</h5>
+        <p class="card-text mt-4 mb-4">With supporting text below as a natural lead-in to additional 
+          content. With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+        <p class="card-text">    
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">    
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">   
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.
+          With supporting text below as a natural lead-in to additional content.</p>
+                                  
+<!--Add Co-Author-->                                
+<button type="button" class="btn btn-coauthor rounded" data-toggle="modal" data-target="#addcoauthor">
+<span class="icon mr-2"><i class="fas fa-user fa-1x"></i></span>Add Co-Author</button>
+<!-- Modal -->
+  <div class="modal fade" id="addcoauthor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h2 class="modal-title text-muted" id="exampleModalLabel">Add Co-Author</h2>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body text-left">
+      <h5 class="mt-2 mb-2">Search Individuals</h5>
+    <form class="form-inline my-2 my-lg-0 mt-2">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-search rounded my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+  <!--Individuals-->
+  <div class="container-fluid mt-4 mb-4">
+    <div class="row">
+      <div class="col-md-6">
+       <div class="media">
+        <img class="img-fluid mr-3" src="img/girl.jpg" alt="Generic placeholder image">
+       <div class="media-body">
+         <h5 class="mt-0">Minerva McGonagall</h5>
+         <h6>Ceo and Founder of Tech for Biotech</h6>
+       <button type="button" class="btn btn-add rounded">Add</button>
+      </div>
+    </div>
+  </div>
+   <div class="col-md-6">
+    <div class="media">
+     <img class="img-fluid mr-3" src="img/girl.jpg" alt="Generic placeholder image">
+      <div class="media-body">
+       <h5 class="mt-0">Minerva McGonagall</h5>
+       <h6>Ceo and Founder of Tech for Biotech</h6>
+     <button type="button" class="btn btn-add rounded">Add</button>
+    </div>
+   </div>
+  </div>
+ </div>
+<!--Second row-->
+  <div class="row mt-2 mb-4">
+    <div class="col-md-6">
+     <div class="media">
+      <img class="img-fluid mr-3" src="img/girl.jpg" alt="Generic placeholder image">
+       <div class="media-body">
+        <h5 class="mt-0">Minerva McGonagall</h5>
+        <h6>Ceo and Founder of Tech for Biotech</h6>
+      <button type="button" class="btn btn-add rounded">Add</button>
+    </div>
+   </div>
+ </div>
+   <div class="col-md-6">
+     <div class="media">
+      <img class="img-fluid mr-3" src="img/girl.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+         <h6 class="mt-0">Minerva McGonagall</h6>
+         <h6 class="text-muted">Ceo and Founder of Tech for Biotech</h6>
+       <button type="button" class="btn btn-add rounded">Add</button>
+     </div>
+    </div>
+  </div>
+ </div>           
+</div>
+
+<!--Add invidual out of the platform-->    
+  <a class="add-individual text-right" data-toggle="collapse" href="#agree" role="" aria-expanded="false" aria-controls="collapseExample">
+    Can I add the individual who is not registered on the Tech for Biotech platform?
+  </a>
+  <div class="collapse mt-2" id="agree">
+    <div class="card card-body">
+      <p class="text-left"> Yes, you can add the individual even if it is not registered on the platfrom.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">First Name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Last Name</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Title</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Occupation">
+          </div>
+        </form>
+     <!--Checkbox-->     
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+           <label class="custom-control-label" for="customCheck1">The individual agreed for submitting
+              the paper and including its name on it.
+           </label>
+        </div>
+        <button type="button" class="btn btn-invite rounded mt-2" data-toggle="collapse" href="#invite" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Invite your colleaque to join Tech for Biotech</button>   
+           <div class="collapse" id="invite">
+             <div class="card card-body">
+               <p class="text-left">Type email address of your colleaque and we will send him an
+                invitation from the heart of our hub. 
+               <p class="text-left mt-2 mb-4">Thank you for contributing in building Tech for Biotech</p>    
+               <img class="img-fluid mx-auto d-block mt-2 mb-2" src="img/badges/winner.svg" style="width: 100px; height: 100px;"/>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div> 
+      </p>
+    </div>
+  </div>
+    </div>
+      </div>
+        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-save rounded">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Add photos-->      
+<button type="button" class="btn btn-photos rounded" data-toggle="collapse" data-target="#addphotos" aria-expanded="false" aria-controls="collapseExample">
+  <span class="badge mr-2"><i class="fas fa-image fa-1x"></i></span>Add Photos
+</button>        
+    <div class="collapse mt-4" id="addphotos">
+      <div class="card-body">
+        <div class="container-fluid" style="border: none;">
+          <div class="row">
+            <div class="col-md-3">
+             <div class="card" style="border: none;">
+             <img class="card-img" src="img/blue.png" alt="Card image">
+             <div class="card-img-overlay">
+             <h5 class="card-text">
+            <i class="fas fa-plus fa-3x"></i>  
+           </h5>
+        </div>
+     </div>
+  </div>
+      <div class="col-md-3">
+        <div class="card">
+         <img class="card-img" src="img/blue.png" alt="Card image">
+          <div class="card-img-overlay">
+    <h5 class="card-text">
+        <i class="fas fa-plus fa-3x"></i>  
+    </h5>
+
+  </div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+  <img class="card-img" src="img/blue.png" alt="Card image">
+  <div class="card-img-overlay">
+    <h5 class="card-text">
+        <i class="fas fa-plus fa-3x"></i>  
+    </h5>
+   </div>
+ </div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+  <img class="card-img" src="img/blue.png" alt="Card image">
+  <div class="card-img-overlay">
+    <h5 class="card-text">
+        <i class="fas fa-plus fa-3x"></i>  
+    </h5>   
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>      
+<!--SAVE ALL-->
+  <button type="button" class="btn btn-save rounded mt-4 mb-4">
+     <span class="badge mr-2"><i class="fas fa-check-circle fa-1x"></i></span>Save All
+  </button>                     
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+    
+<!--Scripts-->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper-1.14.3.min.js"></script>
+ </body>
+</html>

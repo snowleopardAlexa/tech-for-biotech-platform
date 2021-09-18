@@ -1,0 +1,39 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** HUBINFO.CSS *****/
+
+body {
+  font-family: 'K2D', sans-serif; 
+}
+
+/*** Card ***/
+
+.card {
+    border: none;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.4rem;
+}
+
+/*** Images ***/
+
+.img-fluid {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+

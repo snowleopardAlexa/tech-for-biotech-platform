@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'K2D', sans-serif;
+  color: #fff;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.card-title {
+ font-size: 1.5rem;
+}
+
+.card-text {
+ font-size: 1rem;
+}
+
+.img-fluid {
+    width: 35px;
+    height: 35px;
+}
+
+.btn {
+    font-size: 16px;
+    color: #000;
+    background-color: #BBDEFB;
+}
+
+.custom-control-label {
+    font-family: 'K2D', sans-serif;
+    font-size: 1.2rem;
+}
+
+.custom-control-view {
+    font-family: 'K2D', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.btn {
+    font-size: 1rem;
+}
+
+h2, .form-control {
+    font-family: 'K2D', sans-serif;   
+    color: #000;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.form-control {
+    font-size: 1rem;
+}
+
+.img-fluid-online {
+    width: 7px;
+    height: 7px;
+}
+
+.img-fluid-view {
+    width: 35px;
+    height: 35px;
+}
+
+.btn-invite {
+    background: #084E75;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.img-fluid-clover {
+    width:25px; 
+    height:25px;
+}
+
+.img-fluid-award {
+    width:35px; 
+    height:35px;
+}

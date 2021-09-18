@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/events.css" />
+    <title>Upcoming Events</title>
+  </head>
+  <body>
+    
+<!--NAVIGATION MENU-->
+<div class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="fas fa-home"></i>   
+                  </a>
+                </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="myprofile.html">
+                <i class="far fa-calendar-alt"></i>    
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="press.html">
+                    <i class="fas fa-newspaper"></i>   
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" data-toggle="modal" data-target="#login" href="#">
+                    <i class="fas fa-user"></i>
+                  </a>
+                </li>  
+          </ul>
+        </div>
+      </nav>
+     </div>
+  <!-- Modal Login -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Log in to your panel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <p class="mt-2" style="font-size: 1.2rem;">Do you provide the event space for the venue?</p>
+              <p class="text-left"><a href="managerlogin.html" class="btn rounded" style="font-size: 1.2rem;">Log in here</a></p>
+              <p class="text-left" style="font-size: 1.2rem;">Are you joining as Professional? Log in below</p>   
+              <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+             <a href="myprofile.html" class="btn rounded" style="font-size: 1.2rem;">Log in</a>
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Upcoming Events-->
+<h1 class="font-weight-bold text-center">UPCOMING EVENTS</h1>
+
+<!--First card, FIRST EVENT-->
+<div class="card shadow p-3 mb-5 bg-white rounded text-center mx-auto">
+    <div class="card-body">
+        <img class="card-img-top" src="img/eventcoverimage.svg" alt="eventpicture">
+      <h2 class="card-title mt-4 mb-4">Title of the event</h2>
+      <h4 class="card-subtitle mt-4 mb-4 text-muted">Date and time</h4>
+      <h4 class="card-subtitle mb-2 text-muted">Ticket price</h4>
+      <p class="card-text mt-4 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+             cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+  <button type="button" class="btn btn-details rounded" data-toggle="modal" data-target=".bd-example-modal-lg" >
+      See Details
+  </button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-muted" id="exampleModalLabel">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top mx-auto d-block" src="img/event.png" alt="eventcoverimage" style="width: 700px; height: 250px;">  
+                <div class="card-body">
+                  <h2 class="card-title">Title of the event</h2>
+                  <h4 class="card-subtitle mt-4 mb-2 text-muted">Date and time</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Address</h4>
+                  <h4 class="card-subtitle mb-4 text-muted">event created by name</h4>
+                  <p class="card-text mt-4 mb-4 text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.        
+                  </p>
+               
+                    <a href="buytickets.html" class="mx-auto">
+                    <button type="button" class="btn btn-block rounded">BUY TICKETS</button>
+                    </a>
+                  <p class="mt-2 mb-2 text-muted" style="font-size: 1.2rem;">Buying tickets doesn't put you automatically
+                      on the list of attendees. If you want to let the others know 
+                      that you will come, please click the button "Will attend".</p>
+                  <button type="button" class="btn btn-attend rounded">Will attend</button>
+                  <button type="button" class="btn btn-interested rounded">Interested</button>
+                  <button type="button" class="btn btn-noattend rounded">Can't attend</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <a href="listofattendees.html">
+          <button type="button" class="btn btn-list rounded">List of attendees</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <!--Second card, SECOND EVENT-->
+<div class="card shadow p-3 mb-5 bg-white rounded text-center mx-auto">
+    <div class="card-body">
+        <img class="card-img-top" src="img/eventcoverimage.svg" alt="eventpicture">
+      <h2 class="card-title mt-4 mb-4">Title of the event</h2>
+      <h4 class="card-subtitle mt-4 mb-4 text-muted">Date and time</h4>
+      <h4 class="card-subtitle mb-2 text-muted">Ticket price</h4>
+      <p class="card-text mt-4 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+             cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+  <button type="button" class="btn btn-details rounded" data-toggle="modal" data-target=".bd-example-modal-lg" >
+      See Details
+  </button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-muted" id="exampleModalLabel">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top mx-auto d-block" src="img/event.png" alt="eventcoverimage" style="width: 700px; height: 250px;">  
+                <div class="card-body">
+                  <h2 class="card-title">Title of the event</h2>
+                  <h4 class="card-subtitle mt-4 mb-2 text-muted">Date and time</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Address</h4>
+                  <h4 class="card-subtitle mb-4 text-muted">event created by name</h4>
+                  <p class="card-text mt-4 mb-4 text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.        
+                  </p>
+               
+                    <a href="buytickets.html" class="mx-auto">
+                    <button type="button" class="btn btn-block rounded">BUY TICKETS</button>
+                    </a>
+                  <p class="mt-2 mb-2 text-muted" style="font-size: 1.2rem;">Buying tickets doesn't put you automatically
+                      on the list of attendees. If you want to let the others know 
+                      that you will come, please click the button "Will attend".</p>
+                  <button type="button" class="btn btn-attend rounded">Will attend</button>
+                  <button type="button" class="btn btn-interested rounded">Interested</button>
+                  <button type="button" class="btn btn-noattend rounded">Can't attend</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <a href="listofattendees.html">
+          <button type="button" class="btn btn-list rounded">List of attendees</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+<!--Third card, THIRD EVENT-->
+<div class="card shadow p-3 mb-5 bg-white rounded text-center mx-auto">
+    <div class="card-body">
+        <img class="card-img-top" src="img/eventcoverimage.svg" alt="eventpicture">
+      <h2 class="card-title mt-4 mb-4">Title of the event</h2>
+      <h4 class="card-subtitle mt-4 mb-4 text-muted">Date and time</h4>
+      <h4 class="card-subtitle mb-2 text-muted">Ticket price</h4>
+      <p class="card-text mt-4 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+             cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+  <button type="button" class="btn btn-details rounded" data-toggle="modal" data-target=".bd-example-modal-lg" >
+      See Details
+  </button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-muted" id="exampleModalLabel">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top mx-auto d-block" src="img/event.png" alt="eventcoverimage" style="width: 700px; height: 250px;">  
+                <div class="card-body">
+                  <h2 class="card-title">Title of the event</h2>
+                  <h4 class="card-subtitle mt-4 mb-2 text-muted">Date and time</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Address</h4>
+                  <h4 class="card-subtitle mb-4 text-muted">event created by name</h4>
+                  <p class="card-text mt-4 mb-4 text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.        
+                  </p>
+               
+                    <a href="buytickets.html" class="mx-auto">
+                    <button type="button" class="btn btn-block rounded">BUY TICKETS</button>
+                    </a>
+                  <p class="mt-2 mb-2 text-muted" style="font-size: 1.2rem;">Buying tickets doesn't put you automatically
+                      on the list of attendees. If you want to let the others know 
+                      that you will come, please click the button "Will attend".</p>
+                  <button type="button" class="btn btn-attend rounded">Will attend</button>
+                  <button type="button" class="btn btn-interested rounded">Interested</button>
+                  <button type="button" class="btn btn-noattend rounded">Can't attend</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <a href="listofattendees.html">
+          <button type="button" class="btn btn-list rounded">List of attendees</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>  
+
+<!--Fourth card, FOURTH EVENT-->
+<div class="card shadow p-3 mb-5 bg-white rounded text-center mx-auto">
+    <div class="card-body">
+        <img class="card-img-top" src="img/eventcoverimage.svg" alt="eventpicture">
+      <h2 class="card-title mt-4 mb-4">Title of the event</h2>
+      <h4 class="card-subtitle mt-4 mb-4 text-muted">Date and time</h4>
+      <h4 class="card-subtitle mb-2 text-muted">Ticket price</h4>
+      <p class="card-text mt-4 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+             cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+  <button type="button" class="btn btn-details rounded" data-toggle="modal" data-target=".bd-example-modal-lg" >
+      See Details
+  </button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-muted" id="exampleModalLabel">Event Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top mx-auto d-block" src="img/event.png" alt="eventcoverimage" style="width: 700px; height: 250px;">  
+                <div class="card-body">
+                  <h2 class="card-title">Title of the event</h2>
+                  <h4 class="card-subtitle mt-4 mb-2 text-muted">Date and time</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Price</h4>
+                  <h4 class="card-subtitle mb-2 text-muted">Address</h4>
+                  <h4 class="card-subtitle mb-4 text-muted">event created by name</h4>
+                  <p class="card-text mt-4 mb-4 text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.        
+                  </p>
+               
+                    <a href="buytickets.html" class="mx-auto">
+                    <button type="button" class="btn btn-block rounded">BUY TICKETS</button>
+                    </a>
+                  <p class="mt-2 mb-2 text-muted" style="font-size: 1.2rem;">Buying tickets doesn't put you automatically
+                      on the list of attendees. If you want to let the others know 
+                      that you will come, please click the button "Will attend".</p>
+                  <button type="button" class="btn btn-attend rounded">Will attend</button>
+                  <button type="button" class="btn btn-interested rounded">Interested</button>
+                  <button type="button" class="btn btn-noattend rounded">Can't attend</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <a href="listofattendees.html">
+          <button type="button" class="btn btn-list rounded">List of attendees</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>  
+ 
+    
+  <!--Scripts-->    
+     <script src="js/jquery-3.3.1.slim.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/popper-1.14.3.min.js"></script>
+    </body>
+   </html>

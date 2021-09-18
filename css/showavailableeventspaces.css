@@ -1,0 +1,39 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** SHOWAVAILABLEEVENTSPACES.CSS *****/
+
+body {
+    font-family: 'K2D', sans-serif;   
+}
+
+/*** Card ***/
+
+.card-header {
+    background-color: #084E75;
+    color: #fff;
+}
+
+.card-title {
+    font-weight: bold
+}
+
+/*** Custom control label ***/
+
+.custom-control-label {
+    font-size: 1.2rem;
+}
+
+/*** Modal ***/
+
+.modal-title {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

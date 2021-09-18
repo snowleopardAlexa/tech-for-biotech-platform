@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/myprofile.css" />
+    <!--change profile picture-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>My Profile</title>
+  </head>
+  <body>
+
+ <!--NAVIGATION MENU-->  
+ <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center ml-auto">
+           <!--biolive<li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                      <i class="fas fa-video"></i>
+                  </a>
+                </li>-->
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="fas fa-home"></i>   
+                  </a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">
+                  <i class="far fa-calendar-alt"></i>    
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hubspot.html">
+                  <i class="fas fa-dna"></i>   
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jobs.html">
+                    <i class="fas fa-briefcase"></i> 
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideaspot.html">
+                  <i class="fas fa-lightbulb"></i>   
+              </a>
+          </li> 
+          <li class="nav-item">
+              <a class="nav-link" href="notifications.html">
+                  <i class="fas fa-bell"></i> 
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="messages.html">
+                    <i class="fas fa-envelope"></i>  
+                </a>
+              </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="myprofile.html">
+                <i class="fas fa-user-edit"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     </div>    
+ 
+<!--Profile navigation-->     
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fas fa-ellipsis-h fa-1x"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav text-left mt-2">
+    
+<!--Visitor Mode View-->
+    <a class="card-link ml-4" href="viewvisitormodeprofessional.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
+    </a>
+    
+<!--Profile Settings-->
+    <a href="settings.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
+    </a>
+
+<!--Create Event-->  
+<div class="btn-group">  
+<a class="card-link dropdown-toggle ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+    Create Event</a>
+   <div class="dropdown-menu" aria-labelledby="createevent">
+     <a class="dropdown-item" href="createevent.html">Create Event</a>
+     <a class="dropdown-item" href="edityourevents.html">Edit Your Events</a>
+   </div></div>
+ 
+<!--Add Publication-->   
+   <div class="btn-group">  
+      <a class="card-link dropdown-toggle ml-4" href="#" id="addpublication" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+          Add Publication</a>
+         <div class="dropdown-menu" aria-labelledby="addpublication">
+           <a class="dropdown-item" href="addpublication.html">Add Publication</a>
+           <a class="dropdown-item" href="edityourpublications.html">Edit Your Publications</a>
+         </div>
+        </div>
+  
+<!--Turn on Looking for Job mode-->
+<a href="#" class="card-link ml-4" data-toggle="modal" data-target="#clover" style="color: #BBDEFB; font-size: 17px;">Looking for job mode 
+    <img src="img/badges/four-leaf-clover.svg" class="img-fluid" alt="four leaf clover" style="width:24px; height:22px;">     
+</a>      
+  <!-- Modal -->
+  <div class="modal fade" id="clover" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-muted" id="exampleModalLabel">Looking for a job mode</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left">
+          <p class="mb-4">When "Looking for a job" mode is on, you can see the clover under your profile photo. The clover is visible to all the members of the platform. 
+            </p>
+
+             <div class="card mx-auto d-block">
+               <div class="text-center">
+                <p class="text-center"><img class="card-img-top-job" src="img/guy.jpg" alt="Card image cap"></p>
+                <p class="text-center"><img src="img/badges/four-leaf-clover.svg" class="img-fluid-emblem" alt="four leaf clover"></p>  
+                </div>
+              </div>
+            
+            <p class="mb-4 mt-4 mb-4" style="color: grey; font-size: 1rem;">Please note that when the mode is off, the
+              clover is not visible under your profile photo.
+            </p> 
+  
+            <p class="mb-4">Do you want to turn on "Looking for a job mode?"</p> 
+            <!--Toggle Switch-->
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <span>On</span>
+                    <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    </label>
+                    <span>Off</span>
+                  </div>      
+                  </div>
+                </div>
+            
+            <p class="mb-2 mt-2" style="color: grey; font-size: 1rem;">
+              Please keep the mode on only when you are looking for a job. 
+              Otherwise, you might recieve unwanted invitations for job interviews.
+            </p> 
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg rounded">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>            
+
+<!--More Options-->
+  <div class="btn-group">  
+    <a class="card-link ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+        <i class="fas fa-cog" style="font-size: 30px;"></i></a>
+       <div class="dropdown-menu" aria-labelledby="createevent">
+         <a class="dropdown-item" href="createcompanypage.html">Create Company Page</a>
+         <a class="dropdown-item" href="edityourcompanies.html">Edit Your Companies</a>
+         <a class="dropdown-item" href="createuniversitypage.html">Create University Page</a>
+         <a class="dropdown-item" href="edityouruniversities.html">Edit Your Universities</a>
+         <a class="dropdown-item" data-toggle="modal" data-target="#postjob" href="postjob.html">Post Job</a>
+         <a class="dropdown-item" href="edityourpostings.html">Edit Your Job Postings</a>
+       </div>
+    </div> 
+ <!--Modal-->
+ <div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Post Job</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Title</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Posted by</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+                </div>
+              </form>
+              <p class="mt-2 mb-2" style="font-size: 1rem; color: grey;">Your job posting will be visible for the members of 
+                the platform for 30 days, after that period it will dissapear from 
+                job hub. You can drop the posting earlier if you wish. Go to Profile
+                Settings > Job Feed, in order to manage your job postings. Please 
+                note that we recommend to drop job posting earlier if you found
+                the right candidate or don't wish to hire anymore since you might
+                still recieve applications for a job from the other members.
+              </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>     
+
+<!--Logout-->
+<a href="#" class="card-link ml-4" style="font-size: 17px;">Logout</a>
+</div>
+</div>
+    </div>
+  </nav>  
+<!--end of profile navigation-->
+
+<!--RESUME CARDS-->
+<!--First Name, Last Name, occupation, emblems info-->                             
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#" data-toggle="modal" data-target="#editmain"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+      </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editmain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Main</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img class="card-img-top mx-auto d-block" src="img/profilepicture.svg" alt="profileimage">
+              <input id="imageUpload" type="file" name="profilepicture" placeholder="Photo" required="" capture>
+              <script>
+                    $(".card-img-top").click(function(e) {
+                    $("#imageUpload").click();
+                       });
+                    
+                    function fasterPreview( uploader ) {
+                    if ( uploader.files && uploader.files[0] ){
+                        $('.card-img-top').attr('src', 
+                           window.URL.createObjectURL(uploader.files[0]) );
+                          }
+                              }
+                    
+                         $("#imageUpload").change(function(){
+                         fasterPreview( this );
+                             });
+                </script>
+              <div class="container-fluid mt-4">
+                      <!--Name, occupation-->
+                          <form role="form">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">
+                                  First Name
+                                </label>
+                                <input type="firstname" class="form-control" id="firstname" />
+                              </div>
+                              <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="lastname" class="form-control" id="lastname" />
+                                </div>
+                                <div class="form-group">
+                                  <label for="occupation">Occupation</label>
+                                  <input type="occupation" class="form-control" id="occupation" />
+                                </div>
+                            </form>
+                            <div class="row mx-auto">
+                                <div class="col-md-12">
+                                <h4>
+                                   I am representing...
+                                </h4>
+                                    <ul>
+                                      <li class="list-item">
+                                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                          <input type="checkbox" name="Redesigning website" class="custom-control-input" id="technology">
+                                          <label class="custom-control-label" for="technology">Technology</label>
+                                          <img src="img/badges/t.svg" class="img-fluid-emblem" alt="technology emblem">    
+                                        </div>
+                                      </li>
+                                      <li class="list-item">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                              <input type="checkbox" name="Social Media Promotion" class="custom-control-input" id="biotechnology">
+                                              <label class="custom-control-label" for="biotechnology">Biotechnology</label>
+                                              <img src="img/badges/b.svg" class="img-fluid-emblem" alt="biotechnology emblem">    
+                                            </div>
+                                         
+                                      </li>
+                                      <li class="list-item">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                              <input type="checkbox" name="A brand new website" class="custom-control-input" id="investment">
+                                              <label class="custom-control-label" for="investment">Investment</label>
+                                              <img src="img/badges/i.svg" class="img-fluid-emblem" alt="investment emblem">    
+                                            </div>
+                                      </li>
+                                      <li class="list-item">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                              <input type="checkbox" name="Consultation" class="custom-control-input" id="company">
+                                              <label class="custom-control-label" for="company">Company</label>
+                                              <img src="img/badges/c.svg" class="img-fluid-emblem" alt="company emblem">    
+                                            </div>  
+                                      </li>
+                                      <li class="list-item">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                              <input type="checkbox" name="Mobile application" class="custom-control-input" id="startup">
+                                              <label class="custom-control-label" for="startup">Startup</label>
+                                              <img src="img/badges/s.svg" class="img-fluid-emblem" alt="startup emblem">    
+                                            </div> 
+                                      </li>
+                                      <li class="list-item">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                              <input type="checkbox" name="Other" class="custom-control-input" id="sponsorship">
+                                              <label class="custom-control-label" for="sponsorship">Sponsorship</label>
+                                              <img src="img/badges/ss.svg" class="img-fluid-emblem" alt="...">    
+                                            </div>
+                                      </li>
+                                      <li class="list-item">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                              <input type="checkbox" name="Mobile application" class="custom-control-input" id="academia">
+                                              <label class="custom-control-label" for="academia">Academia</label>
+                                              <img src="img/badges/a.svg" class="img-fluid-emblem" alt="academia emblem">    
+                                            </div> 
+                                      </li>
+                                      <li class="list-item">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                              <input type="checkbox" name="Other" class="custom-control-input" id="collegestudent">
+                                              <label class="custom-control-label" for="collegestudent">College Student</label>
+                                              <img src="img/badges/cs.svg" class="img-fluid-emblem" alt="colege student emblem">    
+                                            </div>
+                                      </li>
+                                    </ul>
+                                    <p class="mt-2 text-muted">
+                                      Please note that you can have only 1 active emblem at the time. 
+                                    </p>
+                                    <div class="form-group">
+                                        <label for="description">Description</label>
+                                        <textarea class="form-control" id="description" rows="2"></textarea>
+                                    </div>
+                                </div>
+                              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg rounded">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+        
+<!--Profile picture-->
+  <div class="shadow-lg p-3 mb-5 bg-white rounded">     
+  <div class="card-body text-center">
+    <img class="card-img-top" src="img/profilepicture.svg" alt="profileimage">
+    <input id="imageUpload" type="file" name="profilepicture" placeholder="Photo" required="" capture>
+    <script>
+          $(".card-img-top").click(function(e) {
+          $("#imageUpload").click();
+             });
+          
+          function fasterPreview( uploader ) {
+          if ( uploader.files && uploader.files[0] ){
+              $('.card-img-top').attr('src', 
+                 window.URL.createObjectURL(uploader.files[0]) );
+                }
+                    }
+          
+               $("#imageUpload").change(function(){
+               fasterPreview( this );
+                   });
+      </script>
+   <h2 class="card-title mt-4">Aleksandra Slomska</h2>
+    <h4 class="card-text">Founder and CEO of Tech for Biotech</h4>
+      <div class="container">
+          <div class="row mx-auto">
+              <div class="col-md-12">
+                <div class="mb-5 text-center"> 
+                <img src="img/badges/t.svg" class="img-fluid-emblem-active" alt="...">
+                <img src="img/badges/award.svg" class="img-fluid-emblem-active" alt="...">
+                <!--
+                <img src="img/badges/b.svg" class="img-fluid" alt="...">
+                <img src="img/badges/vc.svg" class="img-fluid" alt="...">
+                <img src="img/badges/c.svg" class="img-fluid" alt="...">
+                <img src="img/badges/s.svg" class="img-fluid" alt="...">
+                <img src="img/badges/ss.svg" class="img-fluid" alt="...">
+                <img src="img/badges/p.svg" class="img-fluid" alt="...">
+                <img src="img/badges/es.svg" class="img-fluid" alt="...">
+                <img src="img/clover.svg" class="img-fluid" alt="...">-->
+        </div>
+      </div>
+    </div>
+    </div>  
+    <p class="card-text">Short Description of the company. Short Description of the company. Short Description of the company.    
+    </p>       
+    </div>
+  </div> 
+  </div>
+   
+<!--Second card, WORK EXPERIENCE-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editwork"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editwork" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-muted" id="editwork">Edit Work</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <a href="#"><h2>Add Work</h2></a>
+              <!--First job-->
+              <form>
+              <div class="form-group d-block mt-4">
+                  <img src="img/companyprofileimage.svg" class="img-fluid" alt="companyprofileimage" style="width:500px; height:250px;">  
+                  <label for="exampleInputEmail1">
+                    Company
+                  </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div> 
+              <div class="form-group d-block mt-4">
+                  <label for="exampleInputEmail1">
+                    Occupation
+                  </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>
+              <div class="form-group d-block mt-4">
+                  <label for="exampleInputEmail1">
+                    Years
+                  </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <p clas="mt-2">
+                 <button class="btn rounded">Remove</button>
+              </p>
+              </form>
+              <!--Second job-->
+              <form>
+              <div class="form-group d-block mt-4">
+                  <img src="img/companyprofileimage.svg" class="img-fluid" alt="companyprofileimage" style="width:500px; height:250px;">  
+                  <label for="exampleInputEmail1">
+                    Company
+                  </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div> 
+                <div class="form-group d-block mt-4">
+                    <label for="exampleInputEmail1">
+                    Occupation
+                    </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+                <div class="form-group d-block mt-4">
+                   <label for="exampleInputEmail1">
+                    Years
+                   </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <p clas="mt-2">
+                  <button class="btn rounded">Remove</button>
+                </p>
+                </form>
+                <!--Save all-->
+                <button class="btn rounded">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+  <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+          <div class="card-body text-center">
+            <h1 class="card-title">Work Experience</h1>
+        <!--First company-->  
+        <img class="card-img-top mt-4" src="img/companyprofileimage.svg" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+          <h3 class="card-subtitle mt-4">Company</h3>
+          <p class="card-text mt-2">Occupation</p>
+          <p class="card-text mt-2"> 2008-2017</p>
+          <p class="card-text">
+          Short Description of a position.</p>
+        <!--Second company-->  
+        <img class="card-img-top mt-4" src="img/tfb500.svg" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+          <h3 class="card-subtitle mt-4">Tech for Biotech</h3>
+          <p class="card-text mt-2">Ceo at Tech for Biotech</p>
+          <p class="card-text mt-2">2009-2018</p>
+          <p class="card-text">
+          Short description of a position.</p>
+        <!--Third company-->
+       <img class="card-img-top mt-4" src="img/companyprofileimage.svg" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+          <h3 class="card-subtitle mt-4">Company</h3>
+          <p class="card-text mt-2">Occupation</p>
+          <p class="card-text mt-2">2008-2017</p>
+          <p class="card-text">Short description of a position.</p>
+        </div>
+      </div>
+    </div>
+           
+<!--Third card, EDUCATION-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#exampleModal"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+    </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Education</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <a href="#"><h2>Add Education</h2></a>
+                   <!--First University-->  
+                  <form>
+                  <div class="form-group d-block mt-4">
+                      <img src="img/universityprofileimage.svg" class="img-fluid" alt="universityprofileimage" style="width:1000px; height:200px;">
+                      <label for="exampleInputEmail1">
+                      University Name
+                      </label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                  </div>
+                  <div class="form-group d-block mt-4">
+                      <label for="exampleInputEmail1">
+                      Degree
+                      </label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                  </div>
+                  <div class="form-group d-block mt-4">
+                      <label for="exampleInputEmail1">
+                      Years of Attendance
+                      </label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                  </div>
+                   <!--short description-->
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Description</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                   <p class="mt-2">
+                    <button class="btn rounded">Remove</button>
+                   </p>
+                   </form>
+                  <!--Second University-->  
+                  <form>
+                      <div class="form-group d-block mt-4">
+                          <img src="img/universityprofileimage.svg" class="img-fluid" alt="universityprofileimage" style="width:1000px; height:200px;">
+                          <label for="exampleInputEmail1">
+                          University Name
+                          </label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                      </div>
+                      <div class="form-group d-block mt-4">
+                          <label for="exampleInputEmail1">
+                          Degree
+                          </label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                      </div>
+                      <div class="form-group d-block mt-4">
+                          <label for="exampleInputEmail1">
+                          Years of Attendance
+                          </label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                      </div>
+                       <!--short description-->
+                      <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Description</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                       <p class="mt-2">
+                        <button class="btn rounded">Remove</button>
+                       </p>
+                       </form>
+                    <!--Save all-->
+                    <button class="btn rounded">Save</button>
+                       </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                      <!--Display card-->        
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                                  <div class="card-body text-center">
+                                    <h1 class="card-title">Education</h1>
+                                    <!--First degree-->  
+                                    <img class="card-img-top mt-4" src="img/stanfordprofileimage.svg" alt="companyprofileimage" style="width: 1000px; height: 200px; border-radius: 0%;">
+                                    <h3 class="card-subtitle mt-4">Stanford University</h3>
+                                    <p class="card-text mt-2">
+                                      Degree
+                                    </p>
+                                    <p class="card-text mt-2">
+                                        2008-2010
+                                    </p>
+                                    <p class="card-text">
+                                      Short Description of a degree.
+                                    </p>
+                                    <!--Second degree-->
+                                    <img class="card-img-top mt-4" src="img/universityprofileimage.svg" alt="companyprofileimage" style="width: 1000px; height: 200px; border-radius: 0%;">
+                                    <h3 class="card-subtitle mt-4">Harvard University</h3>
+                                    <p class="card-text mt-2">
+                                      Bachelor of Science
+                                    </p>
+                                    <p class="card-text mt-2">
+                                        2008-2012
+                                    </p>
+                                    <p class="card-text">
+                                      Short description of a degree.
+                                    </p>
+                                    <!--Third degree-->
+                                    <img class="card-img-top mt-4" src="img/universityprofileimage.svg" alt="companyprofileimage" style="width: 1000px; height: 200px; border-radius: 0%;">
+                                    <h3 class="card-subtitle mt-4">Name of the University</h3>
+                                    <p class="card-text mt-2">
+                                     Degree
+                                    </p>
+                                    <p class="card-text mt-2">
+                                      Years of Attendance
+                                    </p>
+                                    <p class="card-text">
+                                      Short description of a position. 
+                                    </p>
+                                  </div>
+                              </div>
+                            </div>    
+<!--Fourth Card, PUBLICATIONS-->                            
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editeducation"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editeducation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Publications</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <a href="#"><h2>Add Publications</h2></a>
+                  <!--First publication-->
+                  <form>
+                      <div class="form-group d-block mt-4">
+                        <label for="exampleInputEmail1">
+                         Title
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                      </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Description</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <p class="mt-2">
+                      <button class="btn rounded">Remove</button> 
+                    </p>
+                    </form>
+                    <!--Second publication-->
+                    <form>
+                        <div class="form-group d-block mt-4">
+                          <label for="exampleInputEmail1">
+                           Title
+                          </label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                        </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <p class="mt-2">
+                        <button class="btn rounded">Remove</button> 
+                      </p>
+                      </form>
+                       <button class="btn rounded">Save</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+         <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+            <div class="card-body">       
+                <h1 class="card-title text-center">Publications</h1>
+                <p class="card-text">  
+                    <!--First publication-->
+                  <h3 class="card-subtitle mt-4 mb-4">Title of the Publication</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.</p>
+                    <!--Second Publication-->       
+                  <h3 class="card-subtitle mt-4 mb-4">Title of the Publication</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum. </p>   
+                    <!--Third Publication-->    
+                  <h3 class="card-subtitle mt-4 mb-4">Title of the Publication</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum. </p>            
+              </p>
+          </div>
+        </div>
+    </div>
+           
+<!--Fifth card, EVENTS ATTENDANCE-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editevents"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Events</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <a href="#"><h2>Add Events</h2></a>
+                       <button class="btn rounded">Save</button>
+                       </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">                       
+                                  <h1 class="card-title text-center">Events Attendance</h1>
+                                  <p class="card-text">
+                                      <!--First Event-->
+                                      <h4 class="font-weight-bold"><i class="fas fa-check mr-2"></i>TITLE OF THE EVENT</h4>
+                                      <p class="card-text">Date</p>
+                                      <!--Second Event-->
+                                      <h4 class="font-weight-bold"><i class="fas fa-check mr-2"></i>STARTUP BIO EXPO</h4>
+                                      <p class="card-text">September 20th 2018</p>
+                                      <!--Third Event-->   
+                                      <h4 class="font-weight-bold"><i class="fas fa-check mr-2"></i>COMPANY BUYS STARTUP</h4>
+                                      <p class="card-text">July 21th 2018</p>            
+                                  </p>
+                              </div>
+                            </div>
+                         </div>
+
+<!--Sixth card, IN MY OWN WORDS-->          
+<div class="card mx-auto d-block mt-4">
+  <div class="wrapper-icon">
+    <ul class="edit-icon float-right">
+        <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+        <a href="#" data-toggle="modal" data-target="#inmyownwords"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+      </ul>                   
+    </div>  
+<!-- Modal -->
+<div class="modal fade" id="inmyownwords" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-muted" id="exampleModalLabel">Edit In my own words</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                  </div>
+                     <button class="btn rounded">Save</button>
+                     </div>
+                  </div>
+                </div>
+               </div>
+             </div>
+            <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+              <div class="card-body">
+          <!--In my own words-->  
+              <h1 class="card-title text-center">In my own words</h1>
+                <p class="card-text"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>                         
+
+<!--Seventh card, CONTACT-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editcontact"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+      </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Contact</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                      <div class="form-group d-block mt-4">
+                        <label for="firstname">
+                          First Name
+                        </label>
+                        <input type="firstname" class="form-control" id="firstname" />
+                      </div>
+                      <div class="form-group d-block mt-4">
+                          <label for="lastname">
+                            Last Name
+                          </label>
+                          <input type="lastname" class="form-control" id="lastname" />
+                        </div>
+                        <div class="form-group d-block mt-4">
+                            <label for="occupation">
+                              Occupation
+                            </label>
+                            <input type="occupation" class="form-control" id="occupation" />
+                          </div>  
+                        <div class="form-group d-block mt-4">
+                            <label for="number">
+                              Number
+                            </label>
+                            <input type="number" class="form-control" id="number" />
+                          </div>  
+                          <div class="form-group d-block mt-4">
+                              <label for="email">
+                                Email
+                              </label>
+                              <input type="email" class="form-control" id="email" />
+                            </div> 
+                          <div class="form-group d-block mt-4">
+                                <label for="residency">
+                                Place of current residency  
+                                </label>
+                                <input type="residency" class="form-control" id="residency" />
+                          </div>   
+                          <div class="form-group d-block mt-4">
+                              <label for="website">
+                                 Website 
+                              </label>
+                              <input type="website" class="form-control" id="website" />
+                        </div>
+                       <p class="text-left text-muted">Please note that First and Last Name are required. 
+                         If you do not wish to fill in information about your occupation, number, email, place
+                         of current residency and website, you do not have to do it. 
+                       </p>
+                       <button class="btn btn-lg rounded">Save</button>
+                       </div>  
+                      </div>
+                     </div>
+                    </div>
+                  </div>
+                  <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                      <div class="card-body">
+                      <!--Contact Information--> 
+                        <h1 class="card-title text-center">Contact</h1>
+                        <h4 class="card-subtitle font-weight-bold mt-4 mb-4">Contact Information</h4>
+                            <p class="card-text">Aleksandra Slomska</p>
+                            <p class="card-text">CEO at Whatever</p>
+                            <p class="card-text">+1 646.206.00.76</p>
+                            <p class="card-text">aleksandravslomska@gmail.com</p>
+                            <p class="card-text">New York City</p>
+                            <p class="card-text"><span class="mr-2">web:</span><a href="www.techforbiotech.com">techforbiotech.com</a>
+                      </div>
+                    </div>
+                  </div>
+
+<!--Like button-->
+<p class="card-text text-center">Do you like this profile? Give it a like!</p>
+<p class="card-text text-center"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p> 
+<p class="card-text text-center">6475</p>                                        
+            
+<!--Scripts-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper-1.14.3.min.js"></script>
+</body>
+</html>  

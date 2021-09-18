@@ -1,0 +1,50 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** MAIN.CSS *****/
+
+body {
+    font-family: 'K2D', sans-serif;   
+}
+
+/*** Navbar ***/
+
+.navbar {
+    font-size: 1.2rem;  
+    background-color: #084E75;
+
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+a {
+    color: #BBDEFB; 
+}
+  
+a:hover {
+    color: #09c4c4;
+    text-decoration: none;
+}  
+
+.fa-home, .fa-calendar-alt, .fa-dna, .fa-briefcase, .fa-lightbulb, .fa-bell, .fa-envelope, .fa-user-edit, .fa-newspaper, .fa-user {
+    font-size: 32px;
+}
+
+/*** Buttons ***/ 
+
+.btn {
+    background-color:#084E75;
+    color: #fff;
+  }
+
+.btn:hover {
+    color: #09c4c4;    
+}  
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }

@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/myprofile.css" />
+    <!--change profile picture-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Manager profile</title>
+  </head>
+  <body>
+
+ <!--Navigation bar-->  
+ <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav text-center ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">
+                        <i class="fas fa-home"></i>   
+                      </a>
+                    </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">
+                      <i class="far fa-calendar-alt"></i>    
+                  </a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="notifications.html">
+                      <i class="fas fa-bell"></i> 
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="messages.html">
+                        <i class="fas fa-envelope"></i>  
+                    </a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="managerprofile.html">
+                    <i class="fas fa-user-edit"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+         </div>    
+       
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fas fa-ellipsis-h fa-1x"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav text-center mt-2">
+        
+    <!--Visitor Mode View button
+    <a href="#visitormodeview.html">-->
+        <a class="card-link ml-4" href="viewvisitormodemanager.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
+        </a>
+        
+        <!--Settings-->
+        <a href="settings.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
+        </a>
+        
+        <!--Event Space Page-->
+        <a href="createeventspacepage.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Create Event Space Page             
+        </a>
+
+      <!--Turn on Event Space Availability mode-->
+      <a href="manageeventspaces.html" class="card-link ml-4" style="color: #BBDEFB; font-size: 17px;">Manage Current Event Spaces    
+      </a>   
+    
+    <!--Modal-->
+      <div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Post Job</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Title</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Posted by</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Description</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+                    </div>
+                  </form>
+                  <p class="mt-2 mb-2" style="font-size: 1rem; color: grey;">Your job posting will be visible for the members of 
+                    the platform for 30 days, after that period it will dissapear from 
+                    job hub. You can drop the posting earlier if you wish. Go to Profile
+                    Settings > Job Feed, in order to manage your job postings. Please 
+                    note that we recommend to drop job posting earlier if you found
+                    the right candidate or don't wish to hire anymore since you might
+                    still recieve applications for a job from the other members.
+                  </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn rounded">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!--Icon more Options-->
+  <div class="btn-group">  
+      <a class="card-link ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+          <i class="fas fa-cog" style="font-size: 30px;"></i></a>
+         <div class="dropdown-menu" aria-labelledby="createevent">
+           <a class="dropdown-item" href="availableeventspaces.html">See Available Event Spaces</a>
+         </div>
+        </div>   
+   
+           
+    <!--Logout-->
+    <a href="#" class="card-link ml-4" style="font-size: 17px;">Logout</a>
+    
+    
+              </div>
+            </div>
+          </nav>
+        
+        <!--First Name, Last Name, event space info, badges info-->                             
+        <div class="card mx-auto d-block mt-4 text-center">
+            <div class="wrapper-icon">
+              <ul class="edit-icon float-right">
+                  <a href="#" data-toggle="modal" data-target="#editmain"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+              </ul>                   
+              </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="editmain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Main</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <img class="img-fluid mx-auto d-block" style="width:200px; height: 200px; border-radius: 50%;" src="img/me.jpg" alt="Card image cap">     
+                            <div class="container-fluid mt-4">
+                           
+                                <div class="row mx-auto">
+                                  <div class="col-md-6">
+                                    <form role="form">
+                                      <div class="form-group">
+                                         
+                                        <label for="exampleInputEmail1">
+                                         First Name
+                                        </label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <form role="form">
+                                      <div class="form-group">
+                                         
+                                        <label for="exampleInputEmail1">
+                                         Last Name
+                                        </label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                            
+                                       
+                                      
+
+                                        <div class="row mx-auto">
+                                          <div class="col-md-12">
+                                            <form role="form">
+                                              <div class="form-group">
+                                                <label for="exampleInputEmail1">
+                                                 Headline
+                                                </label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>  
+                                     
+                                      <div class="row mx-auto">
+                                        <div class="col-md-12">
+                                          <form role="form">
+                                            <div class="form-group">
+                                              <label for="exampleInputEmail1">
+                                               Short Description
+                                              </label>
+                                              <input type="email" class="form-control" rows="3" id="exampleInputEmail1" />
+                                            </div>
+                                          </form>
+                                        </div>
+                                      </div>
+                 <p class="text-left text-muted mt-4">Event Space badge was assigned to you 
+                   within registration process. </p>
+                 <p class="text-center"><img src="img/badges/es.svg" class="img-fluid" alt="...">
+                  </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn rounded">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+                
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">     
+          <div class="card-body">
+              <img class="card-img-top mx-auto d-block" src="img/hotel.jpeg" alt="Card image cap">                     
+              <input id="imageUpload" type="file" name="profilepicture" placeholder="Photo" required="" capture>
+              <script>
+                    $(".card-img-top").click(function(e) {
+                    $("#imageUpload").click();
+                       });
+                    
+                    function fasterPreview( uploader ) {
+                    if ( uploader.files && uploader.files[0] ){
+                        $('.card-img-top').attr('src', 
+                           window.URL.createObjectURL(uploader.files[0]) );
+                          }
+                              }
+                    
+                         $("#imageUpload").change(function(){
+                         fasterPreview( this );
+                             });
+                </script>
+              <h1 class="card-title text-center mt-4">Oleg Krasnyj</h1>
+              <h1 class="card-subtitle text-center mt-4">Manager at Restaurant La Crimoza</h1>
+            <p class="card-text mt-2">Providing excllent renting experience for any kind of venue</p>
+              <div class="container">
+                  <div class="row mx-auto">
+                      <div class="col-md-12">
+                        <div class="mb-5 text-center"> 
+                        <img src="img/badges/es.svg" class="img-fluid" alt="...">
+                </div>
+              </div>
+            </div>
+            </div>         
+            </div>
+          </div> 
+          </div>
+           
+ 
+      <!--Second card, promotion of the event space -->          
+        <div class="card mx-auto d-block mt-4 text-center">
+            <div class="wrapper-icon">
+              <ul class="edit-icon float-right">
+                  <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+                  <a href="#" data-toggle="modal" data-target="#exampleModal"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+                </ul>                   
+            </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Promotion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container">
+                          <a href="#"><h2>Add Promotion</h2></a>
+                              <div class="form-group d-block mt-4">
+                                <label for="exampleInputEmail1">
+                                 Title
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                              </div>
+                          <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Description</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                               <button class="btn rounded">Add more</button>
+                               <button class="btn rounded">Save</button>
+                               </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                                      <div class="card-body">             
+                                          <h2 class="card-title">Promotion</h2>
+                                          <p class="card-text">
+                                              <ul class="work">
+                                                  <div class="media">
+                                                      <img class="mr-3" src="img/me.jpg" style="width: 64px; height: 64px;"  alt="Generic placeholder image">
+                                                      <div class="media-body">
+                                                        <h5 class="mt-4">CTO at Vimeo 2007-2019</h5>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                               cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                                anim id est laborum.</p>
+                                                      </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <img class="mr-3" src="img/me.jpg" style="width: 64px; height: 64px;"  alt="Generic placeholder image">
+                                                        <div class="media-body">
+                                                          <h5 class="mt-4">CTO at Vimeo 2007-2019</h5>
+                                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                               consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                                 cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                                  anim id est laborum.</p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="media">
+                                                          <img class="mr-3" src="img/me.jpg" style="width: 64px; height: 64px;"  alt="Generic placeholder image">
+                                                          <div class="media-body">
+                                                            <h5 class="mt-4">CTO at Vimeo 2007-2019</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                                   cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                                    anim id est laborum.</p>
+                                                          </div>
+                                                        </div>  
+                                                </ul>  
+                                          
+                                          </p>
+        
+                                      </div>
+                                      </div>
+                                      </div>
+                   
+        <!--Third card, availability -->          
+        <div class="card mx-auto d-block mt-4 text-center">
+            <div class="wrapper-icon">
+              <ul class="edit-icon float-right">
+                  <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+                  <a href="#" data-toggle="modal" data-target="#editeducation"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+                </ul>                   
+              </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="editeducation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Availability</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container">
+                          <a href="#"><h2>Add Availability</h2></a>
+                              <div class="form-group d-block mt-4">
+                                <label for="exampleInputEmail1">
+                                 Title
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                              </div>
+                          <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Description</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                               <button class="btn rounded">Add more</button>
+                               <button class="btn rounded">Save</button>
+                               </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                                      <div class="card-body">       
+                                          <h4 class="card-title mx-auto">Availability</h4>
+                                          <p class="card-text">  
+                                              <ul class="work">
+                                                  <li class="title">Phd at Columbia University 2007-2019</li>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                       esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                         anim id est laborum.</p>
+                                                  <li class="title">Master Boston College 2005-2008</li>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                      cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                      anim id est laborum. </p>   
+                                                  <li class="title">Bachelor at Harvard University 2002-2005</li>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                     cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                     anim id est laborum. </p>            
+                                                </ul>  
+                                          </p>
+                                      </div>
+                                      </div>
+                                      </div>
+                   
+        <!--Fourth card, hosted events -->          
+        <div class="card mx-auto d-block mt-4 text-center">
+            <div class="wrapper-icon">
+              <ul class="edit-icon float-right">
+                  <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+                  <a href="#" data-toggle="modal" data-target="#editevents"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+                </ul>                   
+              </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Hosted Events</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container">
+                          <a href="#"><h2>Add Events</h2></a>
+                               <button class="btn rounded">Save</button>
+                               </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                                      <div class="card-body" style="margin-top:4rem;">
+                                                             
+                                          <h4 class="card-title">Hosted Events</h4>
+                                          <p class="card-text">
+                                            <ul class="work">
+                                              <li class="title"><i class="fas fa-check mr-2"></i>BIG PHARMA OF TOMORROW</li>
+                                              <p>April 17th 2018</p>
+                                              <li class="title"><i class="fas fa-check mr-2"></i>STARTUP BIO EXPO</li>
+                                              <p>September 20th 2018</p>   
+                                              <li class="title"><i class="fas fa-check mr-2"></i>COMPANY BUYS STARTUP</li>
+                                              <p>July 21th 2018</p>            
+                                            </ul> 
+                                          
+                                          </p>
+        
+                                      </div>
+                                      </div>
+                                      </div>
+        
+        <!--Fifth card, contact -->          
+        <div class="card mx-auto d-block mt-4">
+            <div class="wrapper-icon">
+              <ul class="edit-icon float-right">
+                  <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+                  <a href="#" data-toggle="modal" data-target="#editcontact"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+                </ul>                   
+              </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container">
+                          <a href="#"><h2>Add Contact</h2></a>
+                              <div class="form-group d-block mt-4">
+                                <label for="exampleInputEmail1">
+                                  First Name
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                              </div>
+                              <div class="form-group d-block mt-4">
+                                  <label for="exampleInputEmail1">
+                                    Last Name
+                                  </label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                                </div>
+                                <div class="form-group d-block mt-4">
+                                    <label for="exampleInputEmail1">
+                                      Number
+                                    </label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                                  </div>  
+                                  <div class="form-group d-block mt-4">
+                                      <label for="exampleInputEmail1">
+                                        Email
+                                      </label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                                    </div> 
+                                    <div class="form-group d-block mt-4">
+                                        <label for="exampleInputEmail1">
+                                        Place of current residency  
+                                        </label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                                    </div>   
+                               <button class="btn rounded">Add more</button>
+                               <button class="btn rounded">Save</button>
+                               </div>  
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                                      <div class="card-body">
+                                          <h4 class="card-title">Contact</h4>
+                                          <p class="card-text"> 
+                                              <ul class="work">
+                                                  <li class="title mb-2">Contact Information</li>
+                                                  <li class="contact">Aleksandra Slomska</li>
+                                                  <li class="contact">+1 646.206.00.76</li>
+                                                  <li class="contact">aleksandravslomska@gmail.com</li>
+                                                  <li class="contact">New York City</li>
+                                                </ul>  
+                                              </p>
+                                      </div>
+                                      </div>
+                                      </div>
+        
+        <!--Seventh card, description, education etc -->          
+        <div class="card mx-auto d-block mt-4">
+            <div class="wrapper-icon">
+              <ul class="edit-icon float-right">
+                  <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+                  <a href="#" data-toggle="modal" data-target="#inmyownwords"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+                </ul>                   
+              </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="inmyownwords" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Own Words</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container">
+                          <a href="#"><h2>In my own words</h2></a>
+                          <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Description</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                               <button class="btn rounded">Add more</button>
+                               <button class="btn rounded">Save</button>
+                               </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                                      <div class="card-body">
+                                          <h4 class="card-title">In my own words</h4>
+                                          <p class="card-text"> 
+                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                               consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                 cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                  anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                     cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                      anim id est laborum  
+                                          </p>
+                                      </div>
+                                      </div>
+
+                                      <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                                            <div class="card-body">
+                                                <h4 class="card-title">Photos of Event Space</h4>
+                                                <p class="card-text"> 
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                       cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                        anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                           cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                            anim id est laborum  
+                                                </p>
+                                            </div>
+                                            </div>
+
+                                      </div>        
+
+    <!--Like button-->
+    <p class="text-center">Do you like this profile? Give it a like!</p>
+    <p class="text-center"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p> 
+    <p class="text-center">6475</p>                                        
+
+
+
+
+
+
+
+
+
+ 
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper-1.14.3.min.js"></script>
+</body>
+</html>     

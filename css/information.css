@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
+
+.info {
+    color: #fff;
+    font-family: sans-serif, 'Roboto Condensed';
+}
+
+.card-header {
+    background-color: #072482;
+}
+
+.footer-copyright {
+    background-color: rgb(2, 2, 29);
+}
+
+.font-weight-bold {
+ font-size: 20px;
+ font-family: sans-serif, 'Roboto Condensed';
+ color: #fff;
+}

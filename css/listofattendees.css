@@ -1,0 +1,28 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** LISTOFATTENDEES.CSS, LISTOFINTERESTED, LISTOFCANTATTEND - together *****/
+
+body {
+    font-family: 'K2D', sans-serif; 
+}
+
+/*** List ***/
+
+.media-body {
+    color: #000;
+}
+
+.mr-3 {
+    border-radius: 50%;
+}
+
+/*** Breadcrumb navigation ***/
+
+.breadcrumb {
+    color: #212121;
+}
+
+.breadcrumb-item {
+    color: #0edfbc;
+}

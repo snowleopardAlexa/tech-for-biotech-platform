@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/createevent.css" />
+    <link rel="stylesheet" href="css/myprofile.css" />
+    <!--change profile picture-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Create Event</title>
+   </head>
+  <body>
+
+
+ <!--Navigation bar-->  
+ <div class="sticky-top">
+  <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+          <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home"></i>   
+                </a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">
+                <i class="far fa-calendar-alt"></i>    
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hubspot.html">
+                <i class="fas fa-dna"></i>   
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="jobs.html">
+                  <i class="fas fa-briefcase"></i> 
+              </a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ideaspot.html">
+                <i class="fas fa-lightbulb"></i>   
+            </a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="notifications.html">
+                <i class="fas fa-bell"></i> 
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="messages.html">
+                  <i class="fas fa-envelope"></i>  
+              </a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myprofile.html">
+              <i class="fas fa-user-edit"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+   </div>    
+
+
+ <!--PROFILE NAVIGATION-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-ellipsis-h"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav text-center mt-2">
+
+<!--Visitor Mode View button-->
+<a class="card-link ml-4" href="viewvisitormodeevent.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
+</a>
+
+<!--Settings-->
+<a href="settings.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
+</a>
+
+<!--My Profile-->
+<a href="myprofile.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">My Profile          
+</a>  
+
+<!--Create Event-->
+<a class="card-link ml-4" href="edityourevents.html" style="color: #BBDEFB; font-size: 17px;">
+Edit Your Events</a>
+
+<div class="btn-group">  
+  <a class="card-link dropdown-toggle ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+      Add Publication</a>
+     <div class="dropdown-menu" aria-labelledby="createevent">
+       <a class="dropdown-item" href="addpublication.html">Add Publication</a>
+       <a class="dropdown-item" href="edityourpublications.html">Edit Your Publications</a>
+     </div>
+     </div>             
+
+
+<!--Additional Settings-->
+<div class="btn-group">  
+<a class="card-link ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+    <i class="fas fa-cog" style="font-size: 30px;"></i></a>
+   <div class="dropdown-menu" aria-labelledby="createevent">
+     <a class="dropdown-item" href="createcompanypage.html">Create Company Page</a>
+     <a class="dropdown-item" href="edityouruniversities.html">Edit Your Companies</a>
+     <a class="dropdown-item" href="createuniversitypage.html">Create University Page</a>
+     <a class="dropdown-item" href="edityourcompanies.html">Edit Your Universities</a>
+     <a class="dropdown-item" data-toggle="modal" data-target="#postjob" href="postjob.html">Post Job</a>
+     <a class="dropdown-item" href="edityourpostings.html">Edit Your Postings</a>
+   </div>
+   </div> 
+<!--Modal-->
+<div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Post Job</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body text-left">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Posted by</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Description</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+            </div>
+          </form>
+          <p class="mt-2 mb-2" style="font-size: 1rem; color: grey;">Your job posting will be visible for the members of 
+            the platform for 30 days, after that period it will dissapear from 
+            job hub. You can drop the posting earlier if you wish. Go to Profile
+            Settings > Job Feed, in order to manage your job postings. Please 
+            note that we recommend to drop job posting earlier if you found
+            the right candidate or don't wish to hire anymore since you might
+            still recieve applications for a job from the other members.
+          </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn rounded">Post</button>
+    </div>
+  </div>
+</div>
+</div>      
+<!--Logout-->
+<a href="#" class="card-link ml-4" style="font-size: 17px;">Logout</a>
+  </div>
+ </div>
+</nav>   
+<!--THE END OF PROFILE NAVIGATION-->
+
+<!--BEGINNING OF EVENT RESUME-->
+ <!--First Card, EVENT NAME, DATE, PRICE, TYPE, DESCRIPTION-->                             
+ <div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#" data-toggle="modal" data-target="#editmain"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+      </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg " id="editmain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Event Details</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img class="img-fluid mx-auto d-block" style="width:700px; height: 250px; border-radius: 0%;" src="img/frontimg.svg" alt="Card image cap">     
+                    <div class="container-fluid mt-4">
+                        <div class="row mx-auto">
+                          <div class="col-md-12">
+                            <form role="form">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">
+                                 Title
+                                </label>
+                                <input type="name" class="form-control" id="exampleInputEmail1" />
+                              </div>
+                            </form>
+                          </div>
+                          </div>
+                          <div class="row mx-auto">
+                              <div class="col-md-12">
+                                <form role="form">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">
+                                      Date
+                                    </label>
+                                    <input type="userputsdateitself" class="form-control" value="ex. 2019/05/20"/>
+                                  </div>
+                                </form>
+                              </div>
+                              </div>
+                              <div class="row mx-auto">
+                                  <div class="col-md-12">
+                                    <form role="form">
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">
+                                          Time
+                                        </label>
+                                        <input type="userputsdateitself" class="form-control" value="ex. 12:00am"/>
+                                      </div>
+                                      <p class="text-muted" style="font-size: 1rem;">Please note that if you need a sponsorship
+                                        for your event, the event date and time will be displayed as: "To be determined" 
+                                        in Upcoming Events until you find the sponsor. If you find the sponsor,
+                                        we will display the details. If you will find sponsor after the event date you
+                                        has given to us, we will ask you for different date and time. Remember that you can 
+                                        always edit the details of your event, including date and time.  
+                                      </p>
+                                    </form>
+                                  </div>
+                                  </div>
+                          <div class="row mx-auto">
+                              <div class="col-md-12">
+                                <form role="form">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2" >
+                                                <input type="checkbox" name="investor" class="custom-control-input" id="free">
+                                                <label class="custom-control-label" for="free">Free</label>
+                                             
+                                              </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                <input type="checkbox" name="company" class="custom-control-input" id="paid">
+                                                <label class="custom-control-label" for="paid">Paid</label>
+                                             
+                                              </div>  
+                                             
+                                        </div> 
+                                    </div>
+                                    </label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tell the price if paid">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2" >
+                                                <input type="checkbox" name="investor" class="custom-control-input" id="official">
+                                                <label class="custom-control-label" for="official">Official</label>
+                                             
+                                              </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                <input type="checkbox" name="company" class="custom-control-input" id="private">
+                                                <label class="custom-control-label" for="private">Private</label>
+                                             
+                                              </div>  
+                                             
+                                        </div> 
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-muted ml-4" style="font-size: 1rem;">All the members of the platfrom will be 
+                                                    invited to the event if it is official. If you want to invite only certain professionals, 
+                                                    we recommend you to create Private Event.
+                                        </div>
+                                        </div>
+                                        
+                                        </p>
+                                    </div>
+                                    </label>
+                                    <div class="row">
+                                      <div class="col">
+                                    <a href="hubspot.html">
+                                        <button type="button" class="btn rounded mb-2">Send Private Invitaions to Inviduals you chose</button></a>
+                                  </div>
+                                  </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>  
+                         
+                   
+                              <div class="row mx-auto">
+                                  <div class="col-md-12">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Location</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Give your own location"></textarea>
+                                            <a href="availableeventspaces.html">
+                                            <button type="button" class="btn rounded mt-2 mb-2">Search Available Event Spaces</button></a>
+                                          </div>
+                                    </form>
+                                  </div>
+                                </div>    
+
+                          <div class="row mx-auto">
+                            <div class="col-md-12">
+                              <form role="form">
+                                  <div class="form-group">
+                                      <label for="exampleFormControlTextarea1">Description</label>
+                                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                              </form>
+                            </div>
+                          </div>
+
+
+                          <div class="row mx-auto">
+                            <div class="col-md-12">
+                                <p class="text-center">
+                                    <button class="btn rounded" type="button" data-toggle="collapse" data-target="#findsponsor" aria-expanded="false" aria-controls="collapseExample" style="font-size: 1.2rem;">
+                                      FIND SPONSOR FOR YOUR EVENT
+                                    </button>
+                                  </p>
+                                  <div class="collapse" id="findsponsor">
+                                    <div class="card card-body" style="margin-top: -10px;">
+                                        <form>
+                                            <div class="form-group-range">
+                                              <label for="formControlRange" style="font-size: 1.3rem;">Estimated Event Costs</label>
+                                              <input type="range" min="0" max="10000" value="0" class="form-control-range" id="formControlRange">
+                                            </div>
+                                            <p>Costs: $<span id="demo"></span></p>
+                                            <script>
+                                                var slider = document.getElementById("formControlRange");
+                                                var output = document.getElementById("demo");
+                                                output.innerHTML = slider.value;
+                                                
+                                                  slider.oninput = function() {
+                                                  output.innerHTML = this.value;
+                                                }
+                                              </script>
+                                          </form>
+                                          <p class="mt-2" style="font-size: 1.3rem;">Consider what you need</p>
+                                          <div class="row">
+                                              <div class="col-md-6">
+                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2" >
+                                                      <input type="checkbox" name="investor" class="custom-control-input" id="eventspace">
+                                                      <label class="custom-control-label" for="eventspace" style="font-size: 1.2rem;">Event Space</label>
+                                                    </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                      <input type="checkbox" name="company" class="custom-control-input" id="food">
+                                                      <label class="custom-control-label" for="food" style="font-size: 1.2rem;">Food</label>
+                                                   
+                                                    </div>  
+                                                   
+                                              </div> 
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-6">
+                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2" >
+                                                      <input type="checkbox" name="investor" class="custom-control-input" id="drinks">
+                                                      <label class="custom-control-label" for="drinks" style="font-size: 1.2rem;">Drinks</label>
+                                                   
+                                                    </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                      <input type="checkbox" name="company" class="custom-control-input" id="additional">
+                                                      <label class="custom-control-label" for="additional" style="font-size: 1.2rem;">Additional expenses (ex. projector)</label>
+                                                   
+                                                    </div>  
+                                                   
+                                              </div> 
+                                          </div>
+                                          <form>
+                                          <div class="form-group">
+                                              <label for="exampleFormControlTextarea1" style="font-size: 1.2rem;">Private Note to Sponsor</label>
+                                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                          </form>
+                                          <p class="mt-2">
+                                              <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                  <input type="checkbox" name="company" class="custom-control-input" id="proposal">
+                                                  <label class="custom-control-label" for="proposal" style="font-size: 1.2rem;">Send my proposal</label>
+                                               
+                                                </div>
+                                          </p>   
+                                          <p class="text-muted">
+                                            Once you fill in information about your event, mark Send my proposal. 
+                                            Your proposal will be sent to all the members who wear a sponsorship emblem. 
+                                          </p>
+                                    </div>
+                                  </div>
+
+                               
+                               
+                            </div>
+                          </div>
+
+          </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn rounded">Save</button>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    </div>
+        
+  <div class="shadow-lg p-3 mb-5 bg-white rounded">     
+  <div class="card-body text-center">
+      <img class="card-img-top mx-auto d-block" style="width:700px; height: 250px; border-radius: 0%; cursor: pointer;" src="img/eventcoverimage.svg" alt="Card image cap">                     
+      <input id="imageUpload" type="file" name="eventcoverpicture" placeholder="photo" required="" capture>
+      <script>
+            $(".card-img-top").click(function(e) {
+            $("#imageUpload").click();
+               });
+            
+            function fasterPreview( uploader ) {
+            if ( uploader.files && uploader.files[0] ){
+                $('.card-img-top').attr('src', 
+                   window.URL.createObjectURL(uploader.files[0]) );
+                  }
+                      }
+            
+                 $("#imageUpload").change(function(){
+                 fasterPreview( this );
+                     });
+        </script>
+      <h1 class="card-title text-center mt-4">Title</h1>
+      <h1 class="card-subtitle text-center mt-4">Date and Time</h1>
+      <p class="card-text">Free/Paid</p>
+      <p class="card-text">If Paid/Price</p>
+      <p class="card-text mt-2">Address</p>
+    <p class="card-text mt-2">Short Description</p>
+      <div class="container">
+          <div class="row mx-auto">
+              <div class="col-md-12">
+                <div class="mb-5 text-center"> 
+           
+        </div>
+      </div>
+    </div>
+    </div>         
+    </div>
+  </div> 
+  </div>
+   
+
+  <!--Second card, description -->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#description"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+    </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="description" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Description</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                    </div>
+                       <button class="btn rounded">Save</button>
+                       </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">             
+                                  <h2 class="card-title text-center">Description</h2>
+                                  <p class="card-text">
+                                     
+                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                       cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                        anim id est laborum.</p>
+                                              </div>
+                                            </div>
+                                        
+                                      
+
+                              </div>
+                             
+
+           
+<!--Third card, education etc -->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editspeakers"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+<!-- Modal -->
+  <div class="modal fade" id="editspeakers" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Speakers</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form class="form-inline my-2 my-lg-0">
+              <h4 class="mt-2 mb-2">Search Individuals</h4>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn rounded my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="container-fluid">
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                      <div class="card mx-auto">
+                          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                          <div class="card-block">
+                            <h5 class="card-title-team mt-2">
+                            Name
+                            </h5>
+                            <p class="card-text-team mt-2">
+                            Occupation
+                            </p>
+                            <p class="text-center">
+                              <a class="btn btn-team rounded" href="#">See Profile</a>
+                            </p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card mx-auto">
+                          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                          <div class="card-block">
+                            <h5 class="card-title-team mt-2">
+                            Name
+                            </h5>
+                            <p class="card-text-team mt-2">
+                            Occupation
+                            </p>
+                            <p class="text-center">
+                              <a class="btn btn-team rounded" href="#">See Profile</a>
+                            </p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card mx-auto">
+                          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                          <div class="card-block">
+                            <h5 class="card-title-team mt-2">
+                            Name
+                            </h5>
+                            <p class="card-text-team mt-2">
+                            Occupation
+                            </p>
+                            <p class="text-center">
+                              <a class="btn btn-team rounded" href="#">See Profile</a>
+                            </p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                      <div class="card mx-auto">
+                          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                          <div class="card-block">
+                            <h5 class="card-title-team mt-2">
+                            Name
+                            </h5>
+                            <p class="card-text-team mt-2">
+                            Occupation
+                            </p>
+                            <p class="text-center">
+                              <a class="btn btn-team rounded" href="#">See Profile</a>
+                            </p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card mx-auto">
+                          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                          <div class="card-block">
+                            <h5 class="card-title-team mt-2">
+                            Name
+                            </h5>
+                            <p class="card-text-team mt-2">
+                            Occupation
+                            </p>
+                            <p class="text-center">
+                              <a class="btn btn-team rounded" href="#">See Profile</a>
+                            </p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card mx-auto">
+                          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                          <div class="card-block">
+                            <h5 class="card-title-team mt-2">
+                            Name
+                            </h5>
+                            <p class="card-text-team mt-2">
+                            Occupation
+                            </p>
+                            <p class="text-center">
+                              <a class="btn btn-team rounded" href="#">See Profile</a>
+                            </p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+   <!--Out of platfrom individual-->           
+   <a class="card-link mt-2 ml-4" data-toggle="collapse" href="#outofplatform" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Can I add individual who is not registered on Tech for Biotech platform?
+   </a>
+   <div class="collapse" id="outofplatform" style="margin-top: -80px;">
+      <div class="card card-body" style="width: 100%;">
+          <p class="text-left"> Yes, you can add the individual even if it is not registered on the platfrom.</p>
+          <form>
+               <div class="form-group">
+                 <label for="exampleInputEmail1">First Name</label>
+                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+               </div>
+               <div class="form-group">
+                 <label for="exampleInputPassword1">Last Name</label>
+                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+               </div>
+               <div class="form-group">
+                   <label for="exampleInputPassword1">Title</label>
+                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Occupation">
+               </div>
+             </form>
+             <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">The individual agreed for submitting
+                    its name on the event speakers list.
+                </label>
+              </div>
+             <!--Invite the person to join Tech for Biotech platform-->    
+              <button type="button" class="btn btn-add rounded mt-2" data-toggle="collapse" href="#invite" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Invite your colleaque to join Tech for Biotech</button>   
+                    <div class="collapse" id="invite">
+                      <div class="card card-body" style="margin-top: 10px; width:100%;">
+                       <p class="text-left">Type email address of your colleaque and we will send him an
+                          invitation from the heart of our hub.</p> 
+                       <p class="text-left mt-2">Thank you for contributing in building Tech for Biotech</p>
+                       <img src="img/badges/winner.svg" class="img-fluid mx-auto d-block" alt="trophy" style="width: 100px; height: 100px;">
+          <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="modal-footer">
+      <button type="button" class="btn rounded">Save</button>
+    </div>  
+    </div>
+  <!--the end of modal content-->  
+  </div>
+</div>  
+<!--Third card, SPEAKERS-->
+      <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+      <div class="card-body">       
+        <h4 class="card-title text-center">Speakers</h4>
+      <div class="container-fluid mt-4">
+        <div class="row mx-auto">
+          <div class="col-md-12">
+           <div class="row mx-auto">
+            <div class="col-md-4">
+             <div class="card mx-auto">
+              <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+              <div class="card-block">
+                <h5 class="card-title-team mt-2">
+                    Name
+                </h5>
+                <p class="card-text-team mt-2">
+                    Occupation
+                </p>
+                <p class="text-center">
+                  <a class="btn btn-team rounded" href="#">See Profile</a>
+                </p>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4">
+          <div class="card mx-auto">
+            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+            <div class="card-block">
+              <h5 class="card-title-team mt-2">
+                Name
+              </h5>
+              <p class="card-text-team mt-2">
+                Occupation
+              </p>
+              <p class="text-center">
+                <a class="btn btn-team rounded" href="#">See Profile</a>
+              </p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4">
+        <div class="card mx-auto">
+          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+            <div class="card-block">
+              <h5 class="card-title-team mt-2">
+                Name
+              </h5>
+            <p class="card-text-team mt-2">
+                Occupation
+            </p>
+            <p class="text-center">
+               <a class="btn btn-team rounded" href="#">See Profile</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Second row team-->
+          <div class="row mx-auto mt-4">
+              <div class="col-md-12">
+                    <div class="row mx-auto">
+                            <div class="col-md-4">
+                              <div class="card mx-auto">
+                                <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                <div class="card-block">
+                                  <h5 class="card-title-team mt-2">
+                                  Name
+                                  </h5>
+                                  <p class="card-text-team mt-2">
+                                  Occupation
+                                  </p>
+                                  <p class="text-center">
+                                    <a class="btn btn-team rounded" href="#">See Profile</a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mx-auto">
+                                <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                <div class="card-block">
+                                  <h5 class="card-title-team mt-2">
+                                    Name
+                                  </h5>
+                                  <p class="card-text-team mt-2">
+                                    Occupation
+                                  </p>
+                                  <p class="text-center">
+                                    <a class="btn btn-team rounded" href="#">See Profile</a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mx-auto">
+                                <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                <div class="card-block">
+                                  <h5 class="card-title-team mt-2">
+                                    Name
+                                  </h5>
+                                  <p class="card-text-team mt-2">
+                                     Occupation
+                                  </p>
+                                  <p class="text-center">
+                                    <a class="btn btn-team rounded" href="#">See Profile</a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>               
+                                    </div>   
+                              </div>
+                              </div>
+                              </div>
+           
+<!--Fifth card, description, education etc -->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editevents"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Event Space</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                <a href="availableeventspaces.html">
+                  <button class="btn rounded">Seach for available event spaces</button></a>
+                  <button class="btn rounded">Save</button>
+                       </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body text-center">                
+                                  <h4 class="card-title">Event Space</h4>
+                                  <img src="img/hotel.jpeg" class="card-img-top mx-auto d-block" style="border-radius: 50%;" alt="...">
+                                      <h2 class="card-subtitle mt-4">Hotel Bernandino</h2>
+                                      <p class="card-text mt-4">
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                      </p>
+                                      <p class="card-text">
+                                          <div class="container-fluid">
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                    <img class="img-fluid" src="img/hotelroom.jpeg" style="width: 700px; height: 250px;" alt="Card image cap">
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </p>
+                                    </div>
+                                    </div>
+
+                              </div>
+                              </div>
+                              </div>
+
+<!--Third card, description, education etc -->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#exampleModal"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+    </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Event Sponsor</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <a href="#"><h2>Add Sponsor</h2></a>
+                      <div class="form-group d-block mt-4">
+                          <img class="card-img-top mx-auto d-block mt-4" style="width:500px; height: 250px; border-radius: 0%;" src="img/tfb500.svg" alt="Card image cap">                      
+                        <label for="exampleInputEmail1">
+                          Name
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                      </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Description</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                       <button class="btn rounded">Save</button>
+                       </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">             
+                                  <h2 class="card-title text-center">Event Sponsor</h2>
+                                      <img class="card-img-top mx-auto d-block mt-4" style="width:500px; height: 250px; border-radius: 0%;" src="img/tfb500.svg" alt="Card image cap">                     
+                                      <h1 class="card-title text-center mt-4">Tech for Biotech</h1>
+                                  <p class="card-text text-center">Short description. Short description. Short description. 
+                                </p>       
+         
+                                              </div>
+                                            </div>
+                                        
+                                      
+
+                              </div>                              
+
+<!--Six card, description, education etc -->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editcontact"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <a href="#"><h2>Add Contact</h2></a>
+                      <div class="form-group d-block mt-4">
+                        <label for="exampleInputEmail1">
+                          First Name
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                      </div>
+                      <div class="form-group d-block mt-4">
+                          <label for="exampleInputEmail1">
+                            Last Name
+                          </label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                        </div>
+                        <div class="form-group d-block mt-4">
+                            <label for="exampleInputEmail1">
+                              Number
+                            </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" />
+                          </div>  
+                          <div class="form-group d-block mt-4">
+                              <label for="exampleInputEmail1">
+                                Email
+                              </label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" />
+                            </div> 
+                            <div class="form-group d-block mt-4">
+                                <label for="exampleInputEmail1">
+                                Place of current residency  
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                            </div>   
+                       <button class="btn rounded">Add more</button>
+                       <button class="btn rounded">Save</button>
+                       </div>  
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">
+                                  <h4 class="card-title text-center">Event Creator</h4>
+                                  <div class="container-fluid">
+                                  <div class="row mt-4">
+                                  <div class="col-md-12">
+                                      <div class="card text-center mx-auto">
+                                        <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                        <div class="card-block">
+                                          <h5 class="card-title-team mt-2">
+                                            Name
+                                          </h5>
+                                          <p class="card-text">
+                                            Occupation
+                                          </p>
+                                          <p class="text-center">
+                                            <a class="btn btn-team rounded" href="#">See Profile</a>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                 
+                                
+                                
+                              </div>
+                              </div>
+                              </div>
+
+   
+
+<!--Like button-->
+<p class="text-center">Let the creator know if you will join the event</p>
+<p class="text-center">
+    <button type="button" class="btn rounded">Will attend</button>
+    <button type="button" class="btn rounded">Interested</button>
+    <button type="button" class="btn rounded">Can't attend</button>
+</p>
+<p class="text-center">Are you not sure yet? See the list of attendees</p>
+<a href="listofattendees.html">
+<p class="text-center">
+    <button type="button" class="btn rounded">List of attendees</button>
+</p></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper-1.14.3.min.js"></script>
+</body>
+</html>     

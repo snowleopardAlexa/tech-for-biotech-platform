@@ -1,0 +1,70 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** STYLES.CSS *****/
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*** Jumbotron ***/
+
+.jumbotron {
+    border: none;
+    background-color: #fff;
+}
+
+.lead {
+    margin-bottom: 2.5rem; 
+    font-size: 2rem;
+}
+
+/*** Buttons ***/
+
+.btn-login, .btn-join {
+  font-size: 1.2rem;
+}
+
+.btn-jumbotron {
+  font-size: 1.8rem;  
+}
+
+/*** About us ***/
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: #084E75;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.7rem;
+}
+
+/*** Modal ***/
+
+.modal-title {
+    font-weight: bold;
+}
+
+.form-group {
+    font-size: 1.2rem;
+}
+
+/*** Emblems ***/
+
+.img-fluid {
+    width: 30px;
+    height: 30px;
+}
+
+
+
