@@ -1,0 +1,1 @@
+This is an old platform made in 2019. It is created with Bootstrap and small libraries like JQuery. 
