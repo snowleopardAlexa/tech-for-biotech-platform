@@ -1,0 +1,30 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** EVENTSINFO.CSS *****/
+
+body {
+  font-family: 'K2D', sans-serif; 
+}
+
+/*** Card ***/
+
+.card { 
+    border: none;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.5rem;
+}
+
+/*** Image, emblems ***/
+
+.img-fluid {
+   height: 150px;
+   width: 150px;  
+}
+

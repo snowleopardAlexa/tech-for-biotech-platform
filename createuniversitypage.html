@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/createcompanypage.css" />
+    <link rel="stylesheet" href="css/createuniversitypage.css" />
+    <!--change profile picture-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Create University Page</title>
+  </head>
+  <body>
+
+ <!--Navigation bar-->  
+ <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="fas fa-home"></i>   
+                  </a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">
+                  <i class="far fa-calendar-alt"></i>    
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hubspot.html">
+                  <i class="fas fa-dna"></i>   
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jobs.html">
+                    <i class="fas fa-briefcase"></i> 
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideaspot.html">
+                  <i class="fas fa-lightbulb"></i>   
+              </a>
+          </li> 
+          <li class="nav-item">
+              <a class="nav-link" href="notifications.html">
+                  <i class="fas fa-bell"></i> 
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="messages.html">
+                    <i class="fas fa-envelope"></i>  
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="myprofile.html">
+                <i class="fas fa-user-edit"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     </div>    
+
+<!--PROFILE NAVIGATION-->     
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-ellipsis-h"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-left mt-2">
+    
+<!--Visitor Mode View button-->
+    <a class="card-link ml-4" href="viewvisitormodeuniversity.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
+    </a>
+    
+<!--My Profile-->
+    <a href="myprofile.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">My Profile         
+    </a>
+
+<!--Profile Settings-->
+<a href="#" class="card-link ml-4" data-toggle="modal" data-target="#createevent" style="color: #BBDEFB; font-size: 17px;">Profile Settings</button>               
+</a>  
+<!-- Modal -->
+  <div class="modal fade" id="createevent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create Event</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left">
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>    
+    
+<!--Edit Your Universities-->
+<a href="edityouruniversities.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Edit Your Universities</button>               
+</a>    
+  
+<!--Create Event-->
+<div class="btn-group">  
+  <a class="card-link dropdown-toggle ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+    Create Event</a>
+    <div class="dropdown-menu" aria-labelledby="createevent">
+      <a class="dropdown-item" href="edityourpostings.html">Create Event</a>
+      <a class="dropdown-item" href="createyourevents.html">Edit Your Events</a>
+    </div>
+ </div> 
+    
+<!--Add Publication-->
+<div class="btn-group">  
+    <a class="card-link dropdown-toggle ml-4" href="#" id="addpublication" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+        Add Publication</a>
+       <div class="dropdown-menu" aria-labelledby="addpublication">
+         <a class="dropdown-item" href="addpublication.html">Add Publication</a>
+         <a class="dropdown-item" href="edityourpublications.html">Edit Your Publications</a>
+       </div>
+       </div> 
+
+    <!--Additional Settings-->
+    <div class="btn-group">  
+    <a class="card-link ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+        <i class="fas fa-cog"style="font-size: 30px;"></i></a>
+       <div class="dropdown-menu" aria-labelledby="createevent">
+         <a class="dropdown-item" href="createuniversitypage.html" data-toggle="modal" data-target="#postjob">Post Job</a>
+         <a class="dropdown-item" href="edityourpostings.html">Edit Job Postings</a>
+         <a class="dropdown-item" href="addpublication.html">Create Company Page</a>
+         <a class="dropdown-item" href="edityourpublications.html">Edit Your Companies</a>
+       </div>
+       </div> 
+    <!--Modal-->
+    <div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Post Job</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Title</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Posted by</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+                </div>
+              </form>
+              <p class="mt-2 mb-2" style="font-size: 1rem; color: grey;">Your job posting will be visible for the members of 
+                the platform for 30 days. After that period it will dissapear from 
+                job hub. You can drop the posting earlier: go to Profile
+                Settings > Job Feed. We recommend to drop job posting earlier if you found
+                the right candidate or don't wish to hire anymore. If you will not do it, you might
+                still recieve applications for a job from the other members. 
+                SAY THAT YOU WILL HAVE TWO BUTTONS TO LET KNOW THE PLATFROM PEOPLE THAT 
+                YOU WANT TO EITHER DROP POSTING OR THAT YOU HIRED SOMEONE. DONT LET THE PEOPLE TO DO ANY WORK 
+                ON THE PLATFROM! 
+              </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded">Post</button>
+        </div>
+      </div>
+    </div>
+    </div>      
+    <!--Logout-->
+    <a href="#" class="card-link ml-4" style="font-size: 17px;">Logout</a>
+</nav>
+<!--THE END OF PROFILE NAVIGATION-->  
+       
+<!--BEGINNING OF UNIVERSITY INFO CARDS-->
+<!--First card, University Name, badges info-->                             
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#" data-toggle="modal" data-target="#companyname"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+      </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="companyname" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Main</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img class="card-img-top mx-auto d-block" style="width:1000px; height: 200px;" src="img/universityprofileimage.svg" alt="university's logo">     
+                    <div class="container-fluid">
+                              <div class="row mx-auto">
+                                <div class="col-md-12">
+                                  <form role="form">
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">
+                                       University
+                                      </label>
+                                      <input type="name" class="form-control" id="exampleInputEmail1" />
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="row mx-auto">
+                                  <div class="col-md-12">
+                                    <h6>Category</h6>
+                                    <ul>
+                                        <li class="list-item">
+                                          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                            <input type="checkbox" name="Redesigning website" class="custom-control-input" id="techperson">
+                                            <label class="custom-control-label" for="techperson">Technology</label>
+                                            <img src="img/badges/t.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                                          </div>
+                                        </li>
+                                        <li class="list-item">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                <input type="checkbox" name="Social Media Promotion" class="custom-control-input" id="biotechperson">
+                                                <label class="custom-control-label" for="biotechperson">Biotechnology</label>
+                                                <img src="img/badges/b.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                                              </div>
+                                           
+                                        </li>
+                                        <li class="list-item">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                <input type="checkbox" name="Other" class="custom-control-input" id="sponsor">
+                                                <label class="custom-control-label" for="sponsor">Sponsorship</label>
+                                                <img src="img/badges/ss.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                                              </div>
+                                        </li>
+                                        <li class="list-item">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                <input type="checkbox" name="Mobile application" class="custom-control-input" id="collegeprofessor">
+                                                <label class="custom-control-label" for="collegeprofessor">Academia</label>
+                                                <img src="img/badges/a.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                                              </div> 
+                                        </li>
+                                      </ul>
+                                      <p class="mt-2 text-muted">
+                                        Universities are allowed to have 4 emblems at the same time. 
+                                      </p>
+                                      <div class="form-group">
+                                          <label for="exampleFormControlTextarea1">Description</label>
+                                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                      </div>
+                                </div>
+                              </div>
+                            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn rounded">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+ <!--University resume-->       
+  <div class="shadow-lg p-3 mb-5 bg-white rounded">     
+  <div class="card-body">
+      <img class="card-img-top mx-auto d-block" src="img/universityprofileimage.svg" alt="University Profile Image" style="width: 1000px; height: 200px;">                     
+      <input id="imageUpload" type="file" name="companycoverpicture" placeholder="Photo" required="" capture>
+      <script>
+            $(".card-img-top").click(function(e) {
+            $("#imageUpload").click();
+               });
+            
+            function fasterPreview( uploader ) {
+            if ( uploader.files && uploader.files[0] ){
+                $('.card-img-top').attr('src', 
+                   window.URL.createObjectURL(uploader.files[0]) );
+                  }
+                      }
+            
+                 $("#imageUpload").change(function(){
+                 fasterPreview( this );
+                     });
+        </script>
+      <h1 class="card-title text-center mt-4">Harvard University</h1>
+      <div class="container">
+          <div class="row mx-auto">
+              <div class="col-md-12">
+                <div class="mb-5 text-center"> 
+                <img src="img/badges/a.svg" class="img-fluid" alt="...">
+                <img src="img/badges/t.svg" class="img-fluid" alt="...">
+                <img src="img/badges/b.svg" class="img-fluid" alt="...">
+               </div>
+             </div>
+       </div>  
+    <p class="card-text text-center">Short Description. Short Description. Short Description. 
+    </p>       
+    </div>
+  </div> 
+  </div>
+  </div>
+   
+<!--Second card, BIOTECH DEPARTMENT-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#aboutus"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="aboutus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Biotech Department</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                   <button class="btn rounded">Save</button>
+                   </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">
+                                  <h2 class="card-title">Biotech Department</h2>
+                                  <p class="card-text">
+                                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                               cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                anim id est laborum.</p>
+                                      </div>
+                                    </div>
+                                  
+                                        </div>        
+                    
+                              
+<!--Third card, BIOTECH FACULTY-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#ourmission"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="ourmission" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Biotech Faculty</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form-inline my-2 my-lg-0 mt-2">
+                <h4>Search Individuals</h4>
+                <input class="form-control mr-sm-2" type="search" placeholder="Name" aria-label="Search">
+                <button class="btn btn-add rounded my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        <!--RESULTS, names with dp-->
+        <div class="container-fluid mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="media">
+                    <img class="mr-3" src="img/girl.jpg" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0">Minerva McGonagall</h5>
+                      <h5 class="text-muted">Ceo and Founder of Tech for Biotech</h5>
+                      <button type="button" class="btn btn-search-person rounded">Add</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="media">
+                    <img class="mr-3" src="img/girl.jpg" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0">Minerva McGonagall</h5>
+                      <h5 class="text-muted">Ceo and Founder of Tech for Biotech</h5>
+                      <button type="button" class="btn btn-search-person rounded">Add</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        <!--Second row of results-->
+            <div class="row mt-2 mb-4">
+                <div class="col-md-6">
+                  <div class="media">
+                  <img class="mr-3" src="img/girl.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                  <h5 class="mt-0">Minerva McGonagall</h5>
+                  <h5 class="text-muted">Ceo and Founder of Tech for Biotech</h5>
+                  <button type="button" class="btn btn-search-person rounded">Add</button>
+                </div>
+             </div>
+          </div>
+                <div class="col-md-6">
+                  <div class="media">
+                  <img class="mr-3" src="img/girl.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                  <h5 class="mt-0">Minerva McGonagall</h5>
+                  <h5 class="text-muted">Ceo and Founder of Tech for Biotech</h5>
+                  <button type="button" class="btn btn-search-person rounded">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>           
+         </div>
+        <!--Add invidual out of the platform-->    
+        <a class="add-individual text-right" data-toggle="collapse" href="#agree" role="" aria-expanded="false" aria-controls="collapseExample">
+            Can I add the individual who is not registered on the Tech for Biotech platform?
+        </a>
+        <div class="collapse" id="agree" style="margin-top: -70px;">
+            <div class="card card-body" style="width: 100%;">
+                <p class="text-left"> Yes, you can add the individual even if it is not registered on the platfrom.</p>
+                  <form>
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">First Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Last Name</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                       </div>
+                       <div class="form-group">
+                          <label for="exampleInputPassword1">Occupation</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Occupation">
+                        </div>
+                    </form>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">The individual agreed for submitting
+                        its name to Tech for Biotech platform. 
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-add rounded mt-2" data-toggle="collapse" href="#invite" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Invite your colleaque to join Tech for Biotech</button>   
+                    <div class="collapse" id="invite" style="margin-top: -70px;">
+                        <div class="card card-body" style="width: 100%;">
+                          
+                           
+                        <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                       </div> 
+                    
+                     </div>
+                    </div>
+                  <!--the end of collapse-->
+                  </div>
+                </div>
+             </div>
+             <div class="modal-footer">
+                    <button type="button" class="btn rounded">Save</button>
+             </div> 
+          </div>
+       </div>
+    </div>
+                                <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">    
+                                <h4 class="card-title">Biotech Faculty</h4>   
+                                <!--First row team-->   
+                                <div class="container-fluid mt-4">
+                                  <div class="row mx-auto">
+                                    <div class="col-md-12">
+                                      <div class="row mx-auto">
+                                        <div class="col-md-4">
+                                          <div class="card mx-auto">
+                                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                            <div class="card-block">
+                                              <h5 class="card-title-team">
+                                                Name
+                                              </h5>
+                                              <p class="card-text-team">
+                                               Occupation
+                                              </p>
+                                              <p class="text-center">
+                                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="card mx-auto">
+                                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                            <div class="card-block">
+                                              <h5 class="card-title-team">
+                                                Name
+                                              </h5>
+                                              <p class="card-text-team">
+                                                Occupation
+                                              </p>
+                                              <p class="text-center">
+                                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="card mx-auto">
+                                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                            <div class="card-block">
+                                              <h5 class="card-title-team">
+                                                Name
+                                              </h5>
+                                              <p class="card-text-team">
+                                                 Occupation
+                                              </p>
+                                              <p class="text-center">
+                                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                  <!--Second row team-->
+                  <div class="row mx-auto mt-4">
+                    <div class="col-md-12">
+                      <div class="row mx-auto">
+                        <div class="col-md-4">
+                          <div class="card mx-auto">
+                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                            <div class="card-block">
+                              <h5 class="card-title-team">
+                              Name
+                              </h5>
+                              <p class="card-text-team">
+                              Occupation
+                              </p>
+                              <p class="text-center">
+                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card mx-auto">
+                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                            <div class="card-block">
+                              <h5 class="card-title-team">
+                                Name
+                              </h5>
+                              <p class="card-text-team">
+                                Occupation
+                              </p>
+                              <p class="text-center">
+                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card mx-auto">
+                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                            <div class="card-block">
+                              <h5 class="card-title-team">
+                                Name
+                              </h5>
+                              <p class="card-text-team">
+                                Occupation
+                              </p>
+                              <p class="text-center">
+                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>               
+                                </div>      
+                              </div>
+                              </div>
+                                  
+                                        </div>                   
+
+           
+<!--Fourth card, TECH DEPARTMENT-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#news"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="news" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Tech Department</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                   <button class="btn rounded">Save</button>
+                   </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">
+                                  <h2 class="card-title">Tech Department</h2>
+                                  <p class="card-text">
+                                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                               cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                anim id est laborum.</p>
+                                      </div>
+                                    </div>
+                                  </div>         
+
+<!--Fifth card, TECH FACULTY-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editteam"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editteam" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Tech Faculty</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+        ..............................
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">    
+                                <h4 class="card-title">Tech Faculty</h4>   
+                                <!--First row team-->   
+                                <div class="container-fluid mt-4">
+                                  <div class="row mx-auto">
+                                    <div class="col-md-12">
+                                      <div class="row mx-auto">
+                                        <div class="col-md-4">
+                                          <div class="card mx-auto">
+                                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                            <div class="card-block">
+                                              <h5 class="card-title-team">
+                                                Name
+                                              </h5>
+                                              <p class="card-text-team">
+                                               Occupation
+                                              </p>
+                                              <p class="text-center">
+                                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="card mx-auto">
+                                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                            <div class="card-block">
+                                              <h5 class="card-title-team">
+                                                Name
+                                              </h5>
+                                              <p class="card-text-team">
+                                                Occupation
+                                              </p>
+                                              <p class="text-center">
+                                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="card mx-auto">
+                                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                                            <div class="card-block">
+                                              <h5 class="card-title-team">
+                                                Name
+                                              </h5>
+                                              <p class="card-text-team">
+                                                 Occupation
+                                              </p>
+                                              <p class="text-center">
+                                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                  <!--Second row team-->
+                  <div class="row mx-auto mt-4">
+                    <div class="col-md-12">
+                      <div class="row mx-auto">
+                        <div class="col-md-4">
+                          <div class="card mx-auto">
+                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                            <div class="card-block">
+                              <h5 class="card-title-team">
+                              Name
+                              </h5>
+                              <p class="card-text-team">
+                              Occupation
+                              </p>
+                              <p class="text-center">
+                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card mx-auto">
+                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                            <div class="card-block">
+                              <h5 class="card-title-team">
+                                Name
+                              </h5>
+                              <p class="card-text-team">
+                                Occupation
+                              </p>
+                              <p class="text-center">
+                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card mx-auto">
+                            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+                            <div class="card-block">
+                              <h5 class="card-title-team">
+                                Name
+                              </h5>
+                              <p class="card-text-team">
+                                Occupation
+                              </p>
+                              <p class="text-center">
+                                <a class="btn btn-team rounded" href="#">See Profile</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>               
+                                </div>      
+                              </div>
+                              </div>
+                              </div>
+
+                           
+                              
+                              
+           
+<!--Fifth card, EVENTS ATTENDANCE-->          
+<div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editevents"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Events</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <a href="#"><h2>Add Events</h2></a>
+                       <button class="btn rounded">Save</button>
+                       </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">
+                                  <h4 class="card-title">Events Attendance</h4>
+                                  <p class="card-text">
+                                      <ul class="work">
+                                          <li class="title"><i class="fas fa-check mr-2"></i>BIG PHARMA OF TOMORROW</li>
+                                          <p>April 17th 2018</p>
+                                          <li class="title"><i class="fas fa-check mr-2"></i>STARTUP BIO EXPO</li>
+                                          <p>September 20th 2018</p>   
+                                          <li class="title"><i class="fas fa-check mr-2"></i>COMPANY BUYS STARTUP</li>
+                                          <p>July 21th 2018</p>            
+                                        </ul>  
+                                       
+                                  </p>
+
+                              </div>
+                              </div>
+                              </div>
+
+
+ <!--Six card, CONTACT-->          
+ <div class="card mx-auto d-block mt-4">
+    <div class="wrapper-icon">
+      <ul class="edit-icon float-right">
+          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+          <a href="#" data-toggle="modal" data-target="#editcontact"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+        </ul>                   
+      </div>  
+  <!-- Modal -->
+  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <form>
+                      <div class="form-group d-block mt-4">
+                          <h4 class="department" style="font-weight: bold;">Biotech Academic Office</h4>
+                        <label for="exampleInputEmail1">
+                          Department
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                      </div>
+                      <div class="form-group d-block mt-4">
+                            <label for="exampleInputEmail1">
+                            Number
+                            </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" />
+                          </div>  
+                          <div class="form-group d-block mt-4">
+                              <label for="exampleInputEmail1">
+                              Email
+                              </label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" />
+                            </div> 
+                            <div class="form-group d-block mt-4">
+                                <label for="exampleInputEmail1">
+                               Headquarters
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                            </div>   
+                            <div class="form-group d-block mt-4">
+                                <label for="exampleInputEmail1">
+                               Website
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                            </div>  
+                            <button class="btn rounded">Remove</button>
+                            </form>
+                       <!--Tech Academic Office-->   
+                       <form>
+                            <div class="form-group d-block mt-4">
+                                <h4 class="department" style="font-weight: bold;">Tech Academic Office</h4>
+                              <label for="exampleInputEmail1">
+                                Department
+                              </label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" />
+                            </div>
+                            <div class="form-group d-block mt-4">
+                                  <label for="exampleInputEmail1">
+                                  Number
+                                  </label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                                </div>  
+                                <div class="form-group d-block mt-4">
+                                    <label for="exampleInputEmail1">
+                                    Email
+                                    </label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                                  </div> 
+                                  <div class="form-group d-block mt-4">
+                                      <label for="exampleInputEmail1">
+                                     Headquarters
+                                      </label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                                  </div>   
+                                  <div class="form-group d-block mt-4">
+                                      <label for="exampleInputEmail1">
+                                     Website
+                                      </label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                                  </div>  
+                                  <button class="btn rounded">Remove</button>
+                                  </form> 
+                       <button class="btn rounded float-right mt-2">Save</button>
+                       </div>  
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                              <div class="card-body">
+                                  <h4 class="card-title">Contact</h4>
+                                  <div class="container-fluid mt-4 mb-4">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                    <p class="card-text"> 
+                                      <ul class="work">
+                                          <li class="title mb-2">Biotech Academic Office</li>
+                                          <li class="contact">Department of Biological Sciences</li>
+                                          <li class="contact">+1 646.206.00.76</li>
+                                          <li class="contact">techforbiotech@gmail.com</li>
+                                          <li class="contact">New York City</li>
+                                          <li class="contact">web: <a href="#">techforbiotech.com</a></li>
+                                        </ul>  
+                                      </p>
+                                      </div>
+                                      <div class="col-md-6">
+                                            <p class="card-text"> 
+                                              <ul class="work">
+                                                  <li class="title mb-2">Tech Academic Office</li>
+                                                  <li class="contact">Department of Computer Science</li>
+                                                  <li class="contact">+1 646.206.00.76</li>
+                                                  <li class="contact">techforbiotech@gmail.com</li>
+                                                  <li class="contact">New York City</li>
+                                                  <li class="contact">web: <a href="#">techforbiotech.com</a></li>
+                                                </ul>  
+                                              </p>
+                                        </div>
+                                    </div>
+                                </div>
+<!--Send Message-->
+<button type="button" class="btn btn-edit rounded mx-auto d-block" data-toggle="modal" data-target="#sendmessage" style="font-size: 1.2rem;">
+    Send message
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="sendmessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Send Message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group" style="color: #000;">
+                    <div class="row">
+                            <h4 class="ml-3">Send to</h4>
+                            <div class="col-md-12">
+                                <ul>
+                                <li class="list-item">
+                                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                        <input type="checkbox" name="Redesigning website" class="custom-control-input" id="biotechdepartment">
+                                        <label class="custom-control-label" for="biotechdepartment">Biotech Academic Office</label>
+                                      
+                                    </div>
+                                </li>
+                                    <li class="list-item">
+                                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                            <input type="checkbox" name="Redesigning website" class="custom-control-input" id="techdepartment">
+                                            <label class="custom-control-label" for="techdepartment">Tech Academic Office</label>
+                                           
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                <input type="checkbox" name="Redesigning website" class="custom-control-input" id="both">
+                                                <label class="custom-control-label" for="both">Both</label>
+                                               
+                                            </div>
+                                        </li>
+                                 </ul>
+                        </div>
+                    </div>
+
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>   
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-edit rounded" style="font-size: 1.2rem;">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>     
+                              </div>
+                              </div>
+                              </div>
+
+<!--Like button-->
+<p class="text-center">Do you like this University's profile? Give it a like!</p>
+<p class="text-center"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+<p class="text-center">6475</p>
+
+                           
+                  
+                                        
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper-1.14.3.min.js"></script>
+</body>
+</html>  

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+h2 {
+ font-family: 'K2D', sans-serif;  
+ font-weight: bold;
+}
+
+.form-group {
+max-width: 70%;
+font-family: 'K2D', sans-serif;
+font-size: 1.2rem;
+}
+
+.rounded {
+    font-size: 1.2rem;
+}
+

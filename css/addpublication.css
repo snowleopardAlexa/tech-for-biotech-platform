@@ -1,0 +1,53 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** ADDPUBLICATION.CSS *****/
+
+body {
+    font-family: 'K2D', sans-serif;
+}
+
+/*** Card ***/
+
+.card-body {
+    margin-top: 4rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+/*** Buttons ***/
+
+.icon {
+    font-size: 0.8rem;
+}
+
+.btn-add {
+    font-size: 0.8rem;
+}
+
+.btn-search {
+    font-size: 1rem;
+}
+
+.btn-coauthor, .btn-photos, .btn-save, .btn-invite {
+    font-size: 1.2rem;
+}
+
+/*** Modal ***/
+
+.modal-title {
+    font-weight: bold;
+}
+
+.img-fluid {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+
+
+
+

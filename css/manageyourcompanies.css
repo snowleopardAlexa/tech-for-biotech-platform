@@ -1,0 +1,46 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** MANAGEYOURCOMPANIES.CSS (viewyour_companies.html gets the same css) *****/
+
+body {
+    font-family: 'K2D', sans-serif;   
+}
+
+/*** Card ***/
+
+.card {
+    width: 500px;
+    max-width: 100%;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.card-link-delete {
+    color: #084E75;
+    font-size: 1.2rem;
+}
+
+/*** Buttons ***/
+
+.btn-edit {
+    font-size: 1.1rem;
+}
+
+/*** Modal ***/
+
+.modal-title {
+  font-weight: bold;
+}
+
+/*** Like button, thumbs ***/
+
+.fa-thumbs-up {
+    color: #084E75;
+}

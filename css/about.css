@@ -1,0 +1,35 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** ABOUT.CSS *****/
+
+  body {
+    font-family: 'K2D', sans-serif; 
+  }
+
+/*** First card, ABOUT US ***/  
+
+  .card {
+      max-width: 100%;
+      width: 80%;
+      border: none;
+  }
+
+  .card-title {
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .card-text {
+      font-size: 1.5rem;
+  }
+
+/*** Inside modal log in ***/  
+
+  .modal-title {
+    font-weight: bold;
+}
+
+  .form-group {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tech for Biotech</title>
+  </head>
+  <body>
+
+  <!--NAVIGATION MENU-->  
+    <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="fas fa-home"></i>   
+                  </a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">
+                  <i class="far fa-calendar-alt"></i>    
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="press.html">
+                    <i class="fas fa-newspaper"></i>   
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#login" href="#">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     </div>
+  <!-- Modal Login -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="login">Log in to your panel</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p class="mt-2" style="font-size: 1.2rem;">Do you provide the event space for the venue?</p>
+            <p class="text-left"><a href="managerlogin.html" class="btn rounded" style="font-size: 1.2rem;">Log in here</a></p>
+            <p class="text-left" style="font-size: 1.2rem;">Are you joining as Professional? Log in below</p>   
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+           <a href="myprofile.html" class="btn btn-login rounded">Log in</a>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--INTRO-->
+  <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1 class="display-2">Tech meets Biotech</h1>
+        <p class="lead">Event Hub for biotechnology scientists, computer scientists, academia, programmers, engineers, developers, startups, companies and investors.</p>
+  <!--Button trigger modal-->
+  <a href="#" class="btn btn-jumbotron rounded" data-toggle="modal" data-target="#joinus">
+    Join us
+  </a>
+<!--Modal--> 
+<div class="modal fade" id="joinus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Let's connect and build together</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+    <div class="modal-body">
+  <p class="mt-2" style="font-size: 1.2rem;">Do you provide the event space for the venue?</p>
+  <p class="text-center"><a href="managersignup.html" class="btn rounded" style="font-size: 1.2rem;">Sign up here</a></p>
+  <p class="text-center" style="font-size: 1.2rem;">Are you joining as Professional? Fill in the form below</p>        
+  <span class="text-muted">Please make sure to go through all the form, it is important to answer for all questions
+            within the registration process
+      </span>
+          <form class="mt-4">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="firstname" class="form-control" id="firstname" aria-describedby="firstnameHelp" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="lastname" class="form-control" id="lastname" placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="form-group">
+                  <label for="confirmpassword">Confirm Password</label>
+                  <input type="confirmpassword" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+              </div>
+              <h4 class="mb-2">Tell us about yourself</h4>
+              <h5 class="mb-2">You can mark more than one if applied</h5>
+              <h5 class="mb-2">Are you...</h5>
+              <!--choice-->
+              <div class="row">
+                <div class="col">
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" name="tech" class="custom-control-input" id="techperson">
+                        <label class="custom-control-label" for="techperson">Tech individual</label>
+                        <img src="img/badges/t.svg" class="img-fluid" alt="...">
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" name="biotech" class="custom-control-input" id="biotechperson">
+                        <label class="custom-control-label" for="biotechperson">Biotech individual</label>
+                        <img src="img/badges/b.svg" class="img-fluid" alt="...">
+                      </div>
+                </div>
+                </div>
+                <div class="row">
+                        <div class="col">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" name="investor" class="custom-control-input" id="investor">
+                                <label class="custom-control-label" for="investor">Investor</label>
+                                <img src="img/badges/i.svg" class="img-fluid" alt="...">
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" name="company" class="custom-control-input" id="company">
+                                <label class="custom-control-label" for="company">Company</label>
+                                <img src="img/badges/c.svg" class="img-fluid" alt="...">
+                              </div>  
+                        </div> 
+                    </div>
+                    <div class="row">
+                          <div class="col">
+                              <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                  <input type="checkbox" name="startup" class="custom-control-input" id="startup">
+                                  <label class="custom-control-label" for="startup">Startup</label>
+                                  <img src="img/badges/s.svg" class="img-fluid" alt="...">
+                                </div> 
+                          </div>
+                          <div class="col">
+                              <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                  <input type="checkbox" name="sponsor" class="custom-control-input" id="sponsor">
+                                  <label class="custom-control-label" for="sponsor">Sponsor</label>
+                                  <img src="img/badges/ss.svg" class="img-fluid" alt="...">
+                                </div>
+                              </div>     
+                          </div> 
+                          <div class="row">
+                              <div class="col">
+                                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                      <input type="checkbox" name="academia" class="custom-control-input" id="academia">
+                                      <label class="custom-control-label" for="academia">Academia</label>
+                                      <img src="img/badges/a.svg" class="img-fluid" alt="...">
+                                    </div> 
+                              </div>
+                              <div class="col">
+                                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                      <input type="checkbox" name="student" class="custom-control-input" id="student">
+                                      <label class="custom-control-label" for="student">College Student</label>
+                                      <img src="img/badges/cs.svg" class="img-fluid" alt="...">
+                                    </div>
+                                  </div>     
+                              </div>    
+              <button type="submit" class="btn btn-join rounded mt-4" style="font-size: 1.2rem;">Join us</button>
+            </form>  
+        </div>
+        <div class="modal-footer">
+          <span>By clicking Join us, you agree to the Tech for Biotech User Agreement, Privacy Policy, and Cookie Policy.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        </div>
+      </div>
+     
+ <!--FIND PLACE-->     
+    <div class="jumbotron text-center" style="margin-top: -32px;">
+        <h1 class="display-4">Find the place where Big Tech can meet</h1>
+          <hr class="my-4">
+          <h2 class="mb-4">Gather the greatest technologies of our times in one place</h2>
+          <a href="registration.html" class="btn btn-jumbotron rounded">Create Event</a>
+          <h4 class="mt-4">You need to log in if you want to create an event</h4>
+    </div>  
+
+<!--About us-->
+<div class="card text-center">
+    <div class="card-header">
+     ABOUT US
+    </div>
+    <img src="img/newlogotech2.svg" class="rounded mx-auto d-block mt-4" style="width: 200px; height: 150px;" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">Tech for Biotech</h1>
+      <p class="card-text">
+          Tech for Biotech is a hub platform for professionals who work in Tech and Biotech.
+           The platform brings together biotechnology scientists, computer scientists, 
+           academic scientists, programmers, developers, companies, investors, startups,
+            sponsors and science students to an event where they can collaborate with one another.
+             Networking and in-person collaboration is our goal along with building the products
+              and systems of the future.
+      </p>
+      <a href="about.html" class="btn btn-jumbotron rounded mt-4 mb-4">Read more</a>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Tech for Biotech</h5>
+          <p class="info">Find the right place for the event. 
+              Meet professionals and build the future today.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+
+         <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Legal</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="useragreement.html">User Agreement</a>
+              </li>
+              <li>
+                <a href="privacypolicy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="cookiepolicy.html">Cookie Policy</a>
+              </li>
+              <li>
+                <a href="copyrightpolicy.html">Copyright Policy</a>
+              </li>
+            </ul>
+          </div>
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Platform</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="eventsinfo.html">Events</a>
+            </li>
+            <li>
+              <a href="hubinfo.html">Hub</a>
+            </li>
+            <li>
+              <a href="communityguidelines.html">Community Guidelines</a>
+            </li>
+            <li>
+              <a href="guestcontrol.html">Guest Control</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+
+       <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">General</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="press.html">Press</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f fa-2x"></i>  
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter fa-2x"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-instagram fa-2x"></i>  
+        </a>
+      </li>
+    </ul>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/" style="color: #000;"> Tech for Biotech</a>
+    </div>
+</footer>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper-1.14.3.min.js"></script>
+ </body>
+</html>

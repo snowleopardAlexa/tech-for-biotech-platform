@@ -1,0 +1,16 @@
+/* Fonts K2D - main */
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+
+/***** CONTACT.CSS *****/
+
+body {
+  font-family: 'K2D', sans-serif; 
+}
+
+/*** Card ***/
+
+.card-header {
+    background-color: #084E75;
+    color: #fff;
+}
+

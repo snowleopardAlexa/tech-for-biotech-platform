@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/manageyourcompanies.css" />
+    <title>View your companies</title>
+  </head>
+  <body>
+
+ <!--NAVIGATION MENU-->  
+ <div class="sticky-top">
+  <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+          <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home"></i>   
+                </a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">
+                <i class="far fa-calendar-alt"></i>    
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hubspot.html">
+                <i class="fas fa-dna"></i>   
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="jobs.html">
+                  <i class="fas fa-briefcase"></i> 
+              </a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ideaspot.html">
+                <i class="fas fa-lightbulb"></i>   
+            </a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="notifications.html">
+                <i class="fas fa-bell"></i> 
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="messages.html">
+                  <i class="fas fa-envelope"></i>  
+              </a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myprofile.html">
+              <i class="fas fa-user-edit"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+   </div>    
+
+<!--PROFILE PANEL-->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-ellipsis-h fa-1x"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav text-center mt-2">
+
+<!--Settings-->
+<a href="settings.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
+</a>
+
+<!--My Profile-->
+<a href="myprofile.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">My Profile          
+</a>  
+
+<!--Create Company Page-->
+<a class="card-link ml-4 ml-4" href="#" style="color: #BBDEFB; font-size: 17px;">
+Create Company Page</a>
+
+<!--Create Event-->
+<div class="btn-group">  
+  <a class="card-link dropdown-toggle ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+    Create Event</a>
+   <div class="dropdown-menu" aria-labelledby="">
+      <a class="dropdown-item" href="edityourpostings.html">Create Event</a>
+      <a class="dropdown-item" href="edityourpostings.html">Edit Your Events</a>
+    </div>
+</div> 
+           
+<!--Additional Settings-->
+<div class="btn-group">  
+<a class="card-link ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+    <i class="fas fa-cog" style="font-size: 30px;"></i></a>
+   <div class="dropdown-menu" aria-labelledby="createevent">
+     <a class="dropdown-item" href="addpublication.html">Add Publication</a>
+     <a class="dropdown-item" href="edityourpublications.html">Edit Your Publications</a>
+     <a class="dropdown-item" data-toggle="modal" data-target="#postjob" href="postjob.html">Post Job</a>
+     <a class="dropdown-item" href="edityourpostings.html">Edit Your Postings</a>
+     <a class="dropdown-item" href="createuniversitypage.html">Create University Page</a>
+     <a class="dropdown-item" href="edityouruniversities.html">Edit Your Universities</a>
+   </div>
+   </div> 
+<!--Modal-->
+<div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title text-muted font-weight-bold" id="exampleModalLabel">Post Job</h3>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body text-left">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Posted by</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Description</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+            </div>
+          </form>
+          <p class="card-text mt-2 mb-2" style="font-size: 1rem; color: grey;">
+            Your job posting will be visible for the members of 
+            the platform for 30 days, after that period it will dissapear from 
+            job hub. You can drop the posting earlier if you wish. Go to Profile
+            Settings > Job Feed, in order to manage your job postings. Please 
+            note that we recommend to drop job posting earlier if you found
+            the right candidate or don't wish to hire anymore since you might
+            still recieve applications for a job from the other members.
+          </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn rounded">Post</button>
+    </div>
+  </div>
+</div>
+</div>      
+
+<!--Logout-->
+<a href="#" class="card-link ml-4" style="color: #BBDEFB; font-size: 17px;">Logout</a>
+</div>
+</div>
+</div>
+</nav>  
+
+<!--Companies-->
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card mx-auto text-center">
+        <img class="card-img-top" src="img/tfb500.svg" alt="Company profile picture">
+        <div class="card-body">
+        <h4 class="card-title">Tech for Biotech</h4>
+        <a href="edityourcompanies.html" class="btn btn-edit rounded">Edit Company Page</a>
+      <div class="card-text mt-4">
+        <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Company</a></div>
+  <!-- Modal -->
+  <div class="modal fade" id="deletecompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title text-muted" id="exampleModalLabel">Delete Company</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <div class="modal-body text-left">
+    <p class="card-text">Are you sure that you want to delete your company page?</p>
+    <p class="card-text">Your company page will be permanently
+       removed from our system. If you want to renew your company page, you will have to
+       create a new page and fill in the information again.</p>  
+    </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-edit rounded">Delete Company</button>
+  </div>
+ </div>
+</div>
+</div>
+
+<!--Like button-->
+  <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+  <p class="text-center">4567</p>
+  </div> 
+ </div>
+</div>
+
+<div class="col-md-6">
+    <div class="card mx-auto text-center">
+      <img class="card-img-top" src="img/tfb500.svg" alt="Company profile picture">
+      <div class="card-body">
+      <h4 class="card-title">Tech for Biotech</h4>
+      <a href="edityourcompanies.html" class="btn btn-edit rounded">Edit Company Page</a>
+    <div class="card-text mt-4">
+      <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Company</a></div>
+<!-- Modal -->
+<div class="modal fade" id="deletecompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-muted" id="exampleModalLabel">Delete Company</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-body text-left">
+  <p class="card-text">Are you sure that you want to delete your company page?</p>
+  <p class="card-text">Your company page will be permanently
+     removed from our system. If you want to renew your company page, you will have to
+     create a new page and fill in the information again.</p>  
+  </div>
+<div class="modal-footer">
+<button type="button" class="btn btn-edit rounded">Delete Company</button>
+</div>
+</div>
+</div>
+</div>
+
+<!--Like button-->
+<p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+<p class="text-center">4567</p>
+</div> 
+</div>
+</div>            
+<!--end of row-->
+</div>
+<!--Second row-->            
+<div class="row mt-4 mb-4">
+    <div class="col-md-6">
+        <div class="card mx-auto text-center">
+          <img class="card-img-top" src="img/tfb500.svg" alt="Company profile picture">
+          <div class="card-body">
+          <h4 class="card-title">Tech for Biotech</h4>
+          <a href="edityourcompanies.html" class="btn btn-edit rounded">Edit Company Page</a>
+        <div class="card-text mt-4">
+          <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Company</a></div>
+    <!-- Modal -->
+    <div class="modal fade" id="deletecompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-muted" id="exampleModalLabel">Delete Company</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body text-left">
+      <p class="card-text">Are you sure that you want to delete your company page?</p>
+      <p class="card-text">Your company page will be permanently
+         removed from our system. If you want to renew your company page, you will have to
+         create a new page and fill in the information again.</p>  
+      </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-edit rounded">Delete Company</button>
+    </div>
+   </div>
+  </div>
+  </div>
+  
+  <!--Like button-->
+    <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+    <p class="text-center">4567</p>
+    </div> 
+   </div>
+  </div>        
+  </div>
+  </div>     
+
+<!--Scripts-->  
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper-1.14.3.min.js"></script>
+</body>
+</html>     

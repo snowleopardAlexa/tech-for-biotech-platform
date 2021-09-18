@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/showavailableeventspaces.css" />
+    <title>Show Available Event Spaces</title>
+  </head>
+  <body>
+
+ <!--NAVIGATION MENU-->  
+ <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav text-center ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">
+                        <i class="fas fa-home"></i>   
+                      </a>
+                    </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">
+                      <i class="far fa-calendar-alt"></i>    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hubspot.html">
+                      <i class="fas fa-dna"></i>   
+                  </a>
+                </li> 
+              <li class="nav-item">
+                  <a class="nav-link" href="notifications.html">
+                      <i class="fas fa-bell"></i> 
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="messages.html">
+                        <i class="fas fa-envelope"></i>  
+                    </a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="managerprofile.html">
+                    <i class="fas fa-user-edit"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+         </div>    
+
+<!--Available Event Spaces-->
+<div class="card text-center mb-4">
+    <h3 class="card-header">Available Event Spaces</h3>
+</div>  
+      
+<!--Search by Categories-->
+<div class="container-fluid mb-4">
+    <h2 class="mt-4 mb-4 ml-4">Search by category</h2>
+<!--1st row choice, Hotels and Restaurants-->    
+<div class="row ml-4">
+    <div class="col-md-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" name="Redesigning website" class="custom-control-input" id="technology">
+        <label class="custom-control-label" for="technology">Hotels</label>
+    </div>
+ </div>
+    <div class="col-md-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" name="Social Media Promotion" class="custom-control-input" id="biotechnology">
+        <label class="custom-control-label" for="biotechnology">Restaurants</label>
+      </div>
+    </div>
+ </div>
+ <!--2nd row choice, Museums and Conference Centers-->                 
+ <div class="row ml-4">
+    <div class="col-md-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" name="A brand new website" class="custom-control-input" id="investment">
+        <label class="custom-control-label" for="investment">Museums</label>
+    </div>
+</div>
+ <div class="col-md-6">
+ <div class="custom-control custom-checkbox my-1 mr-sm-2">
+    <input type="checkbox" name="Consultation" class="custom-control-input" id="corpcomp">
+    <label class="custom-control-label" for="corpcomp">Conference Centers</label>
+  </div>  
+ </div> 
+</div>
+<!--3rd row choice, Art Galleries, Stately Home-->   
+<div class="row ml-4">
+    <div class="col-md-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" name="Mobile application" class="custom-control-input" id="startups">
+        <label class="custom-control-label" for="startups">Art Galleries</label>
+      </div> 
+    </div>
+    <div class="col-md-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" name="Other" class="custom-control-input" id="sponsorship">
+        <label class="custom-control-label" for="sponsorship">Stately Home</label>
+      </div>
+    </div>     
+  </div> 
+<!--4th row choice, Stadiums, Outdoors-->   
+<div class="row ml-4">
+    <div class="col-md-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" name="Mobile application" class="custom-control-input" id="schooling">
+        <label class="custom-control-label" for="schooling">Stadiums</label>
+      </div> 
+    </div>
+    <div class="col-md-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" name="Other" class="custom-control-input" id="internstudents">
+        <label class="custom-control-label" for="internstudents">Outdoors</label>
+      </div>
+    </div>     
+    <a class="btn btn-lg rounded mt-4 mb-4 ml-2" href="#" role="button">Search</a>
+  </div>  
+ <!--end of search by categories--> 
+</div>
+      
+<!--Search by name-->
+<div class="container-fluid">
+    <h2 class="mt-4 mb-4 ml-4">Search by name</h2>
+       <form class="form-inline my-2 my-lg-0 ml-4">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search by name" aria-label="Search">
+          <button class="btn btn-lg rounded" type="submit">Search</button>
+      </form>
+  </div>
+      
+<!--Loading DNA-->
+<img src="img/dna.svg" class="img-fluid mx-auto d-block mt-4 mb-4" style="width: 200px; height: 200px;">  
+      
+<!--Available Event Spaces results-->
+<div class="container-fluid mt-4 mb-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card text-center">
+        <img class="card-img-top" src="img/hotelroom.jpeg" alt="profile picture of event space">
+      <div class="card-body">
+        <h5 class="card-title">Hotel Bernandino</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+      <p class="card-text">      
+      We are looking for software engineer to join our startup. You need to have 
+      5 years experience with current technologies...
+      </p>
+      <button type="button" class="btn rounded" data-toggle="modal" data-target="#eventspace1">
+         See Details
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="eventspace1" tabindex="-1" role="dialog" aria-labelledby="eventspace1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+           <h4 class="modal-title text-muted" id="detailseventspace">Event Space Details</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title mt-2">Hotel Bernandino</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Contact: +1 654.9876.6578</h6>
+                <p class="card-text mt-4">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <p class="card-text">
+                  <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-md-12">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4 mb-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                  </div>
+                </div>
+                <!--end of card text-->
+              </p>
+            </div>
+          </div> 
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn rounded" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--end of column-->
+  </div>
+  <div class="col-md-4">
+    <div class="card text-center">
+  <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">    
+      <div class="card-body">
+      <h5 class="card-title">Hotel Bernandino</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+    <p class="card-text">
+    We are looking for software engineer to join our startup. You need to have 
+    5 years experience with current technologies...
+    </p>
+  <button type="button" class="btn rounded" data-toggle="modal" data-target="#eventspace2">
+    See Details
+  </button>
+     <!-- Modal -->
+     <div class="modal fade" id="eventspace2" tabindex="-1" role="dialog" aria-labelledby="eventspace2" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+         <h4 class="modal-title text-muted" id="detailseventspace">Event Space Details</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title mt-2">Hotel Bernandino</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Contact: +1 654.9876.6578</h6>
+              <p class="card-text mt-4">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+              <p class="card-text">
+                <div class="container-fluid">
+                  <div class="row">
+                  <div class="col-md-12">
+                      <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="col-md-12 mt-4">
+                      <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="col-md-12 mt-4">
+                      <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="col-md-12 mt-4 mb-4">
+                      <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+              <!--end of card text-->
+            </p>
+          </div>
+        </div> 
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn rounded" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="col-md-4">
+    <div class="card text-center">
+      <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">  
+    <div class="card-body">
+      <h5 class="card-title">Hotel Bernandino</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+    <p class="card-text">
+      We are looking for software engineer to join our startup. You need to have 
+      5 years experience with current technologies...
+    </p>
+    <button type="button" class="btn rounded" data-toggle="modal" data-target="#eventspace2">
+      See Details
+    </button>
+    <!-- Modal -->
+          <div class="modal fade" id="eventspace2" tabindex="-1" role="dialog" aria-labelledby="eventspace3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+               <h4 class="modal-title text-muted" id="eventspace3">Event Space Details</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title mt-2">Hotel Bernandino</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Contact: +1 654.9876.6578</h6>
+                    <p class="card-text mt-4">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    <p class="card-text">
+                      <div class="container-fluid">
+                        <div class="row">
+                        <div class="col-md-12">
+                            <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-12 mt-4 mb-4">
+                            <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of card text-->
+                  </p>
+                </div>
+              </div> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn rounded" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+           </div>
+          </div>
+         </div>                   
+        </div>
+      </div>
+    </div>
+  </div>
+<!--2sd row, available event spaces results-->      
+<div class="row mt-4">
+    <div class="col-md-4">
+      <div class="card text-center">
+        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap"> 
+      <div class="card-body">
+        <h5 class="card-title">Software Engineer</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Employer: Neurovia Solutions</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Posted: 11/03/2018</h6>
+      <p class="card-text">
+      We are looking for software engineer to join our startup. You need to have 
+      5 years experience with current technologies...
+      </p>
+      <button type="button" class="btn rounded" data-toggle="modal" data-target="#eventspace4">
+      See Details
+      </button>
+      <!-- Modal -->
+          <div class="modal fade" id="eventspace4" tabindex="-1" role="dialog" aria-labelledby="eventspace4" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+               <h4 class="modal-title text-muted" id="eventspace4">Event Space Details</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title mt-2">Hotel Bernandino</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Contact: +1 654.9876.6578</h6>
+                    <p class="card-text mt-4">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    <p class="card-text">
+                      <div class="container-fluid">
+                        <div class="row">
+                        <div class="col-md-12">
+                            <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-12 mt-4 mb-4">
+                            <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                        </div>
+                      </div>
+                    </div>
+                    <!--end of card text-->
+                  </p>
+                </div>
+              </div> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn rounded" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+           </div>
+          </div>
+         </div>                 
+        </div>
+      </div>
+    </div>
+  <div class="col-md-4">
+    <div class="card text-center">
+  <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Software Engineer</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Employer: Neurovia Solutions</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Posted: 11/03/2018</h6>
+    <p class="card-text">
+    We are looking for software engineer to join our startup. You need to have 
+    5 years experience with current technologies...
+    </p>
+  <button type="button" class="btn rounded" data-toggle="modal" data-target="#eventspace5">
+   See Details
+  </button>
+  <!-- Modal -->
+       <div class="modal fade" id="eventspace5" tabindex="-1" role="dialog" aria-labelledby="eventspace5" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+           <h5 class="modal-title text-muted" id="eventspace5">Event Space Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title mt-2">Hotel Bernandino</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Contact: +1 654.9876.6578</h6>
+                <p class="card-text mt-4">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <p class="card-text">
+                  <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-md-12">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4 mb-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                  </div>
+                </div>
+                <!--end of card text-->
+              </p>
+            </div>
+          </div> 
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn rounded" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+       </div>
+      </div>
+     </div>                         
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card text-center">
+<img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">  
+  <div class="card-body">
+    <h5 class="card-title">Software Engineer</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Employer: Neurovia Solutions</h6>
+    <h6 class="card-subtitle mb-2 text-muted">Posted: 11/03/2018</h6>
+<p class="card-text">
+  We are looking for software engineer to join our startup. You need to have 
+  5 years experience with current technologies...
+</p>
+<button type="button" class="btn rounded" data-toggle="modal" data-target="#eventspace6">
+  See Details
+</button>
+<!-- Modal -->
+    <div class="modal fade" id="eventspace6" tabindex="-1" role="dialog" aria-labelledby="eventspace6" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+           <h4 class="modal-title text-muted" id="eventspace6">Event Space Details</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title mt-2">Hotel Bernandino</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Manager: Kevin Costner</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Available: 7 days/wk 24hr</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Price: 200$/hr</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Contact: +1 654.9876.6578</h6>
+                <p class="card-text mt-4">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <p class="card-text">
+                  <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-md-12">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="col-md-12 mt-4 mb-4">
+                        <img class="card-img-top" src="img/hotelroom.jpeg" alt="Card image cap">
+                    </div>
+                  </div>
+                </div>
+                <!--end of card text-->
+              </p>
+            </div>
+          </div> 
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn rounded" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+       </div>
+      </div>
+     </div>                       
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!--Scripts-->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper-1.14.3.min.js"></script>
+  </body>
+</html>     

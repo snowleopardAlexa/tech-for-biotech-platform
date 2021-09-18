@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+
+/***** MAIN.CSS *****/
+
+body {
+    font-family: 'Coiny', cursive;
+   
+}
+
+/*** Navbar ***/
+
+.navbar {
+    font-size: 1.2rem;  
+    background-color: #084E75;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.fa-home, .fa-calendar-alt, .fa-dna, .fa-briefcase, .fa-lightbulb, .fa-bell, .fa-envelope, .fa-user-edit, .fa-newspaper, .fa-user {
+    font-size: 42px;
+}
+
+
+
+/*** Footer ***/
+
+.page-footer {
+    background-color: #084E75;
+}
+
+.font-weight-bold {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.list-unstyled {
+    font-size: 1.1rem;
+}
+
+.info {
+    color: #fff;
+    font-family: 'K2D', sans-serif;
+    font-size: 1.2rem;
+}
+
+.footer-copyright {
+    background-color: #BBDEFB;
+    color: #000;
+}
+
+a {
+    color: #BBDEFB; 
+}
+  
+a:hover {
+    color: #09c4c4;
+    text-decoration: none;
+}
+  
+/*** Modal ***/
+
+.modal-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-group {
+    font-size: 1.2rem;
+}
+
+.form-control {
+    font-size: 1.2rem;
+}
+
+/*** Social Media Buttons ***/
+
+.fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-instagram {
+    color: #fff;
+}
+
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-instagram:hover {
+    color: #09c4c4;
+}
+
+/*** Buttons ***/ 
+
+.btn {
+    background-color:#084E75;
+    color: #fff;
+  }
+
+.btn:hover {
+    color: #09c4c4;    
+}  
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/createcompanypage.css" />
+    <!--change profile picture-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Edit Your Company Page</title>
+  </head>
+  <body>
+
+ <!--NAVIGATION MENU-->  
+ <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="fas fa-home"></i>   
+                  </a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">
+                  <i class="far fa-calendar-alt"></i>    
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hubspot.html">
+                  <i class="fas fa-dna"></i>   
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jobs.html">
+                    <i class="fas fa-briefcase"></i> 
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideaspot.html">
+                  <i class="fas fa-lightbulb"></i>   
+              </a>
+          </li> 
+          <li class="nav-item">
+              <a class="nav-link" href="notifications.html">
+                  <i class="fas fa-bell fa-2x"></i> 
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="messages.html">
+                    <i class="fas fa-envelope"></i>  
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="myprofile.html">
+                <i class="fas fa-user-edit"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     </div>    
+
+<!--PROFILE NAVIGATION-->     
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-ellipsis-h"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-left mt-2">
+    
+<!--Visitor Mode View-->
+    <a class="card-link ml-4" href="viewvisitormode_company.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
+    </a>
+
+<!--Profile Settings-->
+<a href="settings.html" class="card-link ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings</button>               
+</a>     
+    
+<!--My Profile-->
+    <a href="myprofile.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">My Profile         
+    </a>
+    
+<!--View Your Companies-->
+<a href="viewyour_companies.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">View Your Companies</button>               
+</a>
+
+<!--Turn on Looking for funding mode-->
+<a href="#" class="card-link ml-4" data-toggle="modal" data-target="#coins" style="color: #BBDEFB; font-size: 17px;">Looking for funding 
+  <img src="img/badges/coins.svg" class="img-fluid" alt="coins" style="width:24px; height:22px;">     
+</a>      
+<!-- Modal -->
+  <div class="modal fade" id="coins" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title text-muted" id="exampleModalLabel">Looking for funding</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left">
+          <p class="mb-4">The mode "Looking for funding" is on by default on your profile. The coins icon
+            is placed under the profile photo of your company.</p>
+             <div class="card mx-auto d-block">
+               <div class="text-center">
+                <img class="img-fluid rounded" src="img/badges/coins.svg" style="width:50px; height:50px;" alt="Card image cap">
+                <div class="card-img-overlay">
+                </div>
+                </div>
+              </div>
+            <p class="mb-4 mt-4 mb-4" style="color: grey; font-size: 1rem;">Please note that if you will turn off the "Looking for funding" mode, the coins
+              icon will no longer be visible under your company's dp.  
+            </p> 
+            <p class="mb-4">Do you want to turn off "Looking for funding mode?"</p> 
+            <!--Toggle Switch-->
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <span>On</span>
+                    <label class="switch-funding">
+                    <input type="checkbox">
+                    <span class="slider-funding round"></span>
+                    </label>
+                    <span>Off</span>
+                  </div>      
+                  </div>
+                </div>
+            <p class="mb-2 mt-2" style="color: grey; font-size: 1rem;">
+              We recommend startups to keep the mode "Looking for funding" on. This is why we
+              set up the mode on by default. Letting know the investors that 
+              you seek Venture Capital makes you appear in their search.
+            </p> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>            
+
+<!--Turn on Looking for co-founder mode
+<a href="#" class="card-link ml-4" data-toggle="modal" data-target="#cofounders" style="color: #BBDEFB; font-size: 17px;">Looking for Co-founders 
+    <img src="img/badges/rings.svg" class="img-fluid" alt="cofounders" style="width:24px; height:22px;">     
+</a>      
+  Modal 
+  <div class="modal fade" id="cofounders" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Looking for Co-founders</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left">
+          <p class="mb-4">When the mode "Looking for Co-founders" is on, the rings icon is placed under your company's profile photo.
+            </p>
+
+             <div class="card mx-auto d-block">
+               <div class="text-center">
+                <img class="img-fluid" src="img/badges/rings.svg" alt="Card image cap">
+                <div class="card-img-overlay">  
+                </div>
+                </div>
+              </div>
+            
+            <p class="mb-4 mt-4 mb-4" style="color: grey; font-size: 1rem;">Please note that if "Looking for Co-founder" mode is off, 
+              rings icon will no longer be visible under your company's profile photo. 
+            </p> 
+  
+            <p class="mb-4">Do you want to turn on "Looking for a Co-founder mode?"</p> 
+            <Toggle Switch
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <span>On</span>
+                    <label class="switch-founder">
+                    <input type="checkbox">
+                    <span class="slider-founder round"></span>
+                    </label>
+                    <span>Off</span>
+                  </div>      
+                  </div>
+                </div>
+            
+            <p class="mb-2 mt-2" style="color: grey; font-size: 1rem;">
+              We recommend to keep the mode off if you are not looking for Co-founders.
+              If you want to hire professionals to work at your startup/company, you can use the option Post Job. 
+              "Looking for Co-founders" mode should be only used for finding co-founders, not employees. 
+            </p> 
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>-->            
+
+    <!--Additional Settings-->
+    <div class="btn-group">  
+    <a class="card-link ml-4" href="#" id="settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
+        <i class="fas fa-cog"style="font-size: 30px;"></i></a>
+       <div class="dropdown-menu" aria-labelledby="settings">
+         <a class="dropdown-item" href="createcompanypage.html" data-toggle="modal" data-target="#postjob">Post Job</a>
+         <a class="dropdown-item" href="edityourpostings.html">Edit Job Postings</a>
+         <a class="dropdown-item" href="createyourevents.html">Create Event</a>
+         <a class="dropdown-item" href="edityourevents.html">Edit Your Events</a>
+         <a class="dropdown-item" href="addpublication.html">Add Publications</a>
+         <a class="dropdown-item" href="edityourpublications.html">Edit Your Publications</a>
+         <a class="dropdown-item" href="addpublication.html">Create University Page</a>
+         <a class="dropdown-item" href="edityourpublications.html">Edit Your Universities</a>
+       </div>
+       </div> 
+    <!--Modal-->
+    <div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Post Job</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-left">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Title</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Posted by</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+                </div>
+              </form>
+              <p class="mt-2 mb-2" style="font-size: 1rem; color: grey;">Your job posting will be visible for the members of 
+                the platform for 30 days. After that period it will dissapear from 
+                job hub. You can drop the posting earlier: go to Profile
+                Settings > Job Feed. We recommend to drop job posting earlier if you found
+                the right candidate or don't wish to hire anymore. If you will not do it, you might
+                still recieve applications for a job from the other members. 
+                SAY THAT YOU WILL HAVE TWO BUTTONS TO LET KNOW THE PLATFROM PEOPLE THAT 
+                YOU WANT TO EITHER DROP POSTING OR THAT YOU HIRED SOMEONE. DONT LET THE PEOPLE TO DO ANY WORK 
+                ON THE PLATFROM! 
+              </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded">Post</button>
+        </div>
+      </div>
+    </div>
+    </div>      
+    
+<!--Logout-->
+  <a href="#" class="card-link ml-4" style="color: #BBDEFB; font-size: 17px;">Logout</a>
+<!--end of nav-->  
+</nav>
+<!--end of profile navigation-->  
+       
+<!--CARDS-->
+<!--First card, Company Name, badges info-->                             
+<div class="card mx-auto d-block mt-4">
+  <a href="#" data-toggle="modal" data-target="#companyname" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a>
+  <!-- Modal -->
+  <div class="modal fade" id="companyname" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title text-muted" id="exampleModalLabel">Edit Main</h3>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+     <div class="modal-body">
+        <img class="card-img-top mx-auto d-block" style="width:500px; height: 250px;" src="img/companyprofileimage.svg" alt="company's logo">     
+            <div class="container-fluid mt-4">
+              <div class="row mx-auto">
+                <div class="col-md-12">
+                <form role="form">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">
+                    Company
+                  </label>
+                  <input type="name" class="form-control" id="exampleInputEmail1" />
+                </div>
+              </form>
+            </div>
+          </div>
+            <div class="row mx-auto">
+              <div class="col-md-12">
+              <form role="form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">
+                  Headline
+                </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>
+            </form>
+          </div>
+        </div>
+            <div class="row mx-auto">
+              <div class="col-md-12">
+                <h5>Category</h5>
+                  <ul>
+                   <li class="list-item">
+                      <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" name="Redesigning website" class="custom-control-input" id="company">
+                        <label class="custom-control-label" for="company">Company</label>
+                          <img src="img/badges/c.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                        </div>
+                      </li>
+                    <li class="list-item">
+                      <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" name="Social Media Promotion" class="custom-control-input" id="startup">
+                        <label class="custom-control-label" for="startup">Startup</label>
+                          <img src="img/badges/s.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                        </div>
+                      </li>
+                    </ul>
+                  <p class=" card-text mt-2 text-muted">
+                  Please note that you can have only one emblem active at the time. 
+                  </p>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            <div class="modal-footer">
+            <button type="button" class="btn rounded">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--Company resume-->       
+<div class="shadow-lg p-3 mb-5 bg-white rounded">     
+  <div class="card-body">
+      <img class="card-img-top mx-auto d-block" src="img/companyprofileimage.svg" alt="Company Profile Image">                     
+      <input id="imageUpload" type="file" name="companycoverpicture" placeholder="Photo" required="" capture>
+      <script>
+            $(".card-img-top").click(function(e) {
+            $("#imageUpload").click();
+               });
+            
+            function fasterPreview( uploader ) {
+            if ( uploader.files && uploader.files[0] ){
+                $('.card-img-top').attr('src', 
+                   window.URL.createObjectURL(uploader.files[0]) );
+                  }
+                      }
+            
+                 $("#imageUpload").change(function(){
+                 fasterPreview( this );
+                     });
+        </script>
+  <h2 class="card-title mt-4">Tech for Biotech</h2>
+    <h4 class="card-subtitle mb-4 text-center">Hubspot for the biggest technologies of our times.</h4>
+      <div class="container">
+          <div class="row mx-auto">
+              <div class="col-md-12">
+                <div class="mb-4 text-center"> 
+                <img src="img/badges/c.svg" class="img-fluid" alt="...">
+                <img src="img/badges/s.svg" class="img-fluid" alt="...">
+                <img src="img/badges/coins.svg" class="img-fluid" alt="...">
+                </div>
+               <p class="card-text text-center">Short Description. Short Description. Short Description.</p> 
+             </div>
+           </div>  
+         </div>
+       </div> 
+     </div>
+   </div>
+   
+<!--Second card, ABOUT US-->          
+<div class="card mx-auto d-block mt-4">
+    <a href="#" data-toggle="modal" data-target="#aboutus" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a>
+  <!-- Modal -->
+  <div class="modal fade" id="aboutus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-muted" id="exampleModalLabel">Edit About us</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+              </div>
+              <button class="btn rounded">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+      <div class="card-body">
+        <h2 class="card-title">About us</h2>
+        <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.</p>
+      </div>
+    </div>
+  </div>        
+                                        
+<!--Third card, OUR MISSION-->          
+<div class="card mx-auto d-block mt-4">
+    <a href="#" data-toggle="modal" data-target="#ourmission" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a> 
+  <!-- Modal -->
+  <div class="modal fade" id="ourmission" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-muted" id="exampleModalLabel">Edit Our Mission</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                   <button class="btn rounded">Save</button>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+    <div class="card-body">
+      <h2 class="card-title">Our Mission</h2>
+        <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.</p>
+      </div>
+    </div>
+  </div>                   
+
+<!--Fourth card, NEWS-->          
+<div class="card mx-auto d-block mt-4">
+    <a href="#" data-toggle="modal" data-target="#news" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a>  
+  <!-- Modal -->
+  <div class="modal fade" id="news" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-muted" id="exampleModalLabel">Edit News</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                   <button class="btn rounded">Save</button>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+    <div class="card-body">
+      <h2 class="card-title">News</h2>
+      <p class="card-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.</p>
+      </div>
+    </div>
+  </div>         
+
+<!--Fifth card, TEAM-->          
+<div class="card mx-auto d-block mt-4">
+    <a href="#" data-toggle="modal" data-target="#editteam" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a>
+  <!-- Modal -->
+  <div class="modal fade" id="editteam" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-muted" id="exampleModalLabel">Edit Team</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+  </div>
+<div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+  <div class="card-body">    
+    <h2 class="card-title">Team</h2>   
+    <!--First row team-->   
+    <div class="container-fluid mt-4">
+      <div class="row mx-auto">
+        <div class="col-md-12">
+      <div class="row mx-auto">
+        <div class="col-md-4">
+          <div class="card mx-auto">
+            <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+              <div class="card-block">
+              <h5 class="card-title-team mt-2">Name</h5>
+              <p class="card-text-team">Occupation</p>
+              <p class="text-center">
+               <a class="btn btn-team rounded" href="#">See Profile</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <div class="card mx-auto">
+          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+        <div class="card-block">
+          <h5 class="card-title-team mt-2">Name</h5>
+            <p class="card-text-team">Occupation</p>
+            <p class="text-center">
+              <a class="btn btn-team rounded" href="#">See Profile</a></p>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <div class="card mx-auto">
+          <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+      <div class="card-block">
+        <h5 class="card-title-team mt-2">Name</h5>
+          <p class="card-text-team">Occupation</p>
+          <p class="text-center">
+            <a class="btn btn-team rounded" href="#">See Profile</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Second row team-->
+<div class="row mx-auto">
+    <div class="col-md-12">
+  <div class="row mx-auto">
+    <div class="col-md-4">
+      <div class="card mx-auto">
+        <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+          <div class="card-block">
+          <h5 class="card-title-team mt-2">Name</h5>
+          <p class="card-text-team">Occupation</p>
+          <p class="text-center">
+           <a class="btn btn-team rounded" href="#">See Profile</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  <div class="col-md-4">
+    <div class="card mx-auto">
+      <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+    <div class="card-block">
+      <h5 class="card-title-team mt-2">Name</h5>
+        <p class="card-text-team">Occupation</p>
+        <p class="text-center">
+          <a class="btn btn-team rounded" href="#">See Profile</a></p>
+        </div>
+      </div>
+    </div>
+  <div class="col-md-4">
+    <div class="card mx-auto">
+      <img class="card-img-top-team mx-auto" alt="profile image" src="img/girl.jpg" />
+  <div class="card-block">
+    <h5 class="card-title-team mt-2">Name</h5>
+      <p class="card-text-team">Occupation</p>
+      <p class="text-center">
+        <a class="btn btn-team rounded" href="#">See Profile</a></p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>              
+ </div>      
+</div>
+</div>
+</div>
+
+<!--Fifth card, EVENTS ATTENDANCE-->          
+<div class="card mx-auto d-block mt-4">
+    <a href="#" data-toggle="modal" data-target="#editevents" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a> 
+  <!-- Modal -->
+  <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-muted" id="exampleModalLabel">Edit Events Attendance</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      <div class="modal-body">
+        <div class="container">
+          <a href="#"><h2>Add Events</h2></a>
+            <button class="btn rounded float-right">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+  <div class="card-body">
+    <h2 class="card-title mb-4">Events Attendance</h2>
+      <h5 class="card-subtitle font-weight-bold"><i class="fas fa-check mr-2"></i>BIG PHARMA OF TOMORROW</h5>
+      <p class="mb-4">April 17th 2018</p>
+      <h5 class="card-subtitle font-weight-bold"><i class="fas fa-check mr-2"></i>STARTUP BIO EXPO</h5>
+      <p class="mb-4">September 20th 2018</p>   
+      <h5 class="card-subtitle font-weight-bold"><i class="fas fa-check mr-2"></i>COMPANY BUYS STARTUP</h5>
+      <p class="mb-4">July 21th 2018</p>            
+    </div>
+  </div>
+</div>
+
+ <!--Six card, CONTACT-->          
+ <div class="card mx-auto d-block mt-4">
+    <a href="#" data-toggle="modal" data-target="#editcontact" class="float-right"><i class="fas fa-edit fa-2x mb-2"></i></a>
+  <!-- Modal -->
+  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-muted" id="exampleModalLabel">Edit Contact</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                <div class="form-group mt-4">
+                  <label for="exampleInputEmail1">
+                    Company
+                  </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+              <div class="form-group mt-4">
+                 <label for="exampleInputEmail1">
+                   Number
+                 </label>
+                 <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>  
+              <div class="form-group mt-4">
+                <label for="exampleInputEmail1">
+                  Email
+                </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div> 
+              <div class="form-group mt-4">
+                <label for="exampleInputEmail1">
+                  Headquarters
+                </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>   
+              <div class="form-group mt-4">
+                <label for="exampleInputEmail1">
+                Website
+                </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>  
+              <button class="btn rounded float-right">Save</button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+  <div class="card-body">
+    <h2 class="card-title">Contact</h2>
+     <h5 class="card-subtitle font-weight-bold mb-4">Contact Information</h5>
+     <p class="card-text">Tech for Biotech</p>
+     <p class="card-text">+1 646.206.00.76</p>
+     <p class="card-text">techforbiotech@gmail.com</p>
+     <p class="card-text">New York City</p>
+     <p class="card-text">web: <a href="#">techforbiotech.com</a></p>
+
+<!--Send Message-->                          
+<button type="button" class="btn btn-edit rounded mx-auto d-block" data-toggle="modal" data-target="#sendmessage" style="font-size: 1.2rem;">
+    Send message
+</button>
+<!-- Modal -->
+<div class="modal fade" id="sendmessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Send Message</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      <div class="modal-body">
+          <div class="form-group" style="color: #000;">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>   
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-edit rounded" style="font-size: 1.2rem;">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+</div>
+
+<!--Like button-->
+<p class="card-text text-center">Do you like a company's profile? Give it a like!</p>
+<p class="card-text text-center"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+<p class="card-text text-center">6475</p>
+
+                           
+<!--Script-->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper-1.14.3.min.js"></script>
+ </body>
+</html>  
