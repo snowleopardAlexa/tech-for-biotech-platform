@@ -1,56 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
 
-.media {
-  border-top: 0.5px solid rgb(214, 200, 200);
-}
-
-.time_date {
-  float: right;
-}
-
-.chat_date {
-  font-size: 0.8rem;
-  margin-top: 4px;
-}
-
-.msg_wrapper_inc {
-  border-radius: 1.5%;
-  background-color: #BBDEFB; 
-  width: 70%;
-}
-
-.msg_wrapper_out {
-  border-radius: 1.5%;
-  background-color: rgb(232, 243, 250);
-  width: 70%;
-  margin-left: 25%;
+body {
+  background-color: var(--polar-bear);
 }
 
 .btn-search {
-    background: rgb(12, 235, 12);
+    background: var(--aqua-deep-metalic);
+    color: var(--polar-bear);
 }
 
-.card-title {
-    font-family: 'K2D', sans-serif;
-    color: #000;
-    font-size: 25px;
-    margin-top: 13px;
+.card {
+  background-color: var(--polar-bear);
+  border: none;
 }
 
-
-
-.mt-0, p, h2 {
-    font-family: 'K2D', sans-serif;
-    color: #000;  
-}
-
-h2 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 15px;
+.chatbox-title {
+  color: var(--polar-bear);
 }
 
 .info, .card-title {
@@ -59,7 +25,8 @@ p {
 }
 
 .card-header {
-    background-color: #084E75;
+    background-color: var(--aqua-deep-metalic);
+    width: 100%;
 }
 
 .font-weight-bold {
@@ -70,6 +37,10 @@ p {
 
 .chat-col {
   border-left: 2px solid var(--faded-snow);
+}
+
+.media-user-box {
+  border-top: 1px solid var(--faded-snow);
 }
 
 .media-msg-box {
@@ -105,5 +76,6 @@ p {
 }
 
 .write_msg {
-  margin-top: 50px;
+  margin-right: -15px;
+  width: 100%;
 }
