@@ -4,12 +4,11 @@
 .form-group {
     max-width: 70%;
     text-align: center;
-    font-family: 'K2D', sans-serif;
     font-size: 1.2rem;
 }
 
 .custom-control, h5, h4, h6 {
-    font-family: 'K2D', sans-serif;
+
 }
 
 .custom-control {
@@ -27,7 +26,6 @@
 
 .agree {
     font-size: 1.2rem;
-    font-family: 'K2D', sans-serif;
     color: #212121;
 }
 
