@@ -1,17 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-/***** MAIN.CSS *****/
+/*
+ font-family: 'Fredoka One', cursive;
+ font-family: 'Varela Round', sans-serif;
+  font-family: 'K2D', sans-serif;
+*/
+
+/* COLORS */
+
+:root {
+    --light-grey: #bbbbbb;
+    --daily-grey: #d1cece;
+    --blue-pearl: #BBDEFB;
+    --aqua-deep-metalic: #084E75;
+    --ocean-mediterrean: #2ebf91;
+    --cloud: #ECE9E6;
+    --faded-snow: #e5e7e7;
+    --polar-bear: #fcfbf9;
+    --snow-blast: #ffffff;
+    --black-bear: #050505;
+}
 
 body {
-    font-family: 'Coiny', cursive;
-   
+    font-family: 'Varela Round', sans-serif;
+    background-color: var(--faded-snow);
 }
 
 /*** Navbar ***/
 
 .navbar {
     font-size: 1.2rem;  
-    background-color: #084E75;
+    background-color: var(--aqua-deep-metalic);
+    position: static;
 }
 
 .navbar-toggler:focus, .navbar-toggler:active {
@@ -19,21 +40,25 @@ body {
     box-shadow: none;
 }
 
-.fa-home, .fa-calendar-alt, .fa-dna, .fa-briefcase, .fa-lightbulb, .fa-bell, .fa-envelope, .fa-user-edit, .fa-newspaper, .fa-user {
-    font-size: 42px;
+.navbar-brand {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
 }
 
+.fa-home, .fa-calendar-alt, .fa-dna, .fa-briefcase, .fa-lightbulb, .fa-bell, .fa-envelope, .fa-user-edit, .fa-newspaper, .fa-user {
+    font-size: 2rem;
+}
 
 
 /*** Footer ***/
 
 .page-footer {
-    background-color: #084E75;
+    background-color: var(--aqua-deep-metalic);
 }
 
 .font-weight-bold {
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--faded-snow);
 }
 
 .list-unstyled {
@@ -41,18 +66,18 @@ body {
 }
 
 .info {
-    color: #fff;
-    font-family: 'K2D', sans-serif;
+    color:var(--faded-snow);
+    font-family: 'Varela Round', sans-serif;
     font-size: 1.2rem;
 }
 
 .footer-copyright {
-    background-color: #BBDEFB;
-    color: #000;
+    background-color: var(--blue-pearl);
+    color: var(--black-bear);
 }
 
 a {
-    color: #BBDEFB; 
+    color: var(--blue-pearl); 
 }
   
 a:hover {
@@ -62,41 +87,63 @@ a:hover {
   
 /*** Modal ***/
 
+.modal-body, .modal-title, .modal-header, .modal-footer {
+    background-color: var(--faded-snow);
+}
+
 .modal-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .form-group {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .form-control {
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+.form-control {
+    border: 0.5px solid var(--light-grey);
+    background-color: var(--faded-snow);
+}
+
+.form-control:focus {
+    background-color: var(--cloud);
 }
 
 /*** Social Media Buttons ***/
 
 .fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-instagram {
-    color: #fff;
+    color: var(--faded-snow);
 }
 
 .fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-instagram:hover {
-    color: #09c4c4;
+    color: var(--ocean-mediterrean);
 }
 
-/*** Buttons ***/ 
+/*** Buttons from all the platfrom ***/ 
 
 .btn {
-    background-color:#084E75;
-    color: #fff;
+    background-color: var(--aqua-deep-metalic);
+    color: var(--faded-snow);
   }
 
 .btn:hover {
-    color: #09c4c4;    
+    color: var(--ocean-mediterrean);    
 }  
 
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
- }
+}
+
+.btn-jumbotron, .btn-join, .btn-login, .btn-submit, .btn-save {
+    font-size: 1.3rem;
+}
+
+/* checkboxes */
+.custom-control-label:before{
+    background-color: var(--light-grey);
+}

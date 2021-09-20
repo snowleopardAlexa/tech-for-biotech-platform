@@ -1,0 +1,25 @@
+.form-group {
+     max-width: 40%;
+     font-size: 1.2rem;
+}
+
+.form-control {
+    border: 0.5px solid var(--light-grey);
+    background-color: var(--faded-snow);
+}
+
+.form-control:focus {
+    background-color: var(--cloud);
+}
+
+.rounded {
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--aqua-deep-metalic);
+    font-family: 'Fredoka One', cursive;
+}
+
