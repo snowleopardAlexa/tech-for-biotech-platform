@@ -9,7 +9,7 @@
 
 .form-control {
     background-color: var(--faded-snow);
-    border: 1px solid var(--aqua-deep-metalic);
+    border: 1px solid var(--light-grey);
 }
 
 .custom-control {

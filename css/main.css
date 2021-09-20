@@ -8,6 +8,7 @@ font-family: 'Fredoka One', cursive;
 /* COLORS */
 
 :root {
+    --light-grey: #bbbbbb;
     --blue-pearl: #BBDEFB;
     --aqua-deep-metalic: #084E75;
     --ocean-mediterrean: #2ebf91;

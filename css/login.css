@@ -3,6 +3,11 @@
      font-size: 1.2rem;
 }
 
+.form-control {
+    border: 0.5px solid var(--light-grey);
+    background-color: var(--faded-snow);
+}
+
 .rounded {
     font-size: 1.2rem;
 }
