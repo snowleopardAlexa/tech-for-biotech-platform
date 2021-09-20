@@ -62,8 +62,16 @@ ul {
   color: var(--black-bear);
 }
 
-.card-text-desc {
+.card-text {
 font-size: 1.1rem;
+}
+
+.event-title, .web {
+  color: var(--aqua-deep-metalic);
+}
+
+.card-text-like {
+  font-size: 1.2rem;
 }
 
 /*** Modal ***/
