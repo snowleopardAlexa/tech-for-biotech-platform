@@ -3,6 +3,7 @@
 
 /*
 font-family: 'Fredoka One', cursive;
+ font-family: 'Varela Round', sans-serif;
 */
 
 /* COLORS */
@@ -107,7 +108,7 @@ a:hover {
     color: var(--ocean-mediterrean);
 }
 
-/*** Buttons ***/ 
+/*** Buttons from all the platfrom ***/ 
 
 .btn {
     background-color: var(--aqua-deep-metalic);
@@ -122,3 +123,7 @@ a:hover {
     outline: none !important;
     box-shadow: none;
  }
+
+.btn-jumbotron, .btn-join, .btn-login, .btn-submit {
+    font-size: 1.3rem;
+}

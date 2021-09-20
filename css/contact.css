@@ -4,7 +4,7 @@
 /***** CONTACT.CSS *****/
 
 body {
-  font-family: 'K2D', sans-serif; 
+  font-family: 'Varela Round', sans-serif;
 }
 
 /*** Card ***/
@@ -12,5 +12,10 @@ body {
 .card-header {
     background-color: #084E75;
     color: #fff;
+}
+
+.form-control {
+  background-color: var(--faded-snow);
+  border: 1px solid var(--light-grey);
 }
 
