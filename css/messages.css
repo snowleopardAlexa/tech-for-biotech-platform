@@ -72,19 +72,38 @@ p {
   border-left: 2px solid var(--faded-snow);
 }
 
+.media-msg-box {
+  border: none;
+  width: 80%;
+}
+
 .profile-img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
 
-.my-msg, .pro-msg {
+.my-msg {
   background-color: var(--aqua-deep-metalic);
   color: var(--polar-bear);
   padding: 10px;
   border-radius: 10px;
 }
 
-.pro-msg-text {
+.pro-msg {
+  background-color: var(--blue-pearl);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.my-msg-text {
   color: var(--polar-bear);
+}
+
+.pro-msg-text {
+  color: var(--black-bear);
+}
+
+.write_msg {
+  margin-top: 50px;
 }
