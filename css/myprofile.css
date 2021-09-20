@@ -53,6 +53,11 @@ ul {
   border-radius: 50%;
 }
 
+.card-img-top-edu {
+  cursor: pointer;
+  max-width: 100%;
+}
+
 .card-title, .card-subtitle {
   color: var(--black-bear);
 }
