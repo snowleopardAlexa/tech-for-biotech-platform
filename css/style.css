@@ -16,13 +16,17 @@ body {
 
 .lead {
     margin-bottom: 2.5rem; 
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .logo {
     font-size: 8rem;
     font-family: 'Fredoka One', cursive;
     color: var(--aqua-deep-metalic);
+}
+
+.text-small {
+    font-size: 1.2rem;
 }
 
 /*** Buttons ***/

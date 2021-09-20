@@ -6,7 +6,9 @@ font-family: 'Fredoka One', cursive;
 */
 
 /* COLORS */
+
 :root {
+    --blue-pearl: #BBDEFB;
     --aqua-deep-metalic: #084E75;
     --ocean-mediterrean: #2ebf91;
     --cloud: #ECE9E6;
@@ -25,7 +27,7 @@ body {
 
 .navbar {
     font-size: 1.2rem;  
-    background-color: #084E75;
+    background-color: var(--aqua-deep-metalic);
 }
 
 .navbar-toggler:focus, .navbar-toggler:active {
@@ -44,13 +46,14 @@ body {
 
 
 /*** Footer ***/
+
 .page-footer {
-    background-color: #084E75;
+    background-color: var(--aqua-deep-metalic);
 }
 
 .font-weight-bold {
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--faded-snow);
 }
 
 .list-unstyled {
@@ -58,18 +61,18 @@ body {
 }
 
 .info {
-    color: #fff;
-    font-family: 'K2D', sans-serif;
+    color:var(--faded-snow);
+    font-family: 'Varela Round', sans-serif;
     font-size: 1.2rem;
 }
 
 .footer-copyright {
-    background-color: #BBDEFB;
-    color: #000;
+    background-color: var(--blue-pearl);
+    color: var(--black-bear);
 }
 
 a {
-    color: #BBDEFB; 
+    color: var(--blue-pearl); 
 }
   
 a:hover {
@@ -95,22 +98,22 @@ a:hover {
 /*** Social Media Buttons ***/
 
 .fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-instagram {
-    color: #fff;
+    color: var(--faded-snow);
 }
 
 .fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-instagram:hover {
-    color: #09c4c4;
+    color: var(--ocean-mediterrean);
 }
 
 /*** Buttons ***/ 
 
 .btn {
-    background-color:#084E75;
-    color: #fff;
+    background-color: var(--aqua-deep-metalic);
+    color: var(--faded-snow);
   }
 
 .btn:hover {
-    color: #09c4c4;    
+    color: var(--ocean-mediterrean);    
 }  
 
 .btn:focus,.btn:active {
