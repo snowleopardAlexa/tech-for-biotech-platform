@@ -10,7 +10,7 @@ font-family: 'Fredoka One', cursive;
 
 :root {
     --light-grey: #bbbbbb;
-    --dirty-grey: #c2bdbd;
+    --daily-grey: #d1cece;
     --blue-pearl: #BBDEFB;
     --aqua-deep-metalic: #084E75;
     --ocean-mediterrean: #2ebf91;
@@ -85,6 +85,10 @@ a:hover {
   
 /*** Modal ***/
 
+.modal-body, .modal-title, .modal-header, .modal-footer {
+    background-color: var(--faded-snow);
+}
+
 .modal-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -96,6 +100,15 @@ a:hover {
 
 .form-control {
     font-size: 1rem;
+}
+
+.form-control {
+    border: 0.5px solid var(--light-grey);
+    background-color: var(--faded-snow);
+}
+
+.form-control:focus {
+    background-color: var(--cloud);
 }
 
 /*** Social Media Buttons ***/
@@ -122,8 +135,13 @@ a:hover {
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
- }
+}
 
 .btn-jumbotron, .btn-join, .btn-login, .btn-submit {
     font-size: 1.3rem;
+}
+
+/* checkboxes */
+.custom-control-label:before{
+    background-color: var(--light-grey);
 }

@@ -14,7 +14,7 @@
 
 .form-control:focus {
     background-color: var(--cloud);
-  }
+}
 
 .custom-control {
     font-size: 20px;
@@ -41,6 +41,6 @@
 }
 
 .custom-control-label:before{
-    background-color: var(--dirty-grey);
+    background-color: var(--light-grey);
 }
   

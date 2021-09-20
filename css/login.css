@@ -10,7 +10,7 @@
 
 .form-control:focus {
     background-color: var(--cloud);
-  }
+}
 
 .rounded {
     font-size: 1.2rem;
