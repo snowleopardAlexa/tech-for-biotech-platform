@@ -5,11 +5,6 @@ body {
   background-color: var(--polar-bear);
 }
 
-.btn-search {
-    background: var(--aqua-deep-metalic);
-    color: var(--polar-bear);
-}
-
 .card {
   background-color: var(--polar-bear);
   border: none;
@@ -22,6 +17,11 @@ body {
 .card-header {
     background-color: var(--aqua-deep-metalic);
     width: 100%;
+}
+
+.btn-search {
+  background: var(--aqua-deep-metalic);
+  color: var(--polar-bear);
 }
 
 .chat_date, .time_date {
