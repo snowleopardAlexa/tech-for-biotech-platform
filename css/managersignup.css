@@ -36,3 +36,7 @@
     height: 35px;
 }
 
+.custom-control-label:before{
+    background-color: var(--dirty-grey);
+}
+  
