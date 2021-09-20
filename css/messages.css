@@ -19,20 +19,14 @@ body {
   color: var(--polar-bear);
 }
 
-.info, .card-title {
-    color: #fff;
-    font-family: 'K2D', sans-serif;
-}
-
 .card-header {
     background-color: var(--aqua-deep-metalic);
     width: 100%;
 }
 
-.font-weight-bold {
- font-size: 20px;
- font-family: 'K2D', sans-serif;
- color: #fff;
+.chat_date, .time_date {
+  font-size: 0.8rem;
+  color: var(--dirty-grey);
 }
 
 .chat-col {
