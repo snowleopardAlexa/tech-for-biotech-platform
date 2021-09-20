@@ -139,7 +139,7 @@ a:hover {
     box-shadow: none;
 }
 
-.btn-jumbotron, .btn-join, .btn-login, .btn-submit {
+.btn-jumbotron, .btn-join, .btn-login, .btn-submit, .btn-save {
     font-size: 1.3rem;
 }
 

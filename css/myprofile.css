@@ -40,6 +40,7 @@ ul {
    width: 70%;
    max-width: 100%;
    border: transparent;
+   background-color: var(--faded-snow);
 }
 
 .card-body {
@@ -124,7 +125,7 @@ font-size: 1.1rem;
   }
   
 input:checked + .slider {
-    background-color: #0adb5a;
+    background-color: var(--blue-pearl);
   }
   
 input:focus + .slider {
