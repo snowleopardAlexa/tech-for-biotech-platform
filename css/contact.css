@@ -19,3 +19,7 @@ body {
   border: 1px solid var(--light-grey);
 }
 
+.form-control:focus {
+  background-color: var(--cloud);
+}
+

@@ -12,6 +12,10 @@
     border: 1px solid var(--light-grey);
 }
 
+.form-control:focus {
+    background-color: var(--cloud);
+  }
+
 .custom-control {
     font-size: 20px;
 }
