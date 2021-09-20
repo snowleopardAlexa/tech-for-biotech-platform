@@ -5,9 +5,20 @@
 font-family: 'Fredoka One', cursive;
 */
 
+/* COLORS */
+:root {
+    --aqua-deep-metalic: #084E75;
+    --ocean-mediterrean: #2ebf91;
+    --cloud: #ECE9E6;
+    --faded-snow: #e5e7e7;
+    --polar-bear: #fcfbf9;
+    --snow-blast: #ffffff;
+    --black-bear: #050505;
+}
+
 body {
     font-family: 'Coiny', cursive;
-   
+    background-color: var(--faded-snow);
 }
 
 /*** Navbar ***/
@@ -32,9 +43,7 @@ body {
 }
 
 
-
 /*** Footer ***/
-
 .page-footer {
     background-color: #084E75;
 }
