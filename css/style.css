@@ -29,16 +29,6 @@ body {
     font-size: 1.2rem;
 }
 
-/*** Buttons ***/
-
-.btn-login, .btn-join {
-  font-size: 1.2rem;
-}
-
-.btn-jumbotron {
-  font-size: 1.8rem;  
-}
-
 /*** About us ***/
 
 .card {
@@ -63,24 +53,32 @@ body {
 }
 
 /*** Modal ***/
+
 .modal-title {
     font-weight: bold;
 }
 
 .form-group {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
+::placeholder {
+    font-size: 1rem;
+  }
+
 /*** Emblems ***/
+
 .img-fluid {
     width: 30px;
     height: 30px;
 }
 
 /*** Buttons ***/
+
 .btn-jumbotron, .btn-join, .btn-login {
     font-size: 1.3rem;
 }
+
 
 
 
