@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
 
-
 .media {
   border-top: 0.5px solid rgb(214, 200, 200);
 }
@@ -27,7 +26,6 @@
   width: 70%;
   margin-left: 25%;
 }
-
 
 .btn-search {
     background: rgb(12, 235, 12);

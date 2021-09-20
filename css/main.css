@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 /*
-font-family: 'Fredoka One', cursive;
+ font-family: 'Fredoka One', cursive;
  font-family: 'Varela Round', sans-serif;
 */
 
@@ -31,6 +31,7 @@ body {
 .navbar {
     font-size: 1.2rem;  
     background-color: var(--aqua-deep-metalic);
+    position: static;
 }
 
 .navbar-toggler:focus, .navbar-toggler:active {

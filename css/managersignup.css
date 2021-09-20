@@ -43,4 +43,11 @@
 .custom-control-label:before{
     background-color: var(--light-grey);
 }
+
+.logo {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--aqua-deep-metalic);
+    font-family: 'Fredoka One', cursive;
+}
   
