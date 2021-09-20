@@ -74,14 +74,16 @@
        <div class="container-fluid">
           <div class="card">
             <div class="card-header" style="background: none;">
-              <nav class="navbar navbar-light bg-light">
-                <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></form>
-              </nav>
+              <h2 class="text-center mt-2">Messages</h2>
             </div>
         </div>
         <div class="row mt-2">
+          <!--Chatbox-->
           <div class="col-md-4">
+          <!--Search Form-->
+            <form class="form-inline mt-3">
+             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+             </form>
              <div class="media mt-4">
               <img class="mr-3 mt-2" alt="profile image" src="img/guy.jpg" />
               <div class="media-body">
@@ -148,8 +150,9 @@
              </div>
             <div class="col-md-8 mt-4">
                 <div class="chat_messages">
+                  <div class="row">
                   <div class="media" style="border: none;">
-                    <img class="align-self-start mr-3 mt-2" src="img/guy.jpg" alt="Generic placeholder image">
+                    <img class="align-self-start mr-3 mt-2" src="img/guy.jpg" alt="profile image">
                       <div class="media-body_msg-box">
                         <div class="msg_wrapper_inc">
                         <p class="msg_incoming ml-2 mt-3">Cras sit amet nibh libero, urus odio, vestibulum in vulputate at, tempus
@@ -158,10 +161,12 @@
                       <span class="time_date"> 11:01 AM    |    June 9</span>
                     </div>
                   </div>
-                </div>
+                </div>      
                 <div class="media_outgoing_msg mt-4">
-                  <div class="media-body_msg-box float-right">
+                  <div class="media-body_msg-box float-left">
+                    <img class="align-self-start mr-3 mt-2" src="img/guy.jpg" alt="profile image">
                     <div class="msg_wrapper_out">
+                      <img class="align-self-start mt-2 mr-auto" src="img/guy.jpg" alt="profile image">
                       <p class="msg_outgoing ml-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus 
                         scelerisque ante sollicitudin. Cras purus odio, vestibulum in 
                         vulputate at, tempus viverra turpis. Fusce condimentum nunc ac 
@@ -170,6 +175,9 @@
                     </div>
                   </div>
                 </div>
+                </div>
+
+                <div class="row">
                 <div class="media" style="border: none;">
                   <img class="align-self-start mr-3 mt-2" src="img/guy.jpg" alt="Generic placeholder image">
                     <div class="media-body_msg-box">
@@ -192,6 +200,8 @@
                   </div>
                 </div>
               </div>
+              </div>
+
               <div class="write_msg" style="margin-top: 205px;">
                 <div class="container">
                   <div class="form-group">
