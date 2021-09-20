@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
 
 .form-group {
-    max-width: 70%;
+    max-width: 40%;
     text-align: center;
     font-size: 1.2rem;
 }
 
-.custom-control, h5, h4, h6 {
-
+.form-control {
+    background-color: var(--faded-snow);
+    border: 1px solid var(--aqua-deep-metalic);
 }
 
 .custom-control {
@@ -16,7 +17,8 @@
 }
 
 .card {
-   border:transparent;
+   border: transparent;
+   background-color: var(--faded-snow);
 }
 
 .card-title {
@@ -33,3 +35,4 @@
     width: 35px;
     height: 35px;
 }
+

@@ -7,3 +7,10 @@
     font-size: 1.2rem;
 }
 
+.logo {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--aqua-deep-metalic);
+    font-family: 'Fredoka One', cursive;
+}
+
