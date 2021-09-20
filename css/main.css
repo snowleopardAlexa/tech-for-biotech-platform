@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|Oxygen|Poppins|Varela+Round');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-/***** MAIN.CSS *****/
+/*
+font-family: 'Fredoka One', cursive;
+*/
 
 body {
     font-family: 'Coiny', cursive;
@@ -19,8 +22,13 @@ body {
     box-shadow: none;
 }
 
+.navbar-brand {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+}
+
 .fa-home, .fa-calendar-alt, .fa-dna, .fa-briefcase, .fa-lightbulb, .fa-bell, .fa-envelope, .fa-user-edit, .fa-newspaper, .fa-user {
-    font-size: 42px;
+    font-size: 2rem;
 }
 
 
