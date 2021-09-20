@@ -228,3 +228,7 @@ img{ max-width:100%;}
   font-size: 12px;
   margin: 8px 0 0;
 }
+*/
+.chat-col {
+  border-left: 2px solid var(--faded-snow);
+}
