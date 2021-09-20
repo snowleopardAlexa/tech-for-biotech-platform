@@ -12,11 +12,17 @@ body {
 .img-fluid-emblem {
     width: 35px;
     height: 35px;
+    border-radius: 50%;
 }
 
 .img-fluid-emblem-active {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+}
+
+.edit-icon {
+  margin-top: 10px;
 }
 
 ul {
