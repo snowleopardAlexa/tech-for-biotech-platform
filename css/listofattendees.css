@@ -4,7 +4,7 @@
 /***** LISTOFATTENDEES.CSS, LISTOFINTERESTED, LISTOFCANTATTEND - together *****/
 
 body {
-    font-family: 'K2D', sans-serif; 
+    font-family: 'Varela Round', sans-serif;
 }
 
 /*** List ***/
@@ -19,10 +19,25 @@ body {
 
 /*** Breadcrumb navigation ***/
 
-.breadcrumb {
-    color: #212121;
+.active {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.breadcrumb-item {
-    color: #0edfbc;
+#item-will-attend {
+    color: var(--aqua-deep-metalic);
+}
+
+#item-will-not-attend {
+    color: #b60d0d;
+}
+
+#item-interested {
+     color: var(--deep-heaven);
+}
+
+.img-fluid {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }

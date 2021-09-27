@@ -11,9 +11,9 @@ body {
 
 /*** Title ***/
 
-.font-weight-bold {
- margin-top: 70px;
- margin-bottom: 70px;
+.title {
+ color: var(--black-bear);
+ font-size: 2rem;
 }
 
 /*** Cards ***/
