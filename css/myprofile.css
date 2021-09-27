@@ -155,7 +155,7 @@ input:checked + .slider:before {
 }
 
 .fa-thumbs-up:hover {
-    color: var(--blue-pearl);
+    color: var(--deep-heaven);
 }
 
 /*** Profile Image for ajax ***/
