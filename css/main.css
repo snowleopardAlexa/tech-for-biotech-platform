@@ -30,8 +30,7 @@ body {
 
 /*** Navbar ***/
 
-.navbar {
-    font-size: 1.2rem;  
+.navbar { 
     background-color: var(--aqua-deep-metalic);
     position: static;
 }
@@ -47,7 +46,7 @@ body {
 }
 
 .fa-home, .fa-calendar-alt, .fa-dna, .fa-briefcase, .fa-lightbulb, .fa-bell, .fa-envelope, .fa-user-edit, .fa-newspaper, .fa-user {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 
