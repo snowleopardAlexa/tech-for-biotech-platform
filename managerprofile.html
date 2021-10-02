@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/myprofile.css" />
     <!--change profile picture-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -16,8 +16,8 @@
  <!--Navigation bar-->  
  <div class="sticky-top">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+            <a class="navbar-brand ml-2" href="index.html">
+               tfb
             </a>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -244,14 +244,14 @@
                          fasterPreview( this );
                              });
                 </script>
-              <h1 class="card-title text-center mt-4">Oleg Krasnyj</h1>
-              <h1 class="card-subtitle text-center mt-4">Manager at Restaurant La Crimoza</h1>
+              <h4 class="card-title text-center mt-4">Oleg Krasnyj</h4>
+              <h5 class="card-subtitle text-center mt-4">Manager at Restaurant La Crimoza</h5>
             <p class="card-text mt-2">Providing excllent renting experience for any kind of venue</p>
               <div class="container">
                   <div class="row mx-auto">
                       <div class="col-md-12">
                         <div class="mb-5 text-center"> 
-                        <img src="img/badges/es.svg" class="img-fluid" alt="...">
+                        <img src="img/badges/ES.png" class="img-fluid" alt="...">
                 </div>
               </div>
             </div>
@@ -391,7 +391,7 @@
                                       </div>
                                       <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
                                       <div class="card-body">       
-                                          <h4 class="card-title mx-auto">Availability</h4>
+                                          <h3 class="card-title text-center">Availability</h3>
                                           <p class="card-text">  
                                               <ul class="work">
                                                   <li class="title">Phd at Columbia University 2007-2019</li>
@@ -452,21 +452,19 @@
                                       </div>
                                       </div>
                                       <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
-                                      <div class="card-body" style="margin-top:4rem;">
-                                                             
-                                          <h4 class="card-title">Hosted Events</h4>
+                                        <div class="card-body">                       
+                                          <h3 class="card-title text-center">Hosted Events</h3>
                                           <p class="card-text">
-                                            <ul class="work">
-                                              <li class="title"><i class="fas fa-check mr-2"></i>BIG PHARMA OF TOMORROW</li>
-                                              <p>April 17th 2018</p>
-                                              <li class="title"><i class="fas fa-check mr-2"></i>STARTUP BIO EXPO</li>
-                                              <p>September 20th 2018</p>   
-                                              <li class="title"><i class="fas fa-check mr-2"></i>COMPANY BUYS STARTUP</li>
-                                              <p>July 21th 2018</p>            
-                                            </ul> 
-                                          
+                                              <!--First Event-->
+                                              <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>TITLE OF THE EVENT</h4>
+                                              <p class="card-text">Date</p>
+                                              <!--Second Event-->
+                                              <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>STARTUP BIO EXPO</h4>
+                                              <p class="card-text">September 20th 2018</p>
+                                              <!--Third Event-->   
+                                              <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>COMPANY BUYS STARTUP</h4>
+                                              <p class="card-text">July 21th 2018</p>            
                                           </p>
-        
                                       </div>
                                       </div>
                                       </div>
@@ -490,57 +488,65 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                      <div class="container">
-                          <a href="#"><h2>Add Contact</h2></a>
-                              <div class="form-group d-block mt-4">
-                                <label for="exampleInputEmail1">
-                                  First Name
+                    <div class="container">
+                            <div class="form-group d-block mt-4">
+                              <label for="firstname">
+                                First Name
+                              </label>
+                              <input type="firstname" class="form-control" id="firstname" />
+                            </div>
+                            <div class="form-group d-block mt-4">
+                                <label for="lastname">
+                                  Last Name
                                 </label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                                <input type="lastname" class="form-control" id="lastname" />
                               </div>
                               <div class="form-group d-block mt-4">
-                                  <label for="exampleInputEmail1">
-                                    Last Name
+                                  <label for="occupation">
+                                    Occupation
                                   </label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" />
-                                </div>
+                                  <input type="occupation" class="form-control" id="occupation" />
+                                </div>  
+                              <div class="form-group d-block mt-4">
+                                  <label for="number">
+                                    Number
+                                  </label>
+                                  <input type="number" class="form-control" id="number" />
+                                </div>  
                                 <div class="form-group d-block mt-4">
-                                    <label for="exampleInputEmail1">
-                                      Number
+                                    <label for="email">
+                                      Email
                                     </label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" />
-                                  </div>  
-                                  <div class="form-group d-block mt-4">
-                                      <label for="exampleInputEmail1">
-                                        Email
+                                    <input type="email" class="form-control" id="email" />
+                                  </div> 
+                                <div class="form-group d-block mt-4">
+                                      <label for="residency">
+                                      Place of current residency  
                                       </label>
-                                      <input type="email" class="form-control" id="exampleInputEmail1" />
-                                    </div> 
-                                    <div class="form-group d-block mt-4">
-                                        <label for="exampleInputEmail1">
-                                        Place of current residency  
-                                        </label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" />
-                                    </div>   
-                               <button class="btn rounded">Add more</button>
-                               <button class="btn rounded">Save</button>
-                               </div>  
-                                      </div>
+                                      <input type="residency" class="form-control" id="residency" />
+                                </div>   
+                                <div class="form-group d-block mt-4">
+                                    <label for="website">
+                                       Website 
+                                    </label>
+                                    <input type="website" class="form-control" id="website" />
+                              </div>
+                             <button class="btn btn-lg rounded">Save</button>
+                             </div>  
+                            </div>
                                       </div>
                                       </div>
                                       </div>
                                       <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
                                       <div class="card-body">
-                                          <h4 class="card-title">Contact</h4>
-                                          <p class="card-text"> 
-                                              <ul class="work">
-                                                  <li class="title mb-2">Contact Information</li>
-                                                  <li class="contact">Aleksandra Slomska</li>
-                                                  <li class="contact">+1 646.206.00.76</li>
-                                                  <li class="contact">aleksandravslomska@gmail.com</li>
-                                                  <li class="contact">New York City</li>
-                                                </ul>  
-                                              </p>
+                                        <h3 class="card-title text-center">Contact</h3>
+                                        <h4 class="card-subtitle font-weight-bold mt-4 mb-4">Contact Information</h4>
+                                            <p class="card-text">Aleksandra Slomska</p>
+                                            <p class="card-text">Frontend Developer</p>
+                                            <p class="card-text">+1 646.206.00.76</p>
+                                            <p class="card-text">aleksandravslomska@gmail.com</p>
+                                            <p class="card-text">New York City</p>
+                                            <p class="card-text"><span class="mr-2">web:</span><a class="web" href="www.techforbiotech.com">techforbiotech.com</a>
                                       </div>
                                       </div>
                                       </div>
@@ -579,8 +585,8 @@
                                       </div>
                                       <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
                                       <div class="card-body">
-                                          <h4 class="card-title">In my own words</h4>
-                                          <p class="card-text"> 
+                                          <h3 class="card-title text-center">In my own words</h3>
+                                          <p class="card-text text-left"> 
                                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                                               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -600,7 +606,7 @@
 
                                       <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
                                             <div class="card-body">
-                                                <h4 class="card-title">Photos of Event Space</h4>
+                                                <h4 class="card-title text-center">Photos of Event Space</h4>
                                                 <p class="card-text"> 
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
