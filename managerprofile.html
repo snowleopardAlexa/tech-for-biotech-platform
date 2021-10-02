@@ -155,65 +155,39 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                      <img class="img-fluid mx-auto d-block" style="width:200px; height: 200px; border-radius: 50%;" src="img/me.jpg" alt="Card image cap">     
-                            <div class="container-fluid mt-4">
-                           
-                                <div class="row mx-auto">
-                                  <div class="col-md-6">
-                                    <form role="form">
-                                      <div class="form-group">
-                                         
-                                        <label for="exampleInputEmail1">
-                                         First Name
-                                        </label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" />
-                                      </div>
-                                    </form>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <form role="form">
-                                      <div class="form-group">
-                                         
-                                        <label for="exampleInputEmail1">
-                                         Last Name
-                                        </label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" />
-                                      </div>
-                                    </form>
-                                  </div>
+                      <img class="card-img-top mx-auto d-block" src="img/profile.png" alt="Card image cap">     
+                      <div class="container-fluid mt-4">
+                        <!--Name, occupation-->
+                            <form role="form">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">
+                                    First Name
+                                  </label>
+                                  <input type="firstname" class="form-control" id="firstname" />
                                 </div>
-                            
-                                       
+                                <div class="form-group">
+                                  <label for="lastname">Last Name</label>
+                                  <input type="lastname" class="form-control" id="lastname" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="occupation">Occupation</label>
+                                    <input type="occupation" class="form-control" id="occupation" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="eventspace">Event Space Name</label>
+                                    <input type="eventspace" class="form-control" id="eventspace" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="desc">Description</label>
+                                    <input type="desc" class="form-control" id="desc" />
+                                  </div>
+                              </form>
+                            </div>
+                           
                                       
-
-                                        <div class="row mx-auto">
-                                          <div class="col-md-12">
-                                            <form role="form">
-                                              <div class="form-group">
-                                                <label for="exampleInputEmail1">
-                                                 Headline
-                                                </label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" />
-                                              </div>
-                                            </form>
-                                          </div>
-                                        </div>  
-                                     
-                                      <div class="row mx-auto">
-                                        <div class="col-md-12">
-                                          <form role="form">
-                                            <div class="form-group">
-                                              <label for="exampleInputEmail1">
-                                               Short Description
-                                              </label>
-                                              <input type="email" class="form-control" rows="3" id="exampleInputEmail1" />
-                                            </div>
-                                          </form>
-                                        </div>
-                                      </div>
                  <p class="text-left text-muted mt-4">Event Space badge was assigned to you 
                    within registration process. </p>
-                 <p class="text-center"><img src="img/badges/es.svg" class="img-fluid" alt="...">
+                 <p class="text-center"><img src="img/badges/ES.png" class="img-fluid-emblem-active" alt="...">
                   </p>
                   </div>
                   <div class="modal-footer">
@@ -222,7 +196,7 @@
                 </div>
               </div>
             </div>
-            </div>
+        
                 
           <div class="shadow-lg p-3 mb-5 bg-white rounded">     
           <div class="card-body">
@@ -280,22 +254,28 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                      <div class="container">
-                          <a href="#"><h2>Add Promotion</h2></a>
-                              <div class="form-group d-block mt-4">
-                                <label for="exampleInputEmail1">
-                                 Title
-                                </label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" />
-                              </div>
-                          <div class="form-group">
-                              <label for="exampleFormControlTextarea1">Description</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="container">
+                            <div class="form-group d-block mt-4">
+                              <label for="firstname">
+                                Special Offer
+                              </label>
+                              <input type="firstname" class="form-control" id="firstname" />
                             </div>
-                               <button class="btn rounded">Add more</button>
-                               <button class="btn rounded">Save</button>
-                               </div>
-                                      </div>
+                            <div class="form-group d-block mt-4">
+                                <label for="lastname">
+                                  Date
+                                </label>
+                                <input type="lastname" class="form-control" id="lastname" />
+                              </div>
+                              <div class="form-group d-block mt-4">
+                                  <label for="occupation">
+                                    Hour
+                                  </label>
+                                  <input type="occupation" class="form-control" id="occupation" />
+                                </div>  
+                             <button class="btn btn-lg rounded">Save</button>
+                             </div>  
+                            </div>
                                       </div>
                                       </div>
                                       </div>
@@ -340,22 +320,28 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                      <div class="container">
-                          <a href="#"><h2>Add Availability</h2></a>
-                              <div class="form-group d-block mt-4">
-                                <label for="exampleInputEmail1">
-                                 Title
-                                </label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" />
-                              </div>
-                          <div class="form-group">
-                              <label for="exampleFormControlTextarea1">Description</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="container">
+                            <div class="form-group d-block mt-4">
+                              <label for="firstname">
+                                Availability
+                              </label>
+                              <input type="firstname" class="form-control" id="firstname" />
                             </div>
-                               <button class="btn rounded">Add more</button>
-                               <button class="btn rounded">Save</button>
-                               </div>
-                                      </div>
+                            <div class="form-group d-block mt-4">
+                                <label for="lastname">
+                                  Date
+                                </label>
+                                <input type="lastname" class="form-control" id="lastname" />
+                              </div>
+                              <div class="form-group d-block mt-4">
+                                  <label for="occupation">
+                                    Hour
+                                  </label>
+                                  <input type="occupation" class="form-control" id="occupation" />
+                                </div>  
+                             <button class="btn btn-lg rounded">Save</button>
+                             </div>  
+                            </div>
                                       </div>
                                       </div>
                                       </div>
@@ -384,17 +370,34 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Hosted Events</h5>
+                    <h3 class="modal-title" id="exampleModalLabel">Edit Hosted Events</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                      <div class="container">
-                          <a href="#"><h2>Add Events</h2></a>
-                               <button class="btn rounded">Save</button>
-                               </div>
-                                      </div>
+                    <div class="container">
+                            <div class="form-group d-block mt-4">
+                              <label for="firstname">
+                                Event Name
+                              </label>
+                              <input type="firstname" class="form-control" id="firstname" />
+                            </div>
+                            <div class="form-group d-block mt-4">
+                                <label for="lastname">
+                                  Date
+                                </label>
+                                <input type="lastname" class="form-control" id="lastname" />
+                              </div>
+                              <div class="form-group d-block mt-4">
+                                  <label for="occupation">
+                                    Hour
+                                  </label>
+                                  <input type="occupation" class="form-control" id="occupation" />
+                                </div>  
+                             <button class="btn btn-lg rounded">Save</button>
+                             </div>  
+                            </div>
                                       </div>
                                       </div>
                                       </div>
