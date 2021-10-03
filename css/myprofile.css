@@ -55,7 +55,8 @@ ul {
 }
 
 .card-img-top-edu,
-.card-img-top-event {
+.card-img-top-event,
+.card-img-top-company {
   cursor: pointer;
   border-radius: 0%;
   width: 100%;
@@ -89,7 +90,7 @@ ul {
 .modal-title {
   font-weight: bold;
   color: var(--deep-grey);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .form-group {

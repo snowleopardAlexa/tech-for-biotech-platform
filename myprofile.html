@@ -449,59 +449,60 @@
           </div>
           <div class="modal-body">
             <div class="container">
-              <a href="#"><h2>Add Work</h2></a>
-              <!--first job-->
+              <!--First job-->
               <form>
               <div class="form-group d-block mt-4">
-                  <img src="img/company-logo.png" class="img-fluid" alt="companyprofileimage" style="width:500px; height:250px;">  
-                  <label for="exampleInputEmail1">
+                  <h6 class="name">Company logo</h6>
+                  <img src="img/university-logo.png" class="card-img-top-company" alt="companyprofileimage">  
+                  <label for="company" class="mt-2">
                     Company
                   </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="company" class="form-control" id="company" />
               </div> 
               <div class="form-group d-block mt-4">
                   <label for="exampleInputEmail1">
                     Occupation
                   </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="occupation" class="form-control" id="occupation" />
               </div>
               <div class="form-group d-block mt-4">
                   <label for="exampleInputEmail1">
                     Years
                   </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="years" class="form-control" id="years" />
               </div>
               <div class="form-group">
                   <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control" id="desc" rows="3"></textarea>
               </div>
               <p clas="mt-2">
                  <button class="btn rounded">Remove</button>
               </p>
               </form>
-              <!--second job-->
+              <!--Second job-->
               <form>
               <div class="form-group d-block mt-4">
-                  <img src="img/university-logo.png" class="img-fluid" alt="companyprofileimage" style="width:500px; height:250px;">  
-                  <label for="exampleInputEmail1">
+                  <h6 class="name">Company logo</h6>
+                  <img src="img/university-logo.png" class="card-img-top-company" alt="companyprofileimage">  
+                  <label for="company" class="mt-2">
                     Company
                   </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="email" class="form-control" id="company" />
                 </div> 
                 <div class="form-group d-block mt-4">
-                    <label for="exampleInputEmail1">
+                    <label for="occupation">
                     Occupation
                     </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="occupation" class="form-control" id="occupation" />
                 </div>
                 <div class="form-group d-block mt-4">
-                   <label for="exampleInputEmail1">
+                   <label for="years">
                     Years
                    </label>
                   <input type="email" class="form-control" id="exampleInputEmail1" />
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Description</label>
+                    <label for="desc">Description</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <p clas="mt-2">
@@ -521,7 +522,7 @@
           <div class="card-body text-center">
             <h3 class="card-title">Work Experience</h3>
         <!--First company-->  
-        <img class="card-img-top mt-4" src="img/company-logo.png" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+        <img class="card-img-top-company mt-4" src="img/university-logo.png" alt="companyprofileimage">
           <h4 class="card-subtitle mt-4">TFB</h4>
           <p class="card-text mt-2">Tech Manager</p>
           <p class="card-text mt-2"> 2008-2017</p>
@@ -529,14 +530,14 @@
             I am managing the team of developers. 
           </p>
         <!--Second company-->  
-        <img class="card-img-top mt-4" src="img/company-logo.png" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+        <img class="card-img-top-company mt-4" src="img/university-logo.png" alt="companyprofileimage">
           <h4 class="card-subtitle mt-4">Tech for Biotech</h4>
           <p class="card-text mt-2">Ceo at Tech for Biotech</p>
           <p class="card-text mt-2">2009-2018</p>
           <p class="card-text">
           Short description of a position.</p>
         <!--Third company-->
-       <img class="card-img-top mt-4" src="img/company-logo.png" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+        <img class="card-img-top-company mt-4" src="img/university-logo.png" alt="companyprofileimage">
           <h4 class="card-subtitle mt-4">Company</h4>
           <p class="card-text mt-2">Occupation</p>
           <p class="card-text mt-2">2008-2017</p>
@@ -567,34 +568,34 @@
           </div>
           <div class="modal-body">
               <div class="container">
-                  <a href="#"><h2>Add Education</h2></a>
                   <form>
                   <!--University-->  
                   <div class="form-group d-block mt-4">
-                      <img src="img/university-logo.png" class="img-fluid" alt="universityprofileimage" style="width:1000px; height:200px;">
-                      <label for="exampleInputEmail1">
+                    <h6 class="name">University logo</h6>
+                      <img src="img/university-logo.png" class="card-img-top-edu mb-2" alt="universityprofileimage">
+                      <label for="uni-name">
                       University Name
                       </label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                      <input type="uni-name" class="form-control" id="uni-name" />
                   </div>
                   <!--Degree-->
                   <div class="form-group d-block mt-4">
-                      <label for="exampleInputEmail1">
+                      <label for="degree">
                       Degree
                       </label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                      <input type="degree" class="form-control" id="degree" />
                   </div>
                   <!--Years of Attendance-->
                   <div class="form-group d-block mt-4">
                       <label for="exampleInputEmail1">
                       Years of Attendance
                       </label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                      <input type="email" class="form-control" id="uni-years" />
                   </div>
                    <!--short description-->
                   <div class="form-group">
                       <label for="exampleFormControlTextarea1">Description</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <textarea class="form-control" id="desc" rows="3"></textarea>
                   </div>
                    <p class="mt-2">
                     <button class="btn rounded">Remove</button>
@@ -603,30 +604,31 @@
                   <form>
                   <!--University-->  
                   <div class="form-group d-block mt-4">
-                    <img src="img/university-logo.png" class="img-fluid" alt="universityprofileimage" style="width:1000px; height:200px;">
-                    <label for="exampleInputEmail1">
+                    <h6 class="name">University logo</h6>
+                    <img src="img/university-logo.png" class="card-img-top-edu mb-2" alt="universityprofileimage">
+                    <label for="uni-name mt-2">
                           University Name
                     </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                    <input type="uni-name" class="form-control" id="uni-name" />
                    </div>
                     <!--Degree-->
                       <div class="form-group d-block mt-4">
                           <label for="exampleInputEmail1">
                           Degree
                           </label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                          <input type="degree" class="form-control" id="degree" />
                       </div>
                       <!--Years of Attendance-->
                       <div class="form-group d-block mt-4">
                           <label for="exampleInputEmail1">
                           Years of Attendance
                           </label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                          <input type="uni-years" class="form-control" id="uni-years" />
                       </div>
                        <!--short description-->
                       <div class="form-group">
                           <label for="exampleFormControlTextarea1">Description</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <textarea class="form-control" id="edu-desc" rows="3"></textarea>
                       </div>
                        <p class="mt-2">
                         <button class="btn rounded">Remove</button>

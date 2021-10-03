@@ -92,15 +92,17 @@ a:hover {
     background-color: var(--faded-snow);
 }
 
+/*** Modal ***/
+
 .modal-title {
     font-weight: bold;
     color: var(--deep-grey);
-    font-size: 1.2rem;
-}
-
-.form-group {
+    font-size: 1.3rem;
+  }
+  
+  .form-group {
     font-size: 1.1rem;
-}
+  }
 
 .form-control {
     font-size: 1rem;
