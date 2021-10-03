@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/myprofile.css" />
-    <!--change profile picture-->
+    <!--upload profile picture from computer-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Professional Profile - My Profile</title>
   </head>
@@ -80,7 +80,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav text-left mt-2">
 <!--Visitor Mode View-->
-    <a class="card-link ml-4" href="viewvisitormodeprofessional.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
+    <a class="card-link ml-4" href="viewvisitormode_professional.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
     </a>
 <!--Profile Settings-->
     <a href="settings.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
@@ -107,11 +107,11 @@
     <img src="img/badges/four-leaf-clover.svg" class="img-fluid" alt="four leaf clover" style="width:24px; height:22px;">     
 </a>      
   <!--modal-->
-  <div class="modal fade" id="clover" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="clover" tabindex="-1" role="dialog" aria-labelledby="lookingforajobLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel">Looking for a job mode</h6>
+          <h6 class="modal-title" id="lookingforajobLabel">Looking for a job mode</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -174,11 +174,11 @@
        </div>
     </div> 
  <!--modal-->
- <div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="postjobLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel">Post Job</h6>
+          <h6 class="modal-title" id="postjobLabel">Post Job</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -187,16 +187,16 @@
             <!--post a job-->
             <form>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Title</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+                  <label for="job-title">Title</label>
+                  <input type="job-title" class="form-control" id="job-title" aria-describedby="emailHelp" placeholder="Title">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Posted by</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+                  <label for="postedby">Posted by</label>
+                  <input type="postedby" class="form-control" id="postedby" placeholder="Company/Corporation Name">
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+                  <label for="job-desc">Description</label>
+                  <textarea class="form-control" id="job-desc" rows="6" placeholder="Description"></textarea>
                 </div>
               </form>
               <!--short info-->
@@ -237,11 +237,11 @@
       </ul>                   
       </div>  
   <!--modal-->
-  <div class="modal fade" id="editmain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="editmain" tabindex="-1" role="dialog" aria-labelledby="editmainLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Edit Main</h6>
+            <h6 class="modal-title" id="editmainLabel">Edit Main</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -271,7 +271,7 @@
                       <!--Name, occupation-->
                           <form role="form">
                             <div class="form-group">
-                              <label for="exampleInputEmail1">
+                              <label for="firstname">
                                   First Name
                                 </label>
                                 <input type="firstname" class="form-control" id="firstname" />
@@ -438,7 +438,7 @@
         </ul>                   
       </div>  
   <!--modal-->
-  <div class="modal fade" id="editwork" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="editwork" tabindex="-1" role="dialog" aria-labelledby="editworkLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -453,7 +453,7 @@
               <form>
               <div class="form-group d-block mt-4">
                   <h6 class="name">Company logo</h6>
-                  <img src="img/university-logo.png" class="card-img-top-company" alt="companyprofileimage">  
+                  <img src="img/company-logo.png" class="card-img-top-company" alt="companyprofileimage">  
                   <label for="company" class="mt-2">
                     Company
                   </label>
@@ -466,13 +466,13 @@
                   <input type="occupation" class="form-control" id="occupation" />
               </div>
               <div class="form-group d-block mt-4">
-                  <label for="exampleInputEmail1">
+                  <label for="years">
                     Years
                   </label>
                   <input type="years" class="form-control" id="years" />
               </div>
               <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Description</label>
+                  <label for="desc">Description</label>
                   <textarea class="form-control" id="desc" rows="3"></textarea>
               </div>
               <p clas="mt-2">
@@ -483,7 +483,7 @@
               <form>
               <div class="form-group d-block mt-4">
                   <h6 class="name">Company logo</h6>
-                  <img src="img/university-logo.png" class="card-img-top-company" alt="companyprofileimage">  
+                  <img src="img/company-logo.png" class="card-img-top-company" alt="companyprofileimage">  
                   <label for="company" class="mt-2">
                     Company
                   </label>
@@ -499,11 +499,11 @@
                    <label for="years">
                     Years
                    </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="years" class="form-control" id="years" />
                 </div>
                 <div class="form-group">
                     <label for="desc">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="desc" rows="3"></textarea>
                 </div>
                 <p clas="mt-2">
                   <button class="btn rounded">Remove</button>
@@ -553,15 +553,15 @@
     <div class="wrapper-icon">
       <ul class="edit-icon float-right">
           <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
-          <a href="#" data-toggle="modal" data-target="#exampleModal"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+          <a href="#" data-toggle="modal" data-target="#eduModal"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
         </ul>                   
     </div>  
   <!--modal-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="eduModal" tabindex="-1" role="dialog" aria-labelledby="eduModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Edit Education</h6>
+            <h6 class="modal-title" id="eduModalLabel">Edit Education</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -587,15 +587,15 @@
                   </div>
                   <!--Years of Attendance-->
                   <div class="form-group d-block mt-4">
-                      <label for="exampleInputEmail1">
+                      <label for="uni-years">
                       Years of Attendance
                       </label>
-                      <input type="email" class="form-control" id="uni-years" />
+                      <input type="uni-years" class="form-control" id="uni-years" />
                   </div>
                    <!--short description-->
                   <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Description</label>
-                      <textarea class="form-control" id="desc" rows="3"></textarea>
+                      <label for="uni-desc">Description</label>
+                      <textarea class="form-control" id="uni-desc" rows="3"></textarea>
                   </div>
                    <p class="mt-2">
                     <button class="btn rounded">Remove</button>
@@ -613,22 +613,22 @@
                    </div>
                     <!--Degree-->
                       <div class="form-group d-block mt-4">
-                          <label for="exampleInputEmail1">
+                          <label for="degree">
                           Degree
                           </label>
                           <input type="degree" class="form-control" id="degree" />
                       </div>
                       <!--Years of Attendance-->
                       <div class="form-group d-block mt-4">
-                          <label for="exampleInputEmail1">
+                          <label for="uni-years">
                           Years of Attendance
                           </label>
                           <input type="uni-years" class="form-control" id="uni-years" />
                       </div>
                        <!--short description-->
                       <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Description</label>
-                          <textarea class="form-control" id="edu-desc" rows="3"></textarea>
+                          <label for="uni-desc">Description</label>
+                          <textarea class="form-control" id="uni-desc" rows="3"></textarea>
                       </div>
                        <p class="mt-2">
                         <button class="btn rounded">Remove</button>
@@ -710,12 +710,12 @@
           <a href="#" data-toggle="modal" data-target="#editeducation"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
         </ul>                   
       </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="editeducation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!--modal-->
+  <div class="modal fade" id="editeducation" tabindex="-1" role="dialog" aria-labelledby="editeducationLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Edit Publications</h6>
+            <h6 class="modal-title" id="editeducationLabel">Edit Publications</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -725,14 +725,14 @@
                   <!--First publication-->
                   <form>
                       <div class="form-group d-block mt-4">
-                        <label for="exampleInputEmail1">
+                        <label for="pub-title">
                          Title
                         </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                        <input type="pub-title" class="form-control" id="pub-title" />
                       </div>
                   <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Description</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <label for="pub-desc">Description</label>
+                      <textarea class="form-control" id="pub-textarea" rows="3"></textarea>
                     </div>
                     <p class="mt-2">
                       <button class="btn rounded">Remove</button> 
@@ -741,14 +741,14 @@
                     <!--Second publication-->
                     <form>
                         <div class="form-group d-block mt-4">
-                          <label for="exampleInputEmail1">
+                          <label for="pub-title">
                            Title
                           </label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                          <input type="pub-title" class="form-control" id="pub-title" />
                         </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="pub-desc">Description</label>
+                        <textarea class="form-control" id="pub-textarea" rows="3"></textarea>
                       </div>
                       <p class="mt-2">
                         <button class="btn rounded">Remove</button> 
@@ -809,11 +809,11 @@
         </ul>                   
       </div>  
   <!--modal-->
-  <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="editeventsLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title text-muted" id="exampleModalLabel">Edit Events</h6>
+            <h6 class="modal-title" id="editeventsLabel">Edit Events</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -821,22 +821,22 @@
           <div class="modal-body">
             <div class="container">
                     <div class="form-group d-block mt-4">
-                      <label for="firstname">
+                      <label for="eventname">
                         Event Name
                       </label>
-                      <input type="firstname" class="form-control" id="firstname" />
+                      <input type="eventname" class="form-control" id="eventname" />
                     </div>
                     <div class="form-group d-block mt-4">
-                        <label for="lastname">
+                        <label for="date">
                           Date
                         </label>
-                        <input type="lastname" class="form-control" id="lastname" />
+                        <input type="date" class="form-control" id="date" />
                       </div>
                       <div class="form-group d-block mt-4">
-                          <label for="occupation">
+                          <label for="hour">
                             Hour
                           </label>
-                          <input type="occupation" class="form-control" id="occupation" />
+                          <input type="hour" class="form-control" id="hour" />
                         </div>  
                      <button class="btn btn-lg rounded">Save</button>
                      </div>  
@@ -879,11 +879,11 @@
       </ul>                   
     </div>  
 <!--modal-->
-<div class="modal fade" id="inmyownwords" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="inmyownwords" tabindex="-1" role="dialog" aria-labelledby="inmyownwordsLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel">Edit In my own words</h6>
+          <h6 class="modal-title" id="inmyownwordsLabel">Edit In my own words</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -891,8 +891,8 @@
         <div class="modal-body">
             <div class="container">
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                    <label for="inmyownwords-desc">Description</label>
+                    <textarea class="form-control" id="inmyownwords-desc" rows="6"></textarea>
                   </div>
                      <button class="btn rounded">Save</button>
                      </div>
@@ -938,11 +938,11 @@
       </ul>                   
       </div>  
   <!--modal-->
-  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="editcontactLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Edit Contact</h6>
+            <h6 class="modal-title" id="editcontactLabel">Edit Contact</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
