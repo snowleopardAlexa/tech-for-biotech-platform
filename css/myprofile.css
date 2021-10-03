@@ -1,28 +1,29 @@
 /* Fonts K2D - main */
-@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+@import url("https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway");
 
 /***** MYPROFILE.CSS *****/
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 .navbar-profile {
-  font-family: 'K2D', sans-serif;
+  font-family: "K2D", sans-serif;
 }
 
 /*** Emblems icons ***/
 
 .img-fluid-emblem {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
-.img-fluid-emblem-active, .img-fluid {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.img-fluid-emblem-active,
+.img-fluid {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .edit-icon {
@@ -30,21 +31,20 @@ body {
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
-
 
 /*** Card ***/
 
 .card {
-   width: 70%;
-   max-width: 100%;
-   border: transparent;
-   background-color: var(--faded-snow);
+  width: 70%;
+  max-width: 100%;
+  border: transparent;
+  background-color: var(--faded-snow);
 }
 
 .card-body {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .card-img-top {
@@ -54,22 +54,29 @@ ul {
   border-radius: 50%;
 }
 
-.card-img-top-edu, .card-img-top-event {
+.card-img-top-edu,
+.card-img-top-event {
   cursor: pointer;
   border-radius: 0%;
   width: 100%;
   height: 0 auto;
 }
 
-.card-title, .card-subtitle {
+.card-title,
+.card-subtitle {
   color: var(--black-bear);
 }
 
-.card-text {
-font-size: 1.1rem;
+.text-declaration {
+  font-size: 1.2rem;
 }
 
-.event-title, .web {
+.card-text {
+  font-size: 1.1rem;
+}
+
+.event-title,
+.web {
   color: var(--aqua-deep-metalic);
 }
 
@@ -80,90 +87,91 @@ font-size: 1.1rem;
 /*** Modal ***/
 
 .modal-title {
-    font-weight: bold;
+  font-weight: bold;
+  color: var(--deep-grey);
+  font-size: 1.4rem;
 }
 
 .form-group {
-    font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /*** Toggle Switch ***/
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-.switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 28px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-input:checked + .slider {
-    background-color: var(--blue-pearl);
-  }
-  
-input:focus + .slider {
-    box-shadow: 0 0 1px rgb(221, 157, 157);
-  }
-  
-input:checked + .slider:before {
-    -webkit-transform: translateX(-22px);
-    -ms-transform: translateX(-22px);
-    transform: translateX(-22px);
-  }
-  
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-  
-.slider.round:before {
-    border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 28px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--blue-pearl);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(221, 157, 157);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-22px);
+  -ms-transform: translateX(-22px);
+  transform: translateX(-22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 /*** Like button ***/
 
 .fa-thumbs-up {
-    color: var(--aqua-deep-metalic);
+  color: var(--aqua-deep-metalic);
 }
 
 .fa-thumbs-up:hover {
-    color: var(--deep-heaven);
+  color: var(--deep-heaven);
 }
 
 /*** Profile Image for ajax ***/
 
 #imageUpload {
-    display: none;
+  display: none;
 }
 
 /* COG icon more options */
@@ -171,5 +179,3 @@ input:checked + .slider:before {
   margin-left: -5px;
   font-size: 1.7rem;
 }
-
-  

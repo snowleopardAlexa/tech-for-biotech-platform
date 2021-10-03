@@ -12,6 +12,7 @@
 :root {
     --light-grey: #bbbbbb;
     --daily-grey: #d1cece;
+    --deep-grey: #808080;
     --blue-pearl: #BBDEFB;
     --aqua-deep-metalic: #084E75;
     --ocean-mediterrean: #2ebf91;
@@ -92,12 +93,13 @@ a:hover {
 }
 
 .modal-title {
-    font-size: 1.5rem;
     font-weight: bold;
+    color: var(--deep-grey);
+    font-size: 1.4rem;
 }
 
 .form-group {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .form-control {
