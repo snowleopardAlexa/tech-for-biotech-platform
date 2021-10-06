@@ -12,6 +12,7 @@ body {
 
 .card { 
     border: none;
+    width: 70%;
 }
 
 .card-title {
@@ -28,5 +29,9 @@ body {
    height: 100px;
    width: 100px; 
    border-radius: 50%; 
+}
+
+.font-weight-bold {
+    color: var(--black-bear);
 }
 
