@@ -31,7 +31,7 @@ body {
    border-radius: 50%; 
 }
 
-.font-weight-bold {
+.card-text-title {
     color: var(--black-bear);
 }
 
