@@ -12,6 +12,7 @@ body {
 
 .card {
     border: none;
+    width: 70%;
 }
 
 .card-title {
