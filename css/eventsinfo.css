@@ -5,6 +5,7 @@
 
 body {
   font-family: 'K2D', sans-serif; 
+  background-color: var(--snow-blast);
 }
 
 /*** Card ***/
@@ -24,7 +25,8 @@ body {
 /*** Image, emblems ***/
 
 .img-fluid {
-   height: 150px;
-   width: 150px;  
+   height: 100px;
+   width: 100px; 
+   border-radius: 50%; 
 }
 
