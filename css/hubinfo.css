@@ -5,6 +5,7 @@
 
 body {
   font-family: 'K2D', sans-serif; 
+  background-color: var(--snow-blast);
 }
 
 /*** Card ***/
@@ -24,8 +25,8 @@ body {
 /*** Images ***/
 
 .img-fluid {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 
