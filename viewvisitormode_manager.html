@@ -166,7 +166,69 @@
                 <img class="card-img-top card-img-top-event mt-4" src="img/university-logo.png" alt="companyprofileimage">
             </div>
           </div>
-      </div>        
+      </div> 
+      
+<!--SEND MESSAGE-->
+<button type="button" class="btn btn-edit rounded mx-auto d-block mt-2 mb-4" data-toggle="modal" data-target="#sendmessage" style="font-size: 1.2rem;">
+  Send message
+</button>
+<!--modal-->
+  <div class="modal fade" id="sendmessage" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sendmessageLabel">Send Message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group" style="color: #000;">
+            <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="message" rows="6"></textarea>
+        </div>   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-edit rounded" style="font-size: 1.2rem;">Send</button>
+    </div>
+  </div>
+</div>
+</div> 
+
+<!--Block and Report modals-->
+<p class="text-center mt-4" style="cursor:pointer;"><i class="fas fa-ellipsis-h fa-2x" data-toggle="modal" data-target="#blockreport"></i></p>
+
+<!--modal-->
+<div class="modal fade" id="blockreport" tabindex="-1" role="dialog" aria-labelledby="blockreportLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+ <div class="modal-content">
+  <div class="modal-header">
+   <h5 class="modal-title" id="blockreportLabel">Settings</h5>
+   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+   </button>
+  </div>
+  <div class="modal-body">
+  <h4 style="font-weight: bold; color: #212121;">Block</h4>
+  <p>If you do not wish to recieve messages from a user, see its profile or allow it to see yours, you can block him.</p>
+  <button type="button" class="btn rounded" style="font-size: 1rem;">Block</button>
+  <h4 class="mt-4" style="font-weight: bold;">Report</h4>
+  <p>If you feel like the user is violating the terms of use of the platfrom, 
+   or you consider its profile to be fake, please report it.</p>
+  <button type="button" class="btn rounded" style="font-size: 1rem;">Report</button>
+ </div>
+<div class="modal-footer">
+   <button type="button" class="btn rounded" style="font-size: 1rem;" data-dismiss="modal">Close</button>
+ </div>
+</div>
+</div>
+</div>    
+
+<!--Like button-->
+<p class="text-center">Do you like this profile? Give it a like!</p>
+<p class="text-center"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p> 
+<p class="text-center">6475</p>                                                            
+     
   
 <!--Scripts-->
   <script src="js/jquery-3.3.1.slim.min.js"></script>
