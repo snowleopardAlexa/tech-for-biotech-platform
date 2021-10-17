@@ -62,11 +62,11 @@
         
     <!--Visitor Mode View button
     <a href="#visitormodeview.html">-->
-        <a class="card-link ml-4" href="viewvisitormodemanager.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
+        <a class="card-link ml-4" href="viewvisitormode_manager.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
         </a>
         
         <!--Settings-->
-        <a href="settings.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
+        <a href="settings_manager.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
         </a>
 
   <!--My Profile-->
@@ -97,13 +97,11 @@
           under your profile photo. The star is visible to all the members of the platform. By default, 
           "Event Space Availability" mode is off. Make sure that you turn on the mode only when you have a space available. In this way,
            you let the members know that you are ready to host a party.</p>
-           <div class="card mx-auto d-block">
-             <div class="text-center">
-              <img class="card-img-top" src="img/hotel.jpeg" alt="hotel">
-              <div class="card-text">
+           <div class="card mx-auto d-block" style="background-color: var(--polar-bear);">
+              <img class="card-img-top mx-auto d-block" src="img/hotel.jpeg" alt="hotel">
+              <div class="card-text text-center">
                 <img src="img/star.svg" class="img-fluid mt-2" alt="star">  
               </div>  
-              </div>
             </div>
           
           <p class="mb-4 mt-4 mb-4" style="color: grey; font-size: 1rem;">Please note that if the mode is off, the yellow star
@@ -142,7 +140,7 @@
       <a class="card-link ml-4" href="#" id="createevent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #BBDEFB; font-size: 17px;">
           <i class="fas fa-cog" style="font-size: 30px;"></i></a>
          <div class="dropdown-menu" aria-labelledby="createevent">
-           <a class="dropdown-item" href="availableeventspaces.html">See Available Event Spaces</a>
+           <a class="dropdown-item" href="showavailable_eventspaces.html">See Available Event Spaces</a>
          </div>
   </div>   
    
@@ -442,88 +440,6 @@
                               </div>
                               </div>
 
-<!--Fifth card, contact -->          
-<div class="card mx-auto d-block mt-4">
-    <div class="wrapper-icon">
-      <ul class="edit-icon float-right">
-          <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
-          <a href="#" data-toggle="modal" data-target="#editcontact"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
-        </ul>                   
-      </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Edit Contact</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-                    <div class="form-group d-block mt-4">
-                      <label for="firstname">
-                        First Name
-                      </label>
-                      <input type="firstname" class="form-control" id="firstname" />
-                    </div>
-                    <div class="form-group d-block mt-4">
-                        <label for="lastname">
-                          Last Name
-                        </label>
-                        <input type="lastname" class="form-control" id="lastname" />
-                      </div>
-                      <div class="form-group d-block mt-4">
-                          <label for="occupation">
-                            Occupation
-                          </label>
-                          <input type="occupation" class="form-control" id="occupation" />
-                        </div>  
-                      <div class="form-group d-block mt-4">
-                          <label for="number">
-                            Number
-                          </label>
-                          <input type="number" class="form-control" id="number" />
-                        </div>  
-                        <div class="form-group d-block mt-4">
-                            <label for="email">
-                              Email
-                            </label>
-                            <input type="email" class="form-control" id="email" />
-                          </div> 
-                        <div class="form-group d-block mt-4">
-                              <label for="residency">
-                              Place of current residency  
-                              </label>
-                              <input type="residency" class="form-control" id="residency" />
-                        </div>   
-                        <div class="form-group d-block mt-4">
-                            <label for="website">
-                               Website 
-                            </label>
-                            <input type="website" class="form-control" id="website" />
-                      </div>
-                     <button class="btn btn-lg rounded">Save</button>
-                     </div>  
-                    </div>
-                              </div>
-                              </div>
-                              </div>
-                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
-                              <div class="card-body">
-                                <h3 class="card-title text-center">Contact</h3>
-                                <h4 class="card-subtitle font-weight-bold mt-4 mb-4">Contact Information</h4>
-                                    <p class="card-text">Aleksandra Slomska</p>
-                                    <p class="card-text">Frontend Developer</p>
-                                    <p class="card-text">+1 646.206.00.76</p>
-                                    <p class="card-text">aleksandravslomska@gmail.com</p>
-                                    <p class="card-text">New York City</p>
-                                    <p class="card-text"><span class="mr-2">web:</span><a class="web" href="www.techforbiotech.com">techforbiotech.com</a>
-                              </div>
-                              </div>
-                              </div>
-
 <!--Seventh card, description, education etc -->          
 <div class="card mx-auto d-block mt-4">
     <div class="wrapper-icon">
@@ -537,14 +453,13 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Edit Own Words</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Edit About me</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
               <div class="container">
-                  <a href="#"><h2>In my own words</h2></a>
                   <div class="form-group">
                       <label for="exampleFormControlTextarea1">Description</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -558,7 +473,7 @@
                               </div>
                               <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
                               <div class="card-body">
-                                  <h3 class="card-title text-center">In my own words</h3>
+                                  <h3 class="card-title text-center">About me</h3>
                                   <p class="card-text text-left"> 
                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -585,7 +500,89 @@
                                         <img class="card-img-top card-img-top-event mt-4" src="img/university-logo.png" alt="companyprofileimage">
                                     </div>
                                     </div>
-                              </div>             
+                              </div>  
+                              
+    <!--Fifth card, contact -->          
+<div class="card mx-auto d-block mt-4">
+  <div class="wrapper-icon">
+    <ul class="edit-icon float-right">
+        <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
+        <a href="#" data-toggle="modal" data-target="#editcontact"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+      </ul>                   
+    </div>  
+<!-- Modal -->
+<div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Contact</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+                  <div class="form-group d-block mt-4">
+                    <label for="firstname">
+                      First Name
+                    </label>
+                    <input type="firstname" class="form-control" id="firstname" />
+                  </div>
+                  <div class="form-group d-block mt-4">
+                      <label for="lastname">
+                        Last Name
+                      </label>
+                      <input type="lastname" class="form-control" id="lastname" />
+                    </div>
+                    <div class="form-group d-block mt-4">
+                        <label for="occupation">
+                          Occupation
+                        </label>
+                        <input type="occupation" class="form-control" id="occupation" />
+                      </div>  
+                    <div class="form-group d-block mt-4">
+                        <label for="number">
+                          Number
+                        </label>
+                        <input type="number" class="form-control" id="number" />
+                      </div>  
+                      <div class="form-group d-block mt-4">
+                          <label for="email">
+                            Email
+                          </label>
+                          <input type="email" class="form-control" id="email" />
+                        </div> 
+                      <div class="form-group d-block mt-4">
+                            <label for="residency">
+                            Place of current residency  
+                            </label>
+                            <input type="residency" class="form-control" id="residency" />
+                      </div>   
+                      <div class="form-group d-block mt-4">
+                          <label for="website">
+                             Website 
+                          </label>
+                          <input type="website" class="form-control" id="website" />
+                    </div>
+                   <button class="btn btn-lg rounded">Save</button>
+                   </div>  
+                  </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Contact</h3>
+                              <h4 class="card-subtitle font-weight-bold mt-4 mb-4">Contact Information</h4>
+                                  <p class="card-text">Aleksandra Slomska</p>
+                                  <p class="card-text">Frontend Developer</p>
+                                  <p class="card-text">+1 646.206.00.76</p>
+                                  <p class="card-text">aleksandravslomska@gmail.com</p>
+                                  <p class="card-text">New York City</p>
+                                  <p class="card-text"><span class="mr-2">web:</span><a class="web" href="www.techforbiotech.com">techforbiotech.com</a>
+                            </div>
+                            </div>
+                            </div>                          
 
     <!--Like button-->
     <p class="text-center">Do you like this profile? Give it a like!</p>
