@@ -3,14 +3,10 @@
 
 /***** HUBINFO.CSS *****/
 
-body {
-  font-family: 'K2D', sans-serif; 
-  background-color: var(--snow-blast);
-}
-
 /*** Card ***/
 
 .card {
+    background-color: var(--faded-snow);
     border: none;
     width: 70%;
 }

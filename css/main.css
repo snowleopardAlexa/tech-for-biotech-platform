@@ -50,7 +50,6 @@ body {
     font-size: 1.8rem;
 }
 
-
 /*** Footer ***/
 
 .page-footer {
@@ -100,9 +99,9 @@ a:hover {
     font-size: 1.3rem;
   }
   
-  .form-group {
+.form-group {
     font-size: 1.1rem;
-  }
+}
 
 .form-control {
     font-size: 1rem;
@@ -110,7 +109,7 @@ a:hover {
 
 .form-control {
     border: 0.5px solid var(--light-grey);
-    background-color: var(--faded-snow);
+    background-color: var(--polar-bear);
 }
 
 .form-control:focus {
