@@ -1,3 +1,6 @@
+.card {
+    width: 70%;
+}
 
 .card-img-top-team {
     border-radius: 50%;
@@ -68,9 +71,6 @@
     display: none;
 }
 
-.card-img-top
-{
-    cursor: pointer;
-    width: 700px;
-    height: 250px;
+.img-event-space {
+    border-radius: 0%;
 }
