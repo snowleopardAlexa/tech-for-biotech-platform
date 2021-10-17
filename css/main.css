@@ -88,8 +88,8 @@ a:hover {
   
 /*** Modal ***/
 
-.modal-body, .modal-title, .modal-header, .modal-footer {
-    background-color: var(--faded-snow);
+.card, .modal-body, .modal-title, .modal-header, .modal-footer {
+    background-color: var(--polar-bear);
 }
 
 /*** Modal ***/
