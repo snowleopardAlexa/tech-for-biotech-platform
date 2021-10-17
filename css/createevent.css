@@ -1,5 +1,11 @@
 .card {
     width: 70%;
+    border: none;
+}
+
+.card-event {
+    width: 100%;
+    border: none;
 }
 
 .card-img-top-team {
@@ -19,6 +25,10 @@
 
 .card-subtitle {
     font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* Slider */
