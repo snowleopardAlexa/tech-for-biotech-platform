@@ -77,6 +77,10 @@ ul {
   font-size: 1.2rem;
 }
 
+.card-mode {
+  background-color: var(--polar-bear);
+}
+
 /*** Modal ***/
 
 .modal-title {
@@ -129,7 +133,7 @@ ul {
 }
 
 input:checked + .slider {
-  background-color: var(--blue-pearl);
+  background-color: var(--green-fusion);
 }
 
 input:focus + .slider {
