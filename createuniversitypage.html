@@ -77,10 +77,6 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav text-left mt-2">
     
-<!--Visitor Mode View button-->
-    <a class="card-link ml-4" href="viewvisitormodeuniversity.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
-    </a>
-    
 <!--My Profile-->
     <a href="myprofile.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">My Profile         
     </a>
@@ -140,7 +136,6 @@
          <a class="dropdown-item" href="createuniversitypage.html" data-toggle="modal" data-target="#postjob">Post Job</a>
          <a class="dropdown-item" href="edityourpostings.html">Edit Job Postings</a>
          <a class="dropdown-item" href="addpublication.html">Create Company Page</a>
-         <a class="dropdown-item" href="edityourpublications.html">Edit Your Companies</a>
        </div>
        </div> 
     <!--Modal-->
@@ -195,7 +190,7 @@
 <div class="card mx-auto d-block mt-4">
     <div class="wrapper-icon">
       <ul class="edit-icon float-right">
-          <a href="#" data-toggle="modal" data-target="#companyname"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+          <a href="#" data-toggle="modal" data-target="#companyname"><li><i class="fas fa-edit fa-2x mt-2"></i></li></a>
       </ul>                   
       </div>  
   <!-- Modal -->
@@ -208,19 +203,17 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-              <img class="card-img-top mx-auto d-block" style="width:1000px; height: 200px;" src="img/universityprofileimage.svg" alt="university's logo">     
+          <div class="modal-body">   
                     <div class="container-fluid">
+                      <img class="card-img-top mx-auto d-block" src="img/profile-img.png" alt="logo">  
                               <div class="row mx-auto">
                                 <div class="col-md-12">
-                                  <form role="form">
                                     <div class="form-group">
-                                      <label for="exampleInputEmail1">
+                                      <label for="exampleInputEmail1" class="mt-2">
                                        University
                                       </label>
                                       <input type="name" class="form-control" id="exampleInputEmail1" />
                                     </div>
-                                  </form>
                                 </div>
                               </div>
                               <div class="row mx-auto">
@@ -231,14 +224,14 @@
                                           <div class="custom-control custom-checkbox my-1 mr-sm-2">
                                             <input type="checkbox" name="Redesigning website" class="custom-control-input" id="techperson">
                                             <label class="custom-control-label" for="techperson">Technology</label>
-                                            <img src="img/badges/t.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                                            <img src="img/badges/T.png" style="width:35px; height:35px; margin-top: -5px;" class="img-fluid" alt="...">    
                                           </div>
                                         </li>
                                         <li class="list-item">
                                             <div class="custom-control custom-checkbox my-1 mr-sm-2">
                                                 <input type="checkbox" name="Social Media Promotion" class="custom-control-input" id="biotechperson">
                                                 <label class="custom-control-label" for="biotechperson">Biotechnology</label>
-                                                <img src="img/badges/b.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                                                <img src="img/badges/B.png" style="width:35px; height:35px; margin-top: -5px;" class="img-fluid" alt="...">    
                                               </div>
                                            
                                         </li>
@@ -246,14 +239,14 @@
                                             <div class="custom-control custom-checkbox my-1 mr-sm-2">
                                                 <input type="checkbox" name="Other" class="custom-control-input" id="sponsor">
                                                 <label class="custom-control-label" for="sponsor">Sponsorship</label>
-                                                <img src="img/badges/ss.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                                                <img src="img/badges/SS.png" style="width:35px; height:35px; margin-top: -5px;" class="img-fluid" alt="...">    
                                               </div>
                                         </li>
                                         <li class="list-item">
                                             <div class="custom-control custom-checkbox my-1 mr-sm-2">
                                                 <input type="checkbox" name="Mobile application" class="custom-control-input" id="collegeprofessor">
                                                 <label class="custom-control-label" for="collegeprofessor">Academia</label>
-                                                <img src="img/badges/a.svg" style="width:35px; height:35px; margin-top: -5px;" class="rounded" alt="...">    
+                                                <img src="img/badges/A.png" style="width:35px; height:35px; margin-top: -5px;" class="img-fluid" alt="...">    
                                               </div> 
                                         </li>
                                       </ul>
@@ -278,7 +271,7 @@
  <!--University resume-->       
   <div class="shadow-lg p-3 mb-5 bg-white rounded">     
   <div class="card-body">
-      <img class="card-img-top mx-auto d-block" src="img/universityprofileimage.svg" alt="University Profile Image" style="width: 1000px; height: 200px;">                     
+      <img class="card-img-top mx-auto d-block" src="img/company-logo.png" alt="University Profile Image" style="width: 1000px; height: 200px;">                     
       <input id="imageUpload" type="file" name="companycoverpicture" placeholder="Photo" required="" capture>
       <script>
             $(".card-img-top").click(function(e) {
@@ -296,14 +289,14 @@
                  fasterPreview( this );
                      });
         </script>
-      <h1 class="card-title text-center mt-4">Harvard University</h1>
+      <h2 class="card-title text-center mt-4">Harvard University</h2>
       <div class="container">
           <div class="row mx-auto">
               <div class="col-md-12">
                 <div class="mb-5 text-center"> 
-                <img src="img/badges/a.svg" class="img-fluid" alt="...">
-                <img src="img/badges/t.svg" class="img-fluid" alt="...">
-                <img src="img/badges/b.svg" class="img-fluid" alt="...">
+                <img src="img/badges/A.png" class="img-fluid" alt="...">
+                <img src="img/badges/T.png" class="img-fluid" alt="...">
+                <img src="img/badges/B.png" class="img-fluid" alt="...">
                </div>
              </div>
        </div>  
@@ -346,7 +339,7 @@
                               </div>
                               <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
                               <div class="card-body">
-                                  <h2 class="card-title">Biotech Department</h2>
+                                  <h4 class="card-title">Biotech Department</h4>
                                   <p class="card-text">
                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -597,11 +590,10 @@
                       </div>
                     </div>
                   </div>               
-                                </div>      
-                              </div>
-                              </div>
-                                  
-                                        </div>                   
+                </div>      
+              </div>
+            </div>
+          </div>                   
 
            
 <!--Fourth card, TECH DEPARTMENT-->          
@@ -609,7 +601,7 @@
     <div class="wrapper-icon">
       <ul class="edit-icon float-right">
           <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
-          <a href="#" data-toggle="modal" data-target="#news"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+          <a href="#" data-toggle="modal" data-target="#news"><li><i class="fas fa-edit fa-2x mt-2"></i></li></a>
         </ul>                   
       </div>  
   <!-- Modal -->
@@ -636,7 +628,7 @@
                               </div>
                               <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
                               <div class="card-body">
-                                  <h2 class="card-title">Tech Department</h2>
+                                  <h4 class="card-title">Tech Department</h4>
                                   <p class="card-text">
                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
