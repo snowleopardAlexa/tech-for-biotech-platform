@@ -13,6 +13,7 @@
 /*** Card ***/
 
 .card {
+    background-color: var(--snow-blast);
     width: 70%;
     max-width: 100%;
     border: none;

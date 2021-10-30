@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/manageyourcompanies.css" />
     <title>Edit your universities</title>
   </head>
@@ -15,8 +15,8 @@
  <!--Navigation bar-->  
  <div class="sticky-top">
   <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="index.html">
-          <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+      <a class="navbar-brand ml-2" href="index.html">
+         tfb
       </a>
       <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -68,85 +68,168 @@
     </nav>
    </div>    
 
-     <!--Edit Your Events-->    
-  <h2 class="text-center" style="font-weight: bold; margin-top: 50px; margin-bottom: 50px;">Current Job Postings</h2>
+<h2 class="text-center mt-5 mb-5">Edit your Universities</h2>   
 
-          <div class="container-fluid mt-4">
-            <div class="row">
-                <div class="col-md-6">
-                        <div class="card mx-auto text-center" style="width: 500px;">
-                                <img class="card-img-top" src="img/tfb500.svg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Job Title</h5>
-                                  <a href="createcompanypage.html" class="btn btn-edit rounded">Edit Posting</a>
-                                  <div class="card-text mt-4">
-                                  <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Posting</a></div>
-      <!-- Modal -->
-      <div class="modal fade" id="deletecompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Delete Posting</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body text-left">
-              <p>Are you sure that you want to delete your company page?</p>
-              <p>Delete Posting option means that your company page will be permanently
-                removed from your profile. If you want to renew your company information, you will have to
-                create a new company page and fill in the information once.</p>  
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-edit rounded">Delete Posting</button>
-            </div>
-          </div>
+<!--Universities-->
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card mx-auto text-center">
+        <img class="card-img-top" src="img/company-logo.png" alt="University profile picture">
+        <div class="card-body">
+        <h4 class="card-title">Harvard University</h4>
+        <a href="edityouruniversities.html" class="btn btn-edit rounded">Edit University Page</a>
+      <div class="card-text mt-4">
+      <a href="" class="card-link-delete" data-toggle="modal" data-target="#deleteschool">Delete University</a></div>
+  
+        <!-- Modal -->
+  <div class="modal fade" id="deleteschool" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title text-muted" id="exampleModalLabel">Delete Company</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+      <div class="modal-body text-left">
+    <p class="card-text">Are you sure that you want to delete your university page?</p>
+    <p class="card-text">Your university page will be permanently
+       removed from our system. If you want to renew your company page, you will have to
+       create a new page and fill in the information again.</p>  
+    </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-edit rounded">Delete Company</button>
+  </div>
+ </div>
+</div>
+</div>
+
+<!--Like button-->
+  <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+  <p class="text-center">4567</p>
+  </div> 
+ </div>
+</div>
+
+<div class="col-md-6">
+    <div class="card mx-auto text-center">
+      <img class="card-img-top" src="img/company-logo.png" alt="Company profile picture">
+      <div class="card-body">
+      <h4 class="card-title">Brown University</h4>
+      <a href="edityourcompanies.html" class="btn btn-edit rounded">Edit University Page</a>
+    <div class="card-text mt-4">
+      <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete University</a></div>
+<!-- Modal -->
+<div class="modal fade" id="deleteschool" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-muted" id="exampleModalLabel">Delete University</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
-      <p class="text-center">4567</p>
-            </div>
+    <div class="modal-body text-left">
+  <p class="card-text">Are you sure that you want to delete your company page?</p>
+  <p class="card-text">Your company page will be permanently
+     removed from our system. If you want to renew your company page, you will have to
+     create a new page and fill in the information again.</p>  
+  </div>
+<div class="modal-footer">
+<button type="button" class="btn btn-edit rounded">Delete University</button>
+</div>
+</div>
+</div>
+</div>
+
+<!--Like button-->
+<p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+<p class="text-center">4567</p>
+</div> 
+</div>
+</div>            
+<!--end of row-->
+</div>
+<!--Second row-->            
+<div class="row mt-5 mb-4">
+    <div class="col-md-6">
+        <div class="card mx-auto text-center">
+          <img class="card-img-top" src="img/company-logo.png" alt="Company profile picture">
+          <div class="card-body">
+          <h4 class="card-title">Yell University</h4>
+          <a href="edityourcompanies.html" class="btn btn-edit rounded">Edit University Page</a>
+        <div class="card-text mt-4">
+          <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Univiersity</a></div>
+    <!-- Modal -->
+    <div class="modal fade" id="deleteschool" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-muted" id="exampleModalLabel">Delete University</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body text-left">
+      <p class="card-text">Are you sure that you want to delete your university page?</p>
+      <p class="card-text">Your university page will be permanently
+         removed from our system. If you want to renew your company page, you will have to
+         create a new page and fill in the information again.</p>  
       </div>
-                </div>
-                <div class="col-md-6">
-                        <div class="card mx-auto text-center" style="width: 500px;">
-                                <img class="card-img-top" src="img/tfb500.svg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Job Title</h5>
-                                  <a href="createcompanypage.html" class="btn btn-edit rounded">Edit Posting</a>
-                                  <div class="card-text mt-4">
-                                        <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Posting</a></div>
-                                        <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
-                                        <p class="text-center">4567</p>
-                                  </div>
-                              </div>
-                </div>
-            </div>
-            <div class="row mt-4 mb-4">
-                <div class="col-md-12">
-                        <div class="card mx-auto text-center" style="width: 500px;">
-                                <img class="card-img-top" src="img/tfb500.svg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Job Title</h5>
-                                  <a href="createcompanypage.html" class="btn btn-edit rounded">Edit Posting</a>
-                                  <div class="card-text mt-4">
-                                        <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Posting</a></div>
-                                        <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
-                                        <p class="text-center">4567</p>
-                                  </div>
-                              </div>
-                </div>
-            </div>
-        </div>     
+    <div class="modal-footer">
+    <button type="button" class="btn btn-edit rounded">Delete University</button>
+    </div>
+   </div>
+  </div>
+  </div>
+  
+  <!--Like button-->
+    <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+    <p class="text-center">4567</p>
+    </div> 
+   </div>
+  </div>       
+  
+  <div class="col-md-6">
+    <div class="card mx-auto text-center">
+      <img class="card-img-top" src="img/company-logo.png" alt="Company profile picture">
+      <div class="card-body">
+      <h4 class="card-title">Stevens Institute</h4>
+      <a href="edityourcompanies.html" class="btn btn-edit rounded">Edit University Page</a>
+    <div class="card-text mt-4">
+      <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete University</a></div>
+<!-- Modal -->
+<div class="modal fade" id="deletecompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-muted" id="exampleModalLabel">Delete University</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-body text-left">
+  <p class="card-text">Are you sure that you want to delete your company page?</p>
+  <p class="card-text">Your company page will be permanently
+     removed from our system. If you want to renew your company page, you will have to
+     create a new page and fill in the information again.</p>  
+  </div>
+<div class="modal-footer">
+<button type="button" class="btn btn-edit rounded">Delete University</button>
+</div>
+</div>
+</div>
+</div>
 
-
-
-
-       
-
-
-
-
+<!--Like button-->
+<p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
+<p class="text-center">4567</p>
+</div> 
+</div>
+</div>  
+  </div>
+  </div>        
 
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
