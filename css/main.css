@@ -4,7 +4,7 @@
 /*
  font-family: 'Fredoka One', cursive;
  font-family: 'Varela Round', sans-serif;
-  font-family: 'K2D', sans-serif;
+ font-family: 'K2D', sans-serif;
 */
 
 /* COLORS */
@@ -12,14 +12,17 @@
 :root {
     --light-grey: #bbbbbb;
     --daily-grey: #d1cece;
+    --deep-grey: #808080;
     --blue-pearl: #BBDEFB;
     --aqua-deep-metalic: #084E75;
     --ocean-mediterrean: #2ebf91;
+    --deep-heaven: #0c0d74;
     --cloud: #ECE9E6;
     --faded-snow: #e5e7e7;
     --polar-bear: #fcfbf9;
     --snow-blast: #ffffff;
     --black-bear: #050505;
+    --green-fusion:#0ec20e;
 }
 
 body {
@@ -29,8 +32,7 @@ body {
 
 /*** Navbar ***/
 
-.navbar {
-    font-size: 1.2rem;  
+.navbar { 
     background-color: var(--aqua-deep-metalic);
     position: static;
 }
@@ -46,9 +48,8 @@ body {
 }
 
 .fa-home, .fa-calendar-alt, .fa-dna, .fa-briefcase, .fa-lightbulb, .fa-bell, .fa-envelope, .fa-user-edit, .fa-newspaper, .fa-user {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
-
 
 /*** Footer ***/
 
@@ -87,17 +88,20 @@ a:hover {
   
 /*** Modal ***/
 
-.modal-body, .modal-title, .modal-header, .modal-footer {
-    background-color: var(--faded-snow);
+.card, .modal-body, .modal-title, .modal-header, .modal-footer {
+    background-color: var(--polar-bear);
 }
+
+/*** Modal ***/
 
 .modal-title {
-    font-size: 1.5rem;
     font-weight: bold;
-}
-
+    color: var(--deep-grey);
+    font-size: 1.3rem;
+  }
+  
 .form-group {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .form-control {
@@ -106,7 +110,7 @@ a:hover {
 
 .form-control {
     border: 0.5px solid var(--light-grey);
-    background-color: var(--faded-snow);
+    background-color: var(--polar-bear);
 }
 
 .form-control:focus {

@@ -4,13 +4,15 @@
 /***** EVENTSINFO.CSS *****/
 
 body {
-  font-family: 'K2D', sans-serif; 
+  background-color: var(--faded-snow);
 }
 
 /*** Card ***/
 
 .card { 
+    background-color: var(--faded-snow);
     border: none;
+    width: 70%;
 }
 
 .card-title {
@@ -24,7 +26,12 @@ body {
 /*** Image, emblems ***/
 
 .img-fluid {
-   height: 150px;
-   width: 150px;  
+   height: 60px;
+   width: 60px; 
+   border-radius: 50%; 
+}
+
+.card-text-title {
+    color: var(--black-bear);
 }
 

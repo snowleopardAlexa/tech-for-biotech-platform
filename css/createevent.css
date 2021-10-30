@@ -1,3 +1,12 @@
+.card {
+    width: 70%;
+    border: none;
+}
+
+.card-event {
+    width: 100%;
+    border: none;
+}
 
 .card-img-top-team {
     border-radius: 50%;
@@ -16,6 +25,10 @@
 
 .card-subtitle {
     font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* Slider */
@@ -68,9 +81,6 @@
     display: none;
 }
 
-.card-img-top
-{
-    cursor: pointer;
-    width: 700px;
-    height: 250px;
+.img-event-space {
+    border-radius: 0%;
 }

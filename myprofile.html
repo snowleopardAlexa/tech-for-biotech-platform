@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/myprofile.css" />
-    <!--change profile picture-->
+    <!--upload profile picture from computer-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <title>My Profile</title>
+    <title>Professional Profile - My Profile</title>
   </head>
   <body>
 
- <!--NAVIGATION MENU-->  
+<!--NAVIGATION-->  
  <div class="sticky-top">
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand ml-2" href="index.html">
           tfb
         </a>
+        <!--logo-->
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!--icons navbar-->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav text-center ml-auto">
               <li class="nav-item">
@@ -67,6 +69,7 @@
           </ul>
         </div>
       </nav>
+<!--end of navigation-->      
      </div>    
  
 <!--NAVIGATION PROFILE-->     
@@ -74,10 +77,10 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="fas fa-ellipsis-h fa-1x"></i></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav text-left mt-2">
 <!--Visitor Mode View-->
-    <a class="card-link ml-4" href="viewvisitormodeprofessional.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
+    <a class="card-link ml-4" href="viewvisitormode_professional.html" style="color: #BBDEFB; font-size: 17px;">View Vistor Mode        
     </a>
 <!--Profile Settings-->
     <a href="settings.html" class="ml-4" style="color: #BBDEFB; font-size: 17px;">Profile Settings          
@@ -103,12 +106,12 @@
 <a href="#" class="card-link ml-4" data-toggle="modal" data-target="#clover" style="color: #BBDEFB; font-size: 17px;">Looking for job mode 
     <img src="img/badges/four-leaf-clover.svg" class="img-fluid" alt="four leaf clover" style="width:24px; height:22px;">     
 </a>      
-  <!-- Modal -->
-  <div class="modal fade" id="clover" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!--modal-->
+  <div class="modal fade" id="clover" tabindex="-1" role="dialog" aria-labelledby="lookingforajobLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title text-muted" id="exampleModalLabel">Looking for a job mode</h2>
+          <h6 class="modal-title" id="lookingforajobLabel">Looking for a job mode</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -116,20 +119,20 @@
         <div class="modal-body text-left">
           <p class="mb-4">When "Looking for a job" mode is on, you can see the clover under your profile photo. The clover is visible to all the members of the platform. 
             </p>
-
-             <div class="card mx-auto d-block">
+        <!--profile image-->
+             <div class="card card-mode mx-auto d-block">
                <div class="text-center">
                 <p class="text-center"><img class="card-img-top" src="img/guy.jpg" alt="Card image cap"></p>
                 <p class="text-center"><img src="img/badges/four-leaf-clover.svg" class="img-fluid-emblem" alt="four leaf clover"></p>  
                 </div>
               </div>
-            
-            <p class="mb-4 mt-4 mb-4" style="color: grey; font-size: 1rem;">Please note that when the mode is off, the
+        <!--short info-->
+            <p class="short-info mb-4 mt-4 mb-4">Please note that when the mode is off, the
               clover is not visible under your profile photo.
             </p> 
-  
+        <!--turn on looking for a job mode-->
             <p class="mb-4">Do you want to turn on "Looking for a job mode?"</p> 
-            <!--Toggle Switch-->
+            <!--toggle switch-->
             <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-12">
@@ -142,18 +145,20 @@
                   </div>      
                   </div>
                 </div>
-            
-            <p class="mb-2 mt-2" style="color: grey; font-size: 1rem;">
+        <!--short info-->   
+            <p class="short-info mb-2 mt-2">
               Please keep the mode on only when you are looking for a job. 
               Otherwise, you might recieve unwanted invitations for job interviews.
             </p> 
-  
+        <!--end of modal body-->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-save rounded">Save</button>
         </div>
       </div>
+   <!--end of modal content-->
     </div>
+<!--end of modal-->    
   </div>            
 <!--More Options-->
   <div class="btn-group">  
@@ -161,39 +166,39 @@
        <i class="fas fa-cog"></i></a>
        <div class="dropdown-menu" aria-labelledby="createevent">
          <a class="dropdown-item" href="createcompanypage.html">Create Company Page</a>
-         <a class="dropdown-item" href="edityourcompanies.html">Edit Your Companies</a>
          <a class="dropdown-item" href="createuniversitypage.html">Create University Page</a>
-         <a class="dropdown-item" href="edityouruniversities.html">Edit Your Universities</a>
          <a class="dropdown-item" data-toggle="modal" data-target="#postjob" href="postjob.html">Post Job</a>
          <a class="dropdown-item" href="edityourpostings.html">Edit Your Job Postings</a>
        </div>
     </div> 
- <!--Modal-->
- <div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <!--modal-->
+ <div class="modal fade" id="postjob" tabindex="-1" role="dialog" aria-labelledby="postjobLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Post Job</h5>
+          <h6 class="modal-title" id="postjobLabel">Post Job</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body text-left">
+            <!--post a job-->
             <form>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Title</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+                  <label for="job-title">Title</label>
+                  <input type="job-title" class="form-control" id="job-title" aria-describedby="emailHelp" placeholder="Title">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Posted by</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Company/Corporation Name">
+                  <label for="postedby">Posted by</label>
+                  <input type="postedby" class="form-control" id="postedby" placeholder="Company/Corporation Name">
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description"></textarea>
+                  <label for="job-desc">Description</label>
+                  <textarea class="form-control" id="job-desc" rows="6" placeholder="Description"></textarea>
                 </div>
               </form>
-              <p class="mt-2 mb-2" style="font-size: 1rem; color: grey;">Your job posting will be visible for the members of 
+              <!--short info-->
+              <p class="short-info mt-2 mb-2">Your job posting will be visible for the members of 
                 the platform for 30 days, after that period it will dissapear from 
                 job hub. You can drop the posting earlier if you wish. Go to Profile
                 Settings > Job Feed, in order to manage your job postings. Please 
@@ -205,20 +210,23 @@
         <div class="modal-footer">
           <button type="button" class="btn rounded">Post</button>
         </div>
+    <!--end of modal content-->    
       </div>
     </div>
+    <!--end of modal-->
   </div>     
 
 <!--Logout-->
 <a href="#" class="card-link ml-4" style="font-size: 17px;">Logout</a>
 </div>
+<!--end of navbar collapse-->
 </div>
-    </div>
-  </nav>  
-<!--end of profile navigation-->
+<!--end of navbar-->
+</nav>  
 
 <!--RESUME CARDS-->
-<!--FIRST CARD-->
+
+<!--FIRST CARD modal-->
 <!--First Name, Last Name, occupation, emblems info-->                             
 <div class="card mx-auto d-block mt-4">
     <div class="wrapper-icon">
@@ -226,19 +234,21 @@
           <a href="#" data-toggle="modal" data-target="#editmain"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
       </ul>                   
       </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="editmain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!--modal-->
+  <div class="modal fade" id="editmain" tabindex="-1" role="dialog" aria-labelledby="editmainLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Main</h2>
+            <h6 class="modal-title" id="editmainLabel">Edit Main</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
+              <!--profile image-->
               <img class="card-img-top mx-auto d-block" src="img/profile-img.png" alt="profile image">
               <input id="imageUpload" type="file" name="profilepicture" placeholder="Photo" required="" capture>
+              <!--add img from computer-->
               <script>
                     $(".card-img-top").click(function(e) {
                     $("#imageUpload").click();
@@ -259,7 +269,7 @@
                       <!--Name, occupation-->
                           <form role="form">
                             <div class="form-group">
-                              <label for="exampleInputEmail1">
+                              <label for="firstname">
                                   First Name
                                 </label>
                                 <input type="firstname" class="form-control" id="firstname" />
@@ -273,11 +283,12 @@
                                   <input type="occupation" class="form-control" id="occupation" />
                                 </div>
                             </form>
+                            <!--industry-->
                             <div class="row mx-auto">
                                 <div class="col-md-12">
-                                <h4>
+                                <h6 class="text-declaration">
                                    I am representing...
-                                </h4>
+                                </h6>
                                     <ul>
                                       <li class="list-item">
                                         <div class="custom-control custom-checkbox my-1 mr-sm-2">
@@ -346,20 +357,26 @@
                                     </div>
                                 </div>
                               </div>
-          </div>
+                          <!--end of container personal info-->    
+                          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-lg rounded">Save</button>
           </div>
+        <!--end of modal body-->
         </div>
+       <!--end of modal content-->  
       </div>
     </div>
+    <!--end of modal-->
     </div>
-        
- <!--Profile picture-->
+
+ <!--FIRST CARD screen-->
   <div class="shadow-lg p-3 mb-5 bg-white rounded">     
   <div class="card-body text-center">
+     <!--profile img--> 
     <img class="card-img-top" src="img/profile-img.png" alt="profile image">
     <input id="imageUpload" type="file" name="profilepicture" placeholder="Photo" required="" capture>
+    <!--add img from computer-->
     <script>
           $(".card-img-top").click(function(e) {
           $("#imageUpload").click();
@@ -376,12 +393,14 @@
                fasterPreview( this );
                    });
       </script>
+   <!--info-->   
    <h4 class="card-title mt-4">Aleksandra Slomska</h4>
     <h5 class="card-subtitle mt-3">Frontend Developer</h5>
       <div class="container">
           <div class="row mx-auto mt-3">
               <div class="col-md-12">
                 <div class="mb-3 text-center"> 
+                <!--emblem-->    
                 <img src="img/badges/t.png" class="img-fluid-emblem-active" alt="...">
                 <img src="img/badges/award.svg" class="img-fluid-emblem-active" alt="...">
                 <!--
@@ -403,9 +422,12 @@
     </div>        
     </div>
   </div> 
+   <!--end of card first card screen-->  
   </div>
+  <!--end of entire card-->
    
-<!--Second card, WORK EXPERIENCE-->          
+<!--SECOND CARD--> 
+<!--Work Experience-->        
 <div class="card mx-auto d-block mt-4">
     <div class="wrapper-icon">
       <ul class="edit-icon float-right">
@@ -413,43 +435,43 @@
           <a href="#" data-toggle="modal" data-target="#editwork"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
         </ul>                   
       </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="editwork" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!--modal-->
+  <div class="modal fade" id="editwork" tabindex="-1" role="dialog" aria-labelledby="editworkLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title text-muted" id="editwork">Edit Work</h2>
+            <h6 class="modal-title" id="editwork">Edit Work</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="container">
-              <a href="#"><h2>Add Work</h2></a>
               <!--First job-->
               <form>
               <div class="form-group d-block mt-4">
-                  <img src="img/company-logo.png" class="img-fluid" alt="companyprofileimage" style="width:500px; height:250px;">  
-                  <label for="exampleInputEmail1">
+                  <h6 class="name">Company logo</h6>
+                  <img src="img/company-logo.png" class="card-img-top-company" alt="companyprofileimage">  
+                  <label for="company" class="mt-2">
                     Company
                   </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="company" class="form-control" id="company" />
               </div> 
               <div class="form-group d-block mt-4">
                   <label for="exampleInputEmail1">
                     Occupation
                   </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="occupation" class="form-control" id="occupation" />
               </div>
               <div class="form-group d-block mt-4">
-                  <label for="exampleInputEmail1">
+                  <label for="years">
                     Years
                   </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="years" class="form-control" id="years" />
               </div>
               <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="desc">Description</label>
+                  <textarea class="form-control" id="desc" rows="3"></textarea>
               </div>
               <p clas="mt-2">
                  <button class="btn rounded">Remove</button>
@@ -458,44 +480,47 @@
               <!--Second job-->
               <form>
               <div class="form-group d-block mt-4">
-                  <img src="img/university-logo.png" class="img-fluid" alt="companyprofileimage" style="width:500px; height:250px;">  
-                  <label for="exampleInputEmail1">
+                  <h6 class="name">Company logo</h6>
+                  <img src="img/company-logo.png" class="card-img-top-company" alt="companyprofileimage">  
+                  <label for="company" class="mt-2">
                     Company
                   </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="email" class="form-control" id="company" />
                 </div> 
                 <div class="form-group d-block mt-4">
-                    <label for="exampleInputEmail1">
+                    <label for="occupation">
                     Occupation
                     </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="occupation" class="form-control" id="occupation" />
                 </div>
                 <div class="form-group d-block mt-4">
-                   <label for="exampleInputEmail1">
+                   <label for="years">
                     Years
                    </label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" />
+                  <input type="years" class="form-control" id="years" />
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="desc">Description</label>
+                    <textarea class="form-control" id="desc" rows="3"></textarea>
                 </div>
                 <p clas="mt-2">
                   <button class="btn rounded">Remove</button>
                 </p>
                 </form>
-                <!--Save all-->
+                <!--save all-->
                 <button class="btn rounded">Save</button>
               </div>
             </div>
+            <!--end of modal content-->
           </div>
         </div>
-      </div>    
-  <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+      </div>   
+      <!--end of modal--> 
+     <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
           <div class="card-body text-center">
             <h3 class="card-title">Work Experience</h3>
         <!--First company-->  
-        <img class="card-img-top mt-4" src="img/company-logo.png" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+        <img class="card-img-top-company mt-4" src="img/university-logo.png" alt="companyprofileimage">
           <h4 class="card-subtitle mt-4">TFB</h4>
           <p class="card-text mt-2">Tech Manager</p>
           <p class="card-text mt-2"> 2008-2017</p>
@@ -503,98 +528,105 @@
             I am managing the team of developers. 
           </p>
         <!--Second company-->  
-        <img class="card-img-top mt-4" src="img/company-logo.png" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+        <img class="card-img-top-company mt-4" src="img/university-logo.png" alt="companyprofileimage">
           <h4 class="card-subtitle mt-4">Tech for Biotech</h4>
           <p class="card-text mt-2">Ceo at Tech for Biotech</p>
           <p class="card-text mt-2">2009-2018</p>
           <p class="card-text">
           Short description of a position.</p>
         <!--Third company-->
-       <img class="card-img-top mt-4" src="img/company-logo.png" alt="companyprofileimage" style="width: 500px; height: 250px; border-radius: 0%;">
+        <img class="card-img-top-company mt-4" src="img/university-logo.png" alt="companyprofileimage">
           <h4 class="card-subtitle mt-4">Company</h4>
           <p class="card-text mt-2">Occupation</p>
           <p class="card-text mt-2">2008-2017</p>
           <p class="card-text">Short description of a position.</p>
         </div>
       </div>
+    <!--end of second card-->  
     </div>
            
-<!--Third card, EDUCATION-->          
+<!--THIRD CARD-->
+<!--Education-->         
 <div class="card mx-auto d-block mt-4">
     <div class="wrapper-icon">
       <ul class="edit-icon float-right">
           <a href="#"><li><i class="fas fa-times-circle fa-2x"></i></li></a> 
-          <a href="#" data-toggle="modal" data-target="#exampleModal"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
+          <a href="#" data-toggle="modal" data-target="#eduModal"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
         </ul>                   
     </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!--modal-->
+  <div class="modal fade" id="eduModal" tabindex="-1" role="dialog" aria-labelledby="eduModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Education</h2>
+            <h6 class="modal-title" id="eduModalLabel">Edit Education</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
               <div class="container">
-                  <a href="#"><h2>Add Education</h2></a>
-                   <!--First University-->  
                   <form>
+                  <!--University-->  
                   <div class="form-group d-block mt-4">
-                      <img src="img/university-logo.png" class="img-fluid" alt="universityprofileimage" style="width:1000px; height:200px;">
-                      <label for="exampleInputEmail1">
+                    <h6 class="name">University logo</h6>
+                      <img src="img/university-logo.png" class="card-img-top-edu mb-2" alt="universityprofileimage">
+                      <label for="uni-name">
                       University Name
                       </label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                      <input type="uni-name" class="form-control" id="uni-name" />
                   </div>
+                  <!--Degree-->
                   <div class="form-group d-block mt-4">
-                      <label for="exampleInputEmail1">
+                      <label for="degree">
                       Degree
                       </label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                      <input type="degree" class="form-control" id="degree" />
                   </div>
+                  <!--Years of Attendance-->
                   <div class="form-group d-block mt-4">
-                      <label for="exampleInputEmail1">
+                      <label for="uni-years">
                       Years of Attendance
                       </label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" />
+                      <input type="uni-years" class="form-control" id="uni-years" />
                   </div>
                    <!--short description-->
                   <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Description</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <label for="uni-desc">Description</label>
+                      <textarea class="form-control" id="uni-desc" rows="3"></textarea>
                   </div>
                    <p class="mt-2">
                     <button class="btn rounded">Remove</button>
                    </p>
-                   </form>
-                  <!--Second University-->  
+                  </form>
                   <form>
-                      <div class="form-group d-block mt-4">
-                          <img src="img/university-logo.png" class="img-fluid" alt="universityprofileimage" style="width:1000px; height:200px;">
-                          <label for="exampleInputEmail1">
+                  <!--University-->  
+                  <div class="form-group d-block mt-4">
+                    <h6 class="name">University logo</h6>
+                    <img src="img/university-logo.png" class="card-img-top-edu mb-2" alt="universityprofileimage">
+                    <label for="uni-name mt-2">
                           University Name
-                          </label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" />
-                      </div>
+                    </label>
+                    <input type="uni-name" class="form-control" id="uni-name" />
+                   </div>
+                    <!--Degree-->
                       <div class="form-group d-block mt-4">
-                          <label for="exampleInputEmail1">
+                          <label for="degree">
                           Degree
                           </label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                          <input type="degree" class="form-control" id="degree" />
                       </div>
+                      <!--Years of Attendance-->
                       <div class="form-group d-block mt-4">
-                          <label for="exampleInputEmail1">
+                          <label for="uni-years">
                           Years of Attendance
                           </label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                          <input type="uni-years" class="form-control" id="uni-years" />
                       </div>
                        <!--short description-->
                       <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Description</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <label for="uni-desc">Description</label>
+                          <textarea class="form-control" id="uni-desc" rows="3"></textarea>
                       </div>
                        <p class="mt-2">
                         <button class="btn rounded">Remove</button>
@@ -602,55 +634,73 @@
                        </form>
                     <!--Save all-->
                     <button class="btn rounded">Save</button>
-                       </div>
-                              </div>
-                              </div>
-                              </div>
-                              </div>
-                      <!--Display card-->        
-                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
-                                  <div class="card-body text-center">
-                                    <h3 class="card-title">Education</h3>
-                                    <!--First degree-->  
-                                    <img class="card-img-top card-img-top-edu mt-4" src="img/university-logo.png" alt="companyprofileimage" style="width: 1000px; height: 200px; border-radius: 0%;">
-                                    <h4 class="card-subtitle mt-4">Stanford University</h4>
-                                    <p class="card-text mt-2">
-                                      Degree
-                                    </p>
-                                    <p class="card-text mt-2">
-                                        2008-2010
-                                    </p>
-                                    <p class="card-text">
-                                      Short Description of a degree.
-                                    </p>
-                                    <!--Second degree-->
-                                    <img class="card-img-top card-img-top-edu mt-4" src="img/university-logo.png" alt="companyprofileimage" style="width: 1000px; height: 200px; border-radius: 0%;">
-                                    <h4 class="card-subtitle mt-4">Harvard University</h4>
-                                    <p class="card-text mt-2">
-                                      Bachelor of Science
-                                    </p>
-                                    <p class="card-text mt-2">
-                                        2008-2012
-                                    </p>
-                                    <p class="card-text">
-                                      Short description of a degree.
-                                    </p>
-                                    <!--Third degree-->
-                                    <img class="card-img-top card-img-top-edu mt-4" src="img/university-logo.png" alt="companyprofileimage" style="width: 1000px; height: 200px; border-radius: 0%;">
-                                    <h4 class="card-subtitle mt-4">Name of the University</h4>
-                                    <p class="card-text mt-2">
-                                     Degree
-                                    </p>
-                                    <p class="card-text mt-2">
-                                      Years of Attendance
-                                    </p>
-                                    <p class="card-text">
-                                      Short description of a position. 
-                                    </p>
-                                  </div>
-                              </div>
-                            </div>    
-<!--Fourth Card, PUBLICATIONS-->                            
+                    <!--end of container education-->
+                </div>
+                <!--end of modal body-->
+            </div>
+            <!--end of modal content-->  
+        </div>
+    </div>
+<!--end of modal-->
+</div>
+    <!--THIRD CARD screen-->    
+        <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+            <div class="card-body text-center">
+                <h3 class="card-title">Education</h3>
+                     <!--University logo-->  
+                    <img class="card-img-top card-img-top-edu mt-4" src="img/university-logo.png" alt="companyprofileimage">
+                     <!--University-->  
+                    <h4 class="card-subtitle mt-4">Stanford University</h4>
+                    <!--Degree-->  
+                    <p class="card-text mt-2">
+                        Degree
+                    </p>
+                    <!--Years of Attendance-->
+                    <p class="card-text mt-2">
+                        2008-2010
+                    </p>
+                    <!--short info-->
+                    <p class="card-text">
+                        Short Description of a degree.
+                    </p>
+                    <!--University logo--> 
+                    <img class="card-img-top card-img-top-edu mt-4" src="img/university-logo.png" alt="companyprofileimage">
+                    <!--University--> 
+                    <h4 class="card-subtitle mt-4">Harvard University</h4>
+                    <!--Degree--> 
+                    <p class="card-text mt-2">
+                       Bachelor of Science
+                    </p>
+                    <!--Years of Attendance--> 
+                    <p class="card-text mt-2">
+                        2008-2012
+                    </p>
+                    <!--short info-->
+                    <p class="card-text">
+                        Short description of a degree.
+                    </p>
+                    <!--University logo--> 
+                    <img class="card-img-top card-img-top-edu mt-4" src="img/university-logo.png" alt="companyprofileimage">
+                    <!--University--> 
+                    <h4 class="card-subtitle mt-4">Name of the University</h4>
+                    <!--Degree--> 
+                    <p class="card-text mt-2">
+                        Degree
+                    </p>
+                    <!--Years of Attendance--> 
+                    <p class="card-text mt-2">
+                        Years of Attendance
+                    </p>
+                    <!--short info-->
+                    <p class="card-text">
+                        Short description of a position. 
+                    </p>
+                </div>
+            </div>
+        </div>    
+
+<!--FOURTH CARD-->
+<!--Publication-->                        
 <div class="card mx-auto d-block mt-4">
     <div class="wrapper-icon">
       <ul class="edit-icon float-right">
@@ -658,30 +708,29 @@
           <a href="#" data-toggle="modal" data-target="#editeducation"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
         </ul>                   
       </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="editeducation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!--modal-->
+  <div class="modal fade" id="editeducation" tabindex="-1" role="dialog" aria-labelledby="editeducationLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Publications</h2>
+            <h6 class="modal-title" id="editeducationLabel">Edit Publications</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
               <div class="container">
-                  <a href="#"><h2>Add Publications</h2></a>
                   <!--First publication-->
                   <form>
                       <div class="form-group d-block mt-4">
-                        <label for="exampleInputEmail1">
+                        <label for="pub-title">
                          Title
                         </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                        <input type="pub-title" class="form-control" id="pub-title" />
                       </div>
                   <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Description</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <label for="pub-desc">Description</label>
+                      <textarea class="form-control" id="pub-textarea" rows="3"></textarea>
                     </div>
                     <p class="mt-2">
                       <button class="btn rounded">Remove</button> 
@@ -690,14 +739,14 @@
                     <!--Second publication-->
                     <form>
                         <div class="form-group d-block mt-4">
-                          <label for="exampleInputEmail1">
+                          <label for="pub-title">
                            Title
                           </label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" />
+                          <input type="pub-title" class="form-control" id="pub-title" />
                         </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="pub-desc">Description</label>
+                        <textarea class="form-control" id="pub-textarea" rows="3"></textarea>
                       </div>
                       <p class="mt-2">
                         <button class="btn rounded">Remove</button> 
@@ -706,8 +755,10 @@
                        <button class="btn rounded">Save</button>
                        </div>
                      </div>
+                    <!--end of modal content--> 
                    </div>
                  </div>
+                 <!--end of modal-->
                </div>
          <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
             <div class="card-body">       
@@ -743,9 +794,11 @@
               </p>
           </div>
         </div>
+    <!--end of card-->    
     </div>
            
-<!--Fifth card, EVENTS ATTENDANCE-->          
+<!--FIFTH CARD-->       
+<!--Events Attendance-->
 <div class="card mx-auto d-block mt-4">
     <div class="wrapper-icon">
       <ul class="edit-icon float-right">
@@ -753,44 +806,69 @@
           <a href="#" data-toggle="modal" data-target="#editevents"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
         </ul>                   
       </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!--modal-->
+  <div class="modal fade" id="editevents" tabindex="-1" role="dialog" aria-labelledby="editeventsLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Events</h2>
+            <h6 class="modal-title" id="editeventsLabel">Edit Events</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-              <div class="container">
-                  <a href="#"><h2>Add Events</h2></a>
-                       <button class="btn rounded">Save</button>
-                       </div>
-                              </div>
-                              </div>
-                              </div>
-                              </div>
-                              <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
-                              <div class="card-body">                       
-                                  <h3 class="card-title text-center">Events Attendance</h3>
-                                  <p class="card-text">
-                                      <!--First Event-->
-                                      <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>TITLE OF THE EVENT</h4>
-                                      <p class="card-text">Date</p>
-                                      <!--Second Event-->
-                                      <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>STARTUP BIO EXPO</h4>
-                                      <p class="card-text">September 20th 2018</p>
-                                      <!--Third Event-->   
-                                      <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>COMPANY BUYS STARTUP</h4>
-                                      <p class="card-text">July 21th 2018</p>            
-                                  </p>
-                              </div>
-                            </div>
-                         </div>
+            <div class="container">
+                    <div class="form-group d-block mt-4">
+                      <label for="eventname">
+                        Event Name
+                      </label>
+                      <input type="eventname" class="form-control" id="eventname" />
+                    </div>
+                    <div class="form-group d-block mt-4">
+                        <label for="date">
+                          Date
+                        </label>
+                        <input type="date" class="form-control" id="date" />
+                      </div>
+                      <div class="form-group d-block mt-4">
+                          <label for="hour">
+                            Hour
+                          </label>
+                          <input type="hour" class="form-control" id="hour" />
+                        </div>  
+                     <button class="btn btn-lg rounded">Save</button>
+                     </div>  
+                    </div>
+                <!--end of modal content-->    
+                </div>
+            </div>
+        <!--end of modal-->    
+        </div>
 
-<!--Sixth card, IN MY OWN WORDS-->          
+ <!--Fifth card screen-->       
+<div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+    <div class="card-body">                       
+        <h3 class="card-title text-center">Events Attendance</h3>
+            <!--First Event-->
+            <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>TITLE OF THE EVENT</h4>
+            <p class="card-text">Date</p>
+            <p class="card-text">Hour</p>
+            <!--Second Event-->
+            <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>STARTUP BIO EXPO</h4>
+            <p class="card-text">September 20th 2018</p>
+            <p class="card-text">8 pm - 10 pm</p>
+            <!--Third Event-->   
+            <h4 class="event-title font-weight-bold"><i class="fas fa-check mr-2"></i>COMPANY BUYS STARTUP</h4>
+            <p class="card-text">July 21th 2018</p>    
+            <p class="card-text">7 pm - 10 pm</p>        
+    </div>
+   <!--end of fifth card screen--> 
+  </div>
+  <!--end of card-->
+</div>
+
+<!--SIXTH CARD-->     
+<!--In my own words-->    
 <div class="card mx-auto d-block mt-4">
   <div class="wrapper-icon">
     <ul class="edit-icon float-right">
@@ -798,12 +876,12 @@
         <a href="#" data-toggle="modal" data-target="#inmyownwords"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
       </ul>                   
     </div>  
-<!-- Modal -->
-<div class="modal fade" id="inmyownwords" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--modal-->
+<div class="modal fade" id="inmyownwords" tabindex="-1" role="dialog" aria-labelledby="inmyownwordsLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title text-muted" id="exampleModalLabel">Edit In my own words</h2>
+          <h6 class="modal-title" id="inmyownwordsLabel">Edit About me</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -811,39 +889,45 @@
         <div class="modal-body">
             <div class="container">
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                    <label for="inmyownwords-desc">Description</label>
+                    <textarea class="form-control" id="inmyownwords-desc" rows="6"></textarea>
                   </div>
                      <button class="btn rounded">Save</button>
                      </div>
                   </div>
+                  <!--end of modal content-->
                 </div>
                </div>
+              <!--end of modal--> 
              </div>
-            <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
-              <div class="card-body">
-          <!--In my own words-->  
-              <h3 class="card-title text-center">In my own words</h3>
-                <p class="card-text"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                anim id est laborum.
-              </p>
-            </div>
-          </div>
-        </div>                         
+<!--Sixth card screen-->            
+<div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+    <div class="card-body">
+    <!--In my own words-->  
+        <h3 class="card-title text-center">About me</h3>
+        <p class="card-text"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+        </div>
+    <!--end of screen card-->    
+    </div>
+<!--end of card-->    
+</div>                         
 
-<!--Seventh card, CONTACT-->          
+<!--SEVENTH CARD-->
+<!--Contact-->      
 <div class="card mx-auto d-block mt-4">
     <div class="wrapper-icon">
       <ul class="edit-icon float-right">
@@ -851,12 +935,12 @@
           <a href="#" data-toggle="modal" data-target="#editcontact"><li><i class="fas fa-edit fa-2x mb-2"></i></li></a>
       </ul>                   
       </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!--modal-->
+  <div class="modal fade" id="editcontact" tabindex="-1" role="dialog" aria-labelledby="editcontactLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title text-muted" id="exampleModalLabel">Edit Contact</h2>
+            <h6 class="modal-title" id="editcontactLabel">Edit Contact</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -910,25 +994,32 @@
                          of current residency and website, you do not have to do it. 
                        </p>
                        <button class="btn btn-lg rounded">Save</button>
+                       <!--end of modal body-->
                        </div>  
                       </div>
+                     <!--end of modal content--> 
                      </div>
                     </div>
+                 <!--end of modal-->   
                   </div>
-                  <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
-                      <div class="card-body">
-                      <!--Contact Information--> 
-                        <h1 class="card-title text-center">Contact</h1>
-                        <h4 class="card-subtitle font-weight-bold mt-4 mb-4">Contact Information</h4>
-                            <p class="card-text">Aleksandra Slomska</p>
-                            <p class="card-text">CEO at Whatever</p>
-                            <p class="card-text">+1 646.206.00.76</p>
-                            <p class="card-text">aleksandravslomska@gmail.com</p>
-                            <p class="card-text">New York City</p>
-                            <p class="card-text"><span class="mr-2">web:</span><a class="web" href="www.techforbiotech.com">techforbiotech.com</a>
-                      </div>
-                    </div>
-                  </div>
+
+<!--Seventh card screen-->                  
+<div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+    <div class="card-body">
+        <!--Contact Information--> 
+        <h3 class="card-title text-center">Contact</h3>
+            <h4 class="card-subtitle font-weight-bold mt-4 mb-4">Contact Information</h4>
+                <p class="card-text">Aleksandra Slomska</p>
+                <p class="card-text">CEO at Whatever</p>
+                <p class="card-text">+1 646.206.00.76</p>
+                <p class="card-text">aleksandravslomska@gmail.com</p>
+                <p class="card-text">New York City</p>
+                <p class="card-text"><span class="mr-2">web:</span><a class="web" href="www.techforbiotech.com">techforbiotech.com</a>
+            </div>
+        </div>
+        <!--end of card screen-->
+    </div>
+    <!--end of card-->
 
 <!--Like button-->
 <p class="card-text card-text-like text-center">Do you like this profile? Give it a like!</p>
@@ -941,4 +1032,4 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/popper-1.14.3.min.js"></script>
 </body>
-</html>  
+</html>

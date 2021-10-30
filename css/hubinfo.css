@@ -3,14 +3,12 @@
 
 /***** HUBINFO.CSS *****/
 
-body {
-  font-family: 'K2D', sans-serif; 
-}
-
 /*** Card ***/
 
 .card {
+    background-color: var(--faded-snow);
     border: none;
+    width: 70%;
 }
 
 .card-title {
@@ -21,11 +19,16 @@ body {
     font-size: 1.4rem;
 }
 
+.card-text-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 /*** Images ***/
 
 .img-fluid {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 

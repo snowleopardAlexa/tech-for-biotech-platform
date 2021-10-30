@@ -5,15 +5,14 @@
 /***** EVENTS.CSS *****/
 
 body {
-    font-family: 'K2D', sans-serif;   
     color: #212121;
 }
 
 /*** Title ***/
 
-.font-weight-bold {
- margin-top: 70px;
- margin-bottom: 70px;
+.title {
+ color: var(--black-bear);
+ font-size: 2rem;
 }
 
 /*** Cards ***/
@@ -38,22 +37,6 @@ body {
     width: 700px;
     height: 250px;
     max-width: 100%;
-}
-
-
-/*** Modal ***/
-
-.modal-title {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.form-group {
-    font-size: 1.2rem;
-}
-
-.form-control {
-    font-size: 1.2rem;
 }
 
 /*** Buttons ***/

@@ -6,6 +6,10 @@ h2 {
   color: #fff;
 }
 
+.results {
+    font-size: 2rem;
+}
+
 .card-img-top {
     border-radius: 50%;
     width: 100px;
@@ -23,6 +27,7 @@ h2 {
 .img-fluid {
     width: 35px;
     height: 35px;
+    border-radius: 50%;
 }
 
 .btn {
