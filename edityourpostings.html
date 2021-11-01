@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/manageyourcompanies.css" />
     <title>Edit your postings</title>
   </head>
@@ -15,8 +15,8 @@
  <!--Navigation bar-->  
  <div class="sticky-top">
   <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="index.html">
-          <img src="img/newlogotech1.svg" width="100" height="50" class="d-inline-block align-top" alt="">
+      <a class="navbar-brand ml-2" href="index.html">
+          tfb
       </a>
       <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -75,14 +75,14 @@
             <div class="row">
                 <div class="col-md-6">
                         <div class="card mx-auto text-center" style="width: 500px;">
-                                <img class="card-img-top" src="img/tfb500.svg" alt="Card image cap">
+                                <img class="card-img-top" src="img/company-logo.png" alt="Card image cap">
                                 <div class="card-body">
                                   <h5 class="card-title">Job Title</h5>
-                                  <a href="createcompanypage.html" class="btn btn-edit rounded">Edit Posting</a>
+                                  <a href="#" class="btn btn-edit rounded" data-toggle="modal" data-target="#editposting">Edit Posting</a>
                                   <div class="card-text mt-4">
                                   <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Posting</a></div>
-      <!-- Modal -->
-      <div class="modal fade" id="deletecompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal Delete Posting -->
+      <div class="modal fade" id="deleteposting" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -92,8 +92,8 @@
               </button>
             </div>
             <div class="modal-body text-left">
-              <p>Are you sure that you want to delete your company page?</p>
-              <p>Delete Posting option means that your company page will be permanently
+              <p>Are you sure that you want to delete your job posting?</p>
+              <p>Delete Posting option means that your job positing page will be permanently
                 removed from your profile. If you want to renew your company information, you will have to
                 create a new company page and fill in the information once.</p>  
             </div>
@@ -103,6 +103,27 @@
           </div>
         </div>
       </div>
+
+            <!-- Modal Edit Posting -->
+            <div class="modal fade" id="editposting" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Posting</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-edit rounded">Delete Posting</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
       <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
       <p class="text-center">4567</p>
             </div>
@@ -110,10 +131,10 @@
                 </div>
                 <div class="col-md-6">
                         <div class="card mx-auto text-center" style="width: 500px;">
-                                <img class="card-img-top" src="img/tfb500.svg" alt="Card image cap">
+                                <img class="card-img-top" src="img/company-logo.png" alt="Card image cap">
                                 <div class="card-body">
                                   <h5 class="card-title">Job Title</h5>
-                                  <a href="createcompanypage.html" class="btn btn-edit rounded">Edit Posting</a>
+                                  <a href="#" class="btn btn-edit rounded" data-toggle="modal" data-target="#editposting">Edit Posting</a>
                                   <div class="card-text mt-4">
                                         <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Posting</a></div>
                                         <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
@@ -123,19 +144,7 @@
                 </div>
             </div>
             <div class="row mt-4 mb-4">
-                <div class="col-md-12">
-                        <div class="card mx-auto text-center" style="width: 500px;">
-                                <img class="card-img-top" src="img/tfb500.svg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Job Title</h5>
-                                  <a href="createcompanypage.html" class="btn btn-edit rounded">Edit Posting</a>
-                                  <div class="card-text mt-4">
-                                        <a href="" class="card-link-delete" data-toggle="modal" data-target="#deletecompany">Delete Posting</a></div>
-                                        <p class="text-center mt-4"><i class="fas fa-thumbs-up fa-2x"></i><span class="ml-2">liked by</span></p>
-                                        <p class="text-center">4567</p>
-                                  </div>
-                              </div>
-                </div>
+    
             </div>
         </div>     
 

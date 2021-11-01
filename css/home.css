@@ -4,6 +4,7 @@
 /***** STYLES.CSS *****/
 
 body {
+    font-size: calc(0.8 + (1.6rem - 0.8) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -14,9 +15,13 @@ body {
     background-color: var(--faded-snow);
 }
 
+.display-4 {
+    font-size: 3rem;
+}
+
 .lead {
     margin-bottom: 2.5rem; 
-    font-size: 1.5rem;
+    
 }
 
 .logo {
