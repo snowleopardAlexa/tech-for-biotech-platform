@@ -1,7 +1,5 @@
-/* Fonts K2D - main */
-@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
+/*********** ADD PUBLICATION **********/
 
-/***** ADDPUBLICATION.CSS *****/
 /*** Card ***/
 
 .card {
@@ -34,14 +32,31 @@ ul {
     font-size: 1rem;
 }
 
-.btn-coauthor, .btn-photos, .btn-save, .btn-invite {
+.btn-coauthor, .btn-photos, .btn-save, .btn-invite, .btn-search {
     font-size: 1.2rem;
+}
+
+.fa-cog {
+    font-size: 30px;
 }
 
 /*** Modal ***/
 
 .modal-title {
     font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.modal-text {
+    font-size: 1.2rem;
+}
+
+.name {
+    font-size: 1.3rem;
+}
+
+.profession {
+    font-size: 1.1rem;
 }
 
 .img-fluid {
@@ -62,7 +77,65 @@ ul {
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
 
-    /* intro card */
+    /* card publication */
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .card-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .card-subtitle-date {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .btn-coauthor, .btn-photos, .btn-save, .btn-invite, .btn-search {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .btn-add {
+        margin-bottom: 5px;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .profession {
+        font-size: 1rem;
+    }
+
+    .fa-cog {
+        font-size: 20px;
+    }
+
+    .dropdown-menu {
+        font-size: 0.9rem;
+    }
+
+    .navbar-collapse {
+        font-size: 1rem;
+    }
+
+    .modal-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    .modal-text {
+        font-size: 1rem;
+    }
+
+    .form-group {
+        font-size: 0.9rem;
+    }
 }
 
 
