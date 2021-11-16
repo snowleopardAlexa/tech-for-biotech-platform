@@ -153,5 +153,15 @@ a:hover {
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
 
-    /* intro card */
+    /* buttons */
+
+    .btn-join, .btn-jumbotron, .btn-login, .btn-submit, .btn-save {
+        font-size: 1rem;
+    }
+
+    /* social media icons */
+    
+    .fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-instagram {
+        font-size: 1.5rem;
+    }
 }
