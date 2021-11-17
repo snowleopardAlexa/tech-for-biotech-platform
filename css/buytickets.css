@@ -1,13 +1,5 @@
-/* Fonts K2D - main */
-@import url('https://fonts.googleapis.com/css?family=Fahkwang|K2D|Questrial|Raleway');
-
-/***** BUYTICKETS.CSS *****/
-
-body {
-    font-family: 'K2D', sans-serif;   
-}
-
 /*** Forms ***/
+
 .form {
     width: 70%;
 }
@@ -38,8 +30,7 @@ body {
     max-width: 100%;
 }
 
-
-/* visa, mastercard, paypal, discovery, american express*/
+/* visa, mastercard, paypal, discovery, american express */
 .img-fluid {
     width: 50px;
     height: 50px;
@@ -51,5 +42,16 @@ body {
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
 
-    /* intro card */
+    /* card tickets */
+
+    .card-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .card-img-top {
+        width: 400px;
+        height: 150px;
+        max-width: 100%;
+    }
 }
