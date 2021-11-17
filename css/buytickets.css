@@ -46,12 +46,36 @@
 
     .card-title {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .card-img-top {
         width: 400px;
         height: 150px;
         max-width: 100%;
+    }
+
+    .card-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .form-group {
+        font-size: 1rem;
+    }
+
+    .form-group input {
+        font-size: 1rem;
+    }
+
+    .form-group select {
+        font-size: 1rem;
+    }
+
+    .card-text-security-info {
+        font-size: 0.8rem;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
     }
 }
