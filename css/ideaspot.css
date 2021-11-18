@@ -153,3 +153,11 @@ color:#000;
 background-color:#BBDEFB;
 }
 
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* intro card */
+}

@@ -4,6 +4,7 @@
 /***** STYLES.CSS *****/
 
 body {
+    font-size: calc(0.8 + (1.6rem - 0.8) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -14,13 +15,19 @@ body {
     background-color: var(--faded-snow);
 }
 
+.display-3 {
+    font-size: 3rem;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
 .lead {
     margin-bottom: 2.5rem; 
-    font-size: 1.5rem;
 }
 
 .logo {
-    font-size: 8rem;
     font-family: 'Fredoka One', cursive;
     color: var(--aqua-deep-metalic);
 }
@@ -74,6 +81,38 @@ body {
     border-radius: 50%;
 }
 
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* display */
+
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    
+    .lead {
+        margin-bottom: 1rem; 
+    }
+    
+    .text-small {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+}
 
 
 

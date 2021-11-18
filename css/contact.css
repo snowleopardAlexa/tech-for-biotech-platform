@@ -14,6 +14,11 @@ body {
     color: #fff;
 }
 
+.form-group {
+  width: 50%;
+  max-width: 100%;
+}
+
 .form-control {
   background-color: var(--faded-snow);
   border: 1px solid var(--light-grey);
@@ -23,3 +28,25 @@ body {
   background-color: var(--cloud);
 }
 
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+  /* card */
+
+  .card-header {
+    font-size: 1.5rem;
+  }
+
+  .text-muted {
+    font-size: 1rem;
+  }
+
+  .form-group {
+    width: 70%;
+    max-width: 100%;
+  }
+
+}

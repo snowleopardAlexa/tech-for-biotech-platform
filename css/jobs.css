@@ -26,3 +26,12 @@ h2, .form-control {
 .card-text {
     font-size: 1rem;
 }
+
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* intro card */
+}
